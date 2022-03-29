@@ -1,0 +1,248 @@
+# Insira este arquivo em /usr/mailcleaner/share/spamassassin
+# Reinicie o serviço Filtering engine através da interface web do Administrador.
+# Arquivo original e atualizado hospedado em: https://www.eth1.com.br/mailcleaner/regras-brasil.cf
+
+body        SA_CORREIOS_SPAM1 /Objeto não entregue|carteiro não atendido|retire sua encomenda no endereço informado|Taxa de importacao pendente|realize o pagamento agora mesmo/i
+score       SA_CORREIOS_SPAM1 10
+describe    SA_CORREIOS_SPAM1 Spam Correios regra 1
+
+body        SA_CORREIOS_SPAM2 /três tentativas de entrega|realize a impressão da guia abaixo|dirija-se a agência indicada|realize a impressão para a retirada/i
+score       SA_CORREIOS_SPAM2 10
+describe    SA_CORREIOS_SPAM2 Spam Correios regra 2
+
+body        SA_CORREIOS_SPAM3 /Por favor, consulte e baixe o formulário|e retire sua encomenda no endereço informado|por crime de desobediência|pagamento das custas da diligência/i
+score       SA_CORREIOS_SPAM3 10
+describe    SA_CORREIOS_SPAM3 Spam Correios regra 3
+
+header      SA_CORREIOS_SPAM4 Subject =~ /\bO prazo para pagamento de sua|taxa de importacao foi atualizado|Pague de imediato/i
+score       SA_CORREIOS_SPAM4 10
+describe    SA_CORREIOS_SPAM4 Spam Correios regra 4
+
+body        SA_BRINQUEDOS /Brinquedos que estimulam criatividade|A melhor maneira de presentear|brinquedos mais incríveis|trabalha todo o cognitivo/i
+score       SA_BRINQUEDOS 10
+describe    SA_BRINQUEDOS Spam Brinquedos
+
+body        SA_CAIXACHEIA /Sua caixa postal|ultrapassou o limite|e-mail excedeu o limite|excedeu o limite de armazenamento/i
+score       SA_CAIXACHEIA 10
+describe    SA_CAIXACHEIA Spam sobre caixa de e-mail cheia
+
+body        SA_LOTOFACIL /Ganhe Sempre na Lotofácil|Lotofacil|Remover e-mail da base|oficial de justiça que poderá solicitar reforço|deixar de comparecer sem motivo justificado/i
+score       SA_LOTOFACIL 10
+describe    SA_LOTOFACIL Spam Lotofácil
+
+body        SA_PLANOSSAUDE1 /melhores hospitais do país|consultoria de planos de saúde|o melhor custo benefício disponível|renovação do seu plano|Coberturas adicionais para emergências/i
+score       SA_PLANOSSAUDE1 10
+describe    SA_PLANOSSAUDE1 Spam planos de saúde 1
+
+body        SA_PLANOSSAUDE2 /Solicite uma cotação agora mesmo e garanta|planos com co-participação|Cote online sem sair de casa|Confira nossas vantagens|consultas e exames laboratoriais/i
+score       SA_PLANOSSAUDE2 10
+describe    SA_PLANOSSAUDE2 Spam planos de saúde 2
+
+body        SA_DOMINIOS1 /registre o domínio garantindo a propriedade|evitando que um terceiro venha registrá-lo|RegistraCom|Não possuímos vínculo com Registro .br/i
+score       SA_DOMINIOS1 10
+describe    SA_DOMINIOS1 Spam registro domínios 1
+
+header      SA_SEUSPONTOS1 Subject =~ /\bSeus pontos do programa|Empresarial vencem dia/i
+score       SA_SEUSPONTOS1 10
+describe    SA_SEUSPONTOS1 Spam pontos empresariais 1
+
+body        SA_SEUSPONTOS2 /Pontos e Milhas que expiram em|seja efetuado o Bloqueio de seu Cartao e Senhas|que voce nao efetuou o resgate de|pontos e Milhas em menos de 1 minuto/i
+score       SA_SEUSPONTOS2 10
+describe    SA_SEUSPONTOS2 Spam pontos empresariais 2
+
+header      SA_SEUSPONTOS3 Subject =~ /\bPrezado (a) Cliente CredCard|Resgate agora suas Milhas/i
+score       SA_SEUSPONTOS3 10
+describe    SA_SEUSPONTOS3 Spam pontos empresariais 3
+
+header      SA_OPERADORAS1 Subject =~ /\bOportunidade OI/i
+score       SA_OPERADORAS1 10
+describe    SA_OPERADORAS1 Phishing operadoras 1
+
+body        SA_OPERADORAS2 /vantagens de ser um cliente Oi|A Malta|empresa parceira da Oi|mensagens do Grupo Malta|Fica a testemunha advertida|como poderá se sujeitar a multa judicial/i
+score       SA_OPERADORAS2 10
+describe    SA_OPERADORAS2 Phishing operadoras 2
+
+body        SA_MERCADOLIVRE1 /Ir para o detalhe da venda|Prepare o pacote e combine o envio|Remover e-mail da base/i
+score       SA_MERCADOLIVRE1 10
+describe    SA_MERCADOLIVRE1 Phishing Mercado Livre 1
+
+body        SA_MERCADOLIVRE2 /Entre em contato com seu comprador para fazer o envio|recomendamos que você guarde um comprovante de entrega/i
+score       SA_MERCADOLIVRE2 10
+describe    SA_MERCADOLIVRE2 Phishing Mercado Livre 2
+
+header      SA_MERCADOLIVRE3 Subject =~ /\bA NF-e da compra|já está disponível/i
+score       SA_MERCADOLIVRE3 10
+describe    SA_MERCADOLIVRE3 Phishing Mercado Livre 3
+
+body        SA_MERCADOLIVRE4 /Sua NF-e já está disponível|Detalhes da compra e Nota Fiscal em anexo/i
+score       SA_MERCADOLIVRE4 10
+describe    SA_MERCADOLIVRE4 Phishing Mercado Livre 4
+
+header      SA_MERCADOLIVRE5 Subject =~ /\bALERTA Um novo dispositivo desconhecido|Alerta de seguranca: verifique o acesso|acessou sua conta|sua conta do Mercado Livre|ACESSO SUSPEITO EM SUA CONTA/i
+score       SA_MERCADOLIVRE5 10
+describe    SA_MERCADOLIVRE5 Phishing Mercado Livre 5
+
+body        SA_MERCADOLIVRE6 /Detectamos um novo acesso à sua conta|Não reconheço este acesso|iPhone de Ratão|Não tem certeza? Recomendamos que você/i
+score       SA_MERCADOLIVRE6 10
+describe    SA_MERCADOLIVRE6 Phishing Mercado Livre 6
+
+header      SA_BRADESCO1 Subject =~ /\bResgate de Pontos Bradesco Epresarial/i
+score       SA_BRADESCO1 10
+describe    SA_BRADESCO1 Phishing Bradesco 1
+
+body        SA_BRADESCO2 /pontos Bradesco Empresárial|Você atingiu o limite de|programa Fidelidade|Bradesco Cartões Empresariais|deve resgata-los para continuar acumulando/i
+score       SA_BRADESCO2 10
+describe    SA_BRADESCO2 Phishing Bradesco 2
+
+body        SA_PROCESSO1 /INTIMAÇÃO da parte executada|acrescidas de eventuais custas processuais|Em "ANEXO" - Intimação Classe|apresentar impugnação/i
+score       SA_PROCESSO1 10
+describe    SA_PROCESSO1 Phishing Processo Justiça 1
+
+body        SA_CLARO1 /Evite o bloqueio do seu serviço|sua fatura ainda não consta no nosso sistema|seu sinal será reabilitado em até 24h/i
+score       SA_CLARO1 10
+describe    SA_CLARO1 Phishing Claro 1
+
+body        SA_CLARO2 /Se o seu sinal já está bloqueado|realize o pagamento desta fatura|a negociação de seu débito é feita Online|já aplicados nesta fatura abaixo/i
+score       SA_CLARO2 10
+describe    SA_CLARO2 Phishing Claro 2
+
+body        SA_PHISHING1 /conta de e-mail foi infectada|efetuar a indexação do banco de dados|excedeu seu limite de|aumente o tamanho da sua caixa de correio|Atualize os dados da sua conta/i
+score       SA_PHISHING1 10
+describe    SA_PHISHING1 Phishing conta de e-mail 1
+
+header      SA_PHISHING2 Subject =~ /\bUm dispositivo desconhecido|acessou a sua conta recentemente|Atualização Sistema de Correio/i
+score       SA_PHISHING2 10
+describe    SA_PHISHING2 Phishing conta de e-mail 2
+
+header      SA_PHISHING3 Subject =~ /\bTaxa de importacao pendente|realize o pagamento agora mesmo/i
+score       SA_PHISHING3 10
+describe    SA_PHISHING3 Phishing conta de e-mail 3
+
+header      SA_PHISHING4 Subject =~ /\bCumprimento de sentença|cPanel is delaying|incoming messages/i
+score       SA_PHISHING4 10
+describe    SA_PHISHING4 Phishing conta de e-mail 4
+
+body        SA_PHISHING5 /Esta alteração proporcionará|maior segurança e velocidade|Diretoria técnica de gestão cpanel.net|Este acesso deverá ser feito|imediatamente e uma única vez/i
+score       SA_PHISHING5 10
+describe    SA_PHISHING5 Phishing conta de e-mail 5
+
+header      SA_PROMO1 Subject =~ /\bMega queima de estoque|Canecas e Copos com SUPER DESCONTOS/i
+score       SA_PROMO1 10
+describe    SA_PROMO1 Spam promoções 1
+
+header      SA_BRINDES1 Subject =~ /\bBrindes com status de presente|Binance|Temos uma mensagem importante/i
+score       SA_BRINDES1 10
+describe    SA_BRINDES1 Spam brindes 1
+
+body        SA_BRINDES2 /Brindes com status de presente|sua marca indo para todos os lugares|sacolas e mochilas PERSONALIZADAS|Atendemos todo o brasil!/i
+score       SA_BRINDES2 10
+describe    SA_BRINDES2 Spam brindes 2
+
+header      SA_VENDAS1 Subject =~ /\bNovas oportunidades|para aumentar suas vendas/i
+score       SA_VENDAS1 10
+describe    SA_VENDAS1 Spam vendas 1
+
+header      SA_VENDAS2 Subject =~ /\bDicas para ter um|negócio de sucesso em/i
+score       SA_VENDAS2 10
+describe    SA_VENDAS2 Spam vendas 2
+
+body        SA_VENDAS3 /Prepare-se para fazer seu negócio decolar|abordando temas relevantes como|Comportamento empreendedor|Marketing digital|webmail server is pending some messages/i
+score       SA_VENDAS3 10
+describe    SA_VENDAS3 Spam vendas 3
+
+header      SA_PIX1 Subject =~ /\bVocê recebeu|dinheiro via Pix/i
+score       SA_PIX1 10
+describe    SA_PIX1 Spam Pix 1
+
+body        SA_PIX2 /ZIP:|Senha de arquivo:|Houve problema ao creditar o valor|para você via PIX|recebeu dinheiro via PIX|Pago Bank Transfer PIX|desbloqueio do seu credito de forma segura/i
+score       SA_PIX2 10
+describe    SA_PIX2 Spam Pix 2
+
+header      SA_CIDADANIA1 Subject =~ /\bGuia prático para|cidadania italiana/i
+score       SA_CIDADANIA1 10
+describe    SA_CIDADANIA1 Spam cidadania italiana 1
+
+body        SA_CIDADANIA2 /durante a busca dos meus documentos|passei por todos esses processos de pesquisa|to access on hold messages/i
+score       SA_CIDADANIA2 10
+describe    SA_CIDADANIA2 Spam cidadania italiana 2
+
+header      SA_SPAM_FROMDUPLO From =~ /.+\@.+\@/i
+score       SA_SPAM_FROMDUPLO 10
+describe    SA_SPAM_FROMDUPLO Emails enviados com mais de um domínio no campo from
+
+uri         SA_GOOGLEUSERCONTENT /\.googleusercontent.com(?:\/|$)/i
+score       SA_GOOGLEUSERCONTENT 10
+describe    SA_GOOGLEUSERCONTENT URL hospedando malware no Google
+
+uri         SA_AMAZONAWSCOM /\.amazonaws.com(?:\/|$)/i
+score       SA_AMAZONAWSCOM 10
+describe    SA_AMAZONAWSCOM URL hospedando malware na Amazon
+
+uri         SA_OUTSYSTEMSCLOUD /\.outsystemscloud.com(?:\/|$)/i
+score       SA_OUTSYSTEMSCLOUD 10
+describe    SA_OUTSYSTEMSCLOUD URL usado spam da OI
+
+uri         SA_DDNSNET /\.ddns.net(?:\/|$)/i
+score       SA_DDNSNET 10
+describe    SA_DDNSNET URL dinâmico hospedando Malware
+
+uri         SPAM_LINK_1 /\/[a-z]+\.php/i
+score       SPAM_LINK_1 10
+describe    SPAM_LINK_1 Link de spam URL contendo PHP
+
+uri         SPAM_LINK_2 /\/[a-z]+\.aspx/i
+score       SPAM_LINK_2 10
+describe    SPAM_LINK_2 Link de spam URL contendo ASP
+
+uri         SPAM_LINK_3 /\/[a-z]+\.cgi/i
+score       SPAM_LINK_3 10
+describe    SPAM_LINK_3 Link de spam URL contendo CGI
+
+uri         SPAM_LINK_3 /\/\w\/\w{10,}\/\w{10,}/i
+score       SPAM_LINK_3 10
+describe    SPAM_LINK_3 Variação de link de Spam
+
+uri         SA_PORTASNAOPADRAOHTTPS m{https?://[^/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:/|\s|$)}
+score       SA_PORTASNAOPADRAOHTTPS 10
+describe    SA_PORTASNAOPADRAOHTTPS HTTPS utilizando portas não padrão na URL
+
+uri         SA_PORTASNAOPADRAOHTTP m{http?://[^/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:/|\s|$)}
+score       SA_PORTASNAOPADRAOHTTP 10
+describe    SA_PORTASNAOPADRAOHTTP HTTP utilizando portas não padrão na URL
+
+uri         SA_LINKSCOMIPV4 /^http?\:\/\/(?:\S*\@)?\d+\.\d+\.\d+\.\d+/i
+score       SA_LINKSCOMIPV4 10
+describe    SA_LINKSCOMIPV4 Links HTTP contendo IPS na URL
+
+uri         SA_LINKSCOMIPV4SSL /^https?\:\/\/(?:\S*\@)?\d+\.\d+\.\d+\.\d+/i
+score       SA_LINKSCOMIPV4SSL 10
+describe    SA_LINKSCOMIPV4SSL Links HTTPS contendo IPS na URL
+
+header   __SPF_SOFTFAIL_FROM    Return-Path:addr =~ /\@(gmail\.com|outlook\.com|outlook\.com.br|hotmail\.com|live\.com)$/i
+meta     SPF_SOFTFAIL_FROM      ( __SPF_SOFTFAIL_FROM && SPF_SOFTFAIL )
+score    SPF_SOFTFAIL_FROM      10
+describe SPF_SOFTFAIL_FROM      SPF Softfail em serviços de email gratuitos
+
+header __WP_X_PHP_ORIG_SCRIPT X-PHP-Originating-Script =~ /(post|gallery|user)\.php/i
+header __WP_X_PHP_SCRIPT X-PHP-Script =~ /(post|gallery|user)\.php/i
+header __WP_X_SOURCE X-Source =~ /php-cgi/i
+header __WP_X_SOURCE_ARGS X-Source-Args =~ /(post|gallery|user)\.php/i
+header __WP_PATH_X_SOURCE_ARGS X-Source-Args =~ /\/wp\-(content|includes)\//i
+header __JO_COMP_X_SOURCE_ARGS X-Source-Args =~ /components\/com_/i
+header __JO_X_SOURCE_ARGS X-Source-Args =~ /\/joomla\//i
+
+meta CMS_MAIL ( __WP_X_PHP_ORIG_SCRIPT || __WP_X_PHP_SCRIPT || __WP_X_SOURCE || __WP_X_SOURCE_ARGS || __WP_PATH_X_SOURCE_ARGS || __JO_COMP_X_SOURCE_ARGS || __JO_X_SOURCE_ARGS )
+score CMS_MAIL 5.0
+describe CMS_MAIL Email enviado por CMS Hackeado
+
+header OUTDATED_PHP X-Mailer =~ /PHP v?5\.[1234].*/i
+score OUTDATED_PHP 5.0
+describe OUTDATED_PHP Email enviado de um PHP desatualizado
+
+header X_MAILER_SENDEMAIL X-Mailer =~ /sendEmail/i
+score X_MAILER_SENDEMAIL 5.0
+describe X_MAILER_SENDEMAIL Email enviado pelo sendEmail
+
+header VULN_PHPMAILER X-Mailer =~ /PHPMailer 5\.2\.[0-9] /i
+score VULN_PHPMAILER 5.0
+describe VULN_PHPMAILER Email enviado por uma versão vulnerável do PHPMailer
