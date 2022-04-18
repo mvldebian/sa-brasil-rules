@@ -37,6 +37,18 @@ header      SA_SPAMGERAL2 Subject =~ /\bSomeone matched with you|Gordurinhas ind
 score       SA_SPAMGERAL2 10
 describe    SA_SPAMGERAL2 Spam Geral 2
 
+header      SA_SPAMGERAL3 Subject =~ /\bSeu boleto foi atualizado com novo valor|Novas oportunidades para aumentar suas vendas|Nome Limpo Cartao Atacadao|200 Cursos pelo Valor de/i
+score       SA_SPAMGERAL3 10
+describe    SA_SPAMGERAL3 Spam Geral 3
+
+body        SA_SPAMGERAL4 /Emails sent to you are not delivered when your inbox|and this should be conveyed to each sender|ensure that your mailbox is no longer overflowing/i
+score       SA_SPAMGERAL4 10
+describe    SA_SPAMGERAL4 Spam Geral 4
+
+header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota limit/i
+score       SA_SPAMGERAL5 10
+describe    SA_SPAMGERAL5 Spam Geral 5
+
 body        SA_BRINQUEDOS /Brinquedos que estimulam criatividade|A melhor maneira de presentear|brinquedos mais incríveis|trabalha todo o cognitivo|Basta preencher nosso formulário/i
 score       SA_BRINQUEDOS 10
 describe    SA_BRINQUEDOS Spam Brinquedos
@@ -141,6 +153,10 @@ header      SA_MERCADOLIVRE8 Subject =~ /\bO SMARTWATCH MAIS TECNOLÓGICO|ECOMPA
 score       SA_MERCADOLIVRE8 10
 describe    SA_MERCADOLIVRE8 Phishing Mercado Livre 8
 
+body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)/i
+describe    SA_DEAR_USER Spam caro usuário
+score       SA_DEAR_USER 10
+
 header      SA_BRADESCO1 Subject =~ /\bResgate de Pontos Bradesco Epresarial|Atendimento Itau-Digital|Atualização do sistema de TIC|Video e Foto para Pessoa Juridica ou Fisica/i
 score       SA_BRADESCO1 10
 describe    SA_BRADESCO1 Phishing Bradesco 1
@@ -233,7 +249,7 @@ header      SA_POLICIA2 Subject =~ /\bProcesso penal concluido|Vara Criminal e|S
 score       SA_POLICIA2 10
 describe    SA_POLICIA2 Spam Policia Civil 2
 
-body        SA_DETRAN1 /uma infração para a CNH final|Foi inserido no Sistema de Notificação Eletrônica - SNE|uma infração para a CNH final|A infração já está disponível em seu aplicativo/i
+body        SA_DETRAN1 /uma infração para a CNH final|Foi inserido no Sistema de Notificação Eletrônica - SNE|uma infração para a CNH final|A infração já está disponível em seu aplicativo|Orçamento.zip/i
 score       SA_DETRAN1 10
 describe    SA_DETRAN1 Spam Detran 1
 
@@ -241,7 +257,7 @@ header      SA_VENDAS1 Subject =~ /\bNovas oportunidades|para aumentar suas vend
 score       SA_VENDAS1 10
 describe    SA_VENDAS1 Spam vendas 1
 
-header      SA_VENDAS2 Subject =~ /\bDicas para ter um|negócio de sucesso em|NOVO ACESSO INDENTIFICADO|Acesso desconhecido de um novo dispositivo|Sua recompensa em milhas chegou/i
+header      SA_VENDAS2 Subject =~ /\bDicas para ter um|negócio de sucesso em|NOVO ACESSO INDENTIFICADO|Acesso desconhecido de um novo dispositivo|Sua recompensa em milhas chegou|Solicito meu orçamento/i
 score       SA_VENDAS2 10
 describe    SA_VENDAS2 Spam vendas 2
 
@@ -292,6 +308,12 @@ describe    SA_VIRUSZIP3 Phishing contendo virus zipado com senha 3
 header      SA_VIRUSZIP4 Subject =~ /\bMulta emitida para: [A-Za-z0-9_-]+\@/
 score       SA_VIRUSZIP4 10
 describe    SA_VIRUSZIP4 Phishing contendo virus zipado com senha 4
+
+header      __SUBJ_PAGAMENTO Subject =~ /\bPagamento do pedido/i
+mimeheader  __MIME_ANEXOS  Content-Type =~ /\.(zip|rar|tar|gz)\b/i
+meta        SUBJ_VIRUS_ZIPADO ( __SUBJ_PAGAMENTO && __MIME_ANEXOS )
+score       SUBJ_VIRUS_ZIPADO 10
+describe    SUBJ_VIRUS_ZIPADO Phishing contendo virus zipado em anexo
 
 uri         SA_GOOGLEUSERCONTENT /\.googleusercontent.com(?:\/|$)/i
 score       SA_GOOGLEUSERCONTENT 10
