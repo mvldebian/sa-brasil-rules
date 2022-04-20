@@ -45,7 +45,7 @@ body        SA_SPAMGERAL4 /Emails sent to you are not delivered when your inbox|
 score       SA_SPAMGERAL4 10
 describe    SA_SPAMGERAL4 Spam Geral 4
 
-header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota limit/i
+header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota limit|Notificao Extrajudicial|Tentativa de entrega sem sucesso|Bradesco Saúde é Mais Economia|A capacidade disponível em seu webmail/i
 score       SA_SPAMGERAL5 10
 describe    SA_SPAMGERAL5 Spam Geral 5
 
@@ -69,11 +69,27 @@ header      SA_NOTAFISCAL2 Subject =~ /\bSua nota fiscal foi emitida|Apresentaç
 score       SA_NOTAFISCAL2 10
 describe    SA_NOTAFISCAL2 Phising nota fiscal 2
 
+header      SA_GANHOS1 Subject =~ /\bSeu endereço de e-mail ganhou|Junte-se aos illuminati/i
+score       SA_GANHOS1 10
+describe    SA_GANHOS1 Phising ganhos 1
+
+body        SA_GANHOS2 /império de elite mundial illuminati|nosso esquema de recrutamento|ordem mundial illuminati|Illuminati em sua pasta de spam|grande império Illuminati|ingressar no império illuminati/i
+score       SA_GANHOS2 10
+describe    SA_GANHOS2 Phising ganhos 2
+
+body        SA_GANHOS3 /britânicos centenário lotto|NÚMERO PIN VENCEDOR|Centenário Britânico|Financeiro de Reivindicações|Príncipe Douglas Blair|Katie Angeles Raab|Britânicos Centenário Loteria|Nisha Shibu/i
+score       SA_GANHOS3 10
+describe    SA_GANHOS3 Phising ganhos 3
+
+body        SA_GANHOS4 /ex-embaixador do KUWAIT|2,5 MILHÕES DE DÓLARES|que use esse dinheiro para realizar o Evangelho|aceitar Deus como nosso senhor e salvador|Meu marido morreu há 7 anos depois/i
+score       SA_GANHOS4 10
+describe    SA_GANHOS4 Phising ganhos 4
+
 body        SA_PLANOSSAUDE1 /melhores hospitais do país|consultoria de planos de saúde|o melhor custo benefício disponível|renovação do seu plano|Coberturas adicionais para emergências/i
 score       SA_PLANOSSAUDE1 10
 describe    SA_PLANOSSAUDE1 Spam planos de saúde 1
 
-body        SA_PLANOSSAUDE2 /planos com co-participação|Cote online sem sair de casa|Confira nossas vantagens|consultas e exames laboratoriais|DETECTAMOSUMACESSOASUACONTA/i
+body        SA_PLANOSSAUDE2 /planos com co-participação|Cote online sem sair de casa|Confira nossas vantagens|consultas e exames laboratoriais|DETECTAMOSUMACESSOASUACONTA|aumentar para 30GB totalmente grátis/i
 score       SA_PLANOSSAUDE2 10
 describe    SA_PLANOSSAUDE2 Spam planos de saúde 2
 
@@ -152,6 +168,18 @@ describe    SA_MERCADOLIVRE7 Phishing Mercado Livre 7
 header      SA_MERCADOLIVRE8 Subject =~ /\bO SMARTWATCH MAIS TECNOLÓGICO|ECOMPATÍVEL DO MUNDO AGORA EM SEUS|Segurança da Conta Webmail|Credito liberado para sua conta|ative agora mesmo/i
 score       SA_MERCADOLIVRE8 10
 describe    SA_MERCADOLIVRE8 Phishing Mercado Livre 8
+
+body        SA_MERCADOLIVRE9 /Olá, detectamos uma alteração|você removeu seu método de verificação em duas etapas|Se não foi você, por favor, avise-nos|Devido ao alto uso de nosso serviço de E-mail/i
+score       SA_MERCADOLIVRE9 10
+describe    SA_MERCADOLIVRE9 Phishing Mercado Livre 9
+
+header      SA_MERCADOLIVRE10 Subject =~ /\bOlá, você solicitou uma alteração às|Informativo Simpala/i
+score       SA_MERCADOLIVRE10 10
+describe    SA_MERCADOLIVRE10 Phishing Mercado Livre 10
+
+body        SA_SPAMWEBMAIL1 /Equipe de Webmail 2022|houve congestionamento em nosso banco de dados|excluindo todas as contas de e-mail não utilizadas|precisa confirmar sua conta como uma conta ativa/i
+score       SA_SPAMWEBMAIL1 10
+describe    SA_SPAMWEBMAIL1 Phishing Webmail 1
 
 body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)/i
 describe    SA_DEAR_USER Spam caro usuário
@@ -273,6 +301,38 @@ body        SA_PIX2 /ZIP:|Senha de arquivo:|Houve problema ao creditar o valor|p
 score       SA_PIX2 10
 describe    SA_PIX2 Spam Pix 2
 
+body        SA_LIVELO1 /estamos parabenizando e disponibilizando|600Mil Pontos Livelo|VOCÊ GANHOU 600Mil pontos Livelo|fazer a ativação do Chat Online Bradesco|pela sua parceria junto ao Banco Bradesco/i
+score       SA_LIVELO1 10
+describe    SA_LIVELO1 Spam livelo 1
+
+header      SA_LIVELO2 Subject =~ /\bVoce tem 600Mil|Pontos Livelo a resgatar|Documentos Recebidos. Cod|Estamos com a Ucrânia|Melissa Fatima Ali|Olá, você solicitou uma alteração às/i
+score       SA_LIVELO2 10
+describe    SA_LIVELO2 Spam livelo 2
+
+body        SA_PERSONALITE1 /cadastrar através deste e-mail junto ao Itaú Personnalité|MUDE AGORA PARA O PERSONNALITÉ|lhe desejando as boas vindas ao Itaú Personnalité|Revisao do cartao de debito pendente/i
+score       SA_PERSONALITE1 10
+describe    SA_PERSONALITE1 Spam Itau Personalite 1
+
+body        SA_PERSONALITE2 /seu cartao de debito esta sem|realizar a verificacao de seguranca|manter seu cartao e seus dados financeiros seguros|revisao dos dados do seu cartao de debito sera realizado/i
+score       SA_PERSONALITE2 10
+describe    SA_PERSONALITE2 Spam Itau Personalite 2
+
+body        SA_SEGUROSBRADESCO1 /A MAIOR SEGURADORA PRIVADA DO BRASIL|muito mais benefícios para você, sua família e sua empresa|SOLICITE COTAÇÃO ACESSE|consultoria de planos de saúde está a sua disposição/i
+score       SA_SEGUROSBRADESCO1 10
+describe    SA_SEGUROSBRADESCO1 Spam Bradesco Seguros 1
+
+body        SA_SEGUROSBRADESCO2 /de se tornar cliente da BRADESCO SAÚDE|SOLICITAR COTAÇÃO BRADESCO AGORA|rápido e leva menos de 20 segundos|BRADESCO SAÚDE - FALE AGORA PELO WHATSAPP/i
+score       SA_SEGUROSBRADESCO2 10
+describe    SA_SEGUROSBRADESCO2 Spam Bradesco Seguros 2
+
+body        SA_UCRANIA /Estamos com a Ucrânia para apoiar sua liberdade|Agora aceitando doações de criptomoedas|BeautifulUkraine|We Aid Ukraine|apoiar sua liberdade e defender a democracia/i
+score       SA_UCRANIA 10
+describe    SA_UCRANIA Spam Ucrânia
+
+body        SA_VOIP1 /ALLG SOLUTIONS|pleno conhecimento de mercado de telecomunicações|Pioneira em serviços VoIP e uma das líderes globais na oferta|25 BILHÕES DE MINUTOS TRAFEGADOS EM REDE PRÓPRIA/i
+score       SA_VOIP1 10
+describe    SA_VOIP1 Spam Voip 1
+
 header      SA_CIDADANIA1 Subject =~ /\bGuia prático para|cidadania italiana|Era isso que você estava esperando|Lembrete de vencimento|APORTE DE CAPITAL|Your account password for|Marketing Manager/i
 score       SA_CIDADANIA1 10
 describe    SA_CIDADANIA1 Spam cidadania italiana 1
@@ -309,6 +369,10 @@ header      SA_VIRUSZIP4 Subject =~ /\bMulta emitida para: [A-Za-z0-9_-]+\@/
 score       SA_VIRUSZIP4 10
 describe    SA_VIRUSZIP4 Phishing contendo virus zipado com senha 4
 
+header      SA_VIRUSZIP5 Subject =~ /\bSua conta digital vivo chegou [A-Za-z0-9_-]+\@/
+score       SA_VIRUSZIP5 10
+describe    SA_VIRUSZIP5 Phishing contendo virus zipado com senha 5
+
 header      __SUBJ_PAGAMENTO Subject =~ /\bPagamento do pedido/i
 mimeheader  __MIME_ANEXOS  Content-Type =~ /\.(zip|rar|tar|gz)\b/i
 meta        SUBJ_VIRUS_ZIPADO ( __SUBJ_PAGAMENTO && __MIME_ANEXOS )
@@ -334,6 +398,30 @@ describe    SA_GODADDY URL hospedando malware na Godaddy
 uri         SA_DDNSNET /\.ddns.net(?:\/|$)/i
 score       SA_DDNSNET 10
 describe    SA_DDNSNET URL dinâmico hospedando Malware
+
+uri         SA_DUCKDNS /\.duckdns.org(?:\/|$)/i
+score       SA_DUCKDNS 10
+describe    SA_DUCKDNS URL dinâmico hospedando Malware
+
+uri         SA_SERVEFTP /\.serveftp.net(?:\/|$)/i
+score       SA_SERVEFTP 10
+describe    SA_SERVEFTP URL dinâmico hospedando Malware
+
+uri         SA_CREATION /\.thecreationentertainments.com(?:\/|$)/i
+score       SA_CREATION 10
+describe    SA_CREATION URL hospedando Malware
+
+uri         SA_SMARTURL /\.smarturl.it(?:\/|$)/i
+score       SA_SMARTURL 10
+describe    SA_SMARTURL URL hospedando Malware
+
+uri         SA_CLOUDFUNCTIONS /\.cloudfunctions.net(?:\/|$)/i
+score       SA_CLOUDFUNCTIONS 10
+describe    SA_CLOUDFUNCTIONS URL hospedando Malware
+
+uri         SA_5STARSPM /\.5starspm.com(?:\/|$)/i
+score       SA_5STARSPM 10
+describe    SA_5STARSPM URL hospedando Malware
 
 uri         SPAM_LINK_1 /\/[a-z]+\.php/i
 score       SPAM_LINK_1 10
