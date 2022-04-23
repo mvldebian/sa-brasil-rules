@@ -69,7 +69,7 @@ header      SA_NOTAFISCAL2 Subject =~ /\bSua nota fiscal foi emitida|Apresentaç
 score       SA_NOTAFISCAL2 10
 describe    SA_NOTAFISCAL2 Phising nota fiscal 2
 
-header      SA_GANHOS1 Subject =~ /\bSeu endereço de e-mail ganhou|Junte-se aos illuminati/i
+header      SA_GANHOS1 Subject =~ /\bSeu endereço de e-mail ganhou|Junte-se aos illuminati|TVBox com Canais Liberados|Vincule sua carteira externa|Dear Friend|Sugestões de Brindes Personalizados/i
 score       SA_GANHOS1 10
 describe    SA_GANHOS1 Phising ganhos 1
 
@@ -112,6 +112,10 @@ describe    SA_CPFS1 Phishing assunto CPF 1
 body        SA_CPFS2 /is due to expire|Use below button to keep or update|current credentials|Keep or Update|Password for|quarantined incoming messages|quantine portal|before they are delete/i
 score       SA_CPFS2 10
 describe    SA_CPFS2 Phishing assunto CPF 2
+
+header      SA_CPFS3 Subject =~ /\bCreditamos com sucesso seus valores de|Novo Corolla com IPI reduzido e 8 anos|Montamos uma proposta personalizada para você/i
+score       SA_CPFS3 10
+describe    SA_CPFS3 Phishing assunto CPF 3
 
 header      SA_SEUSPONTOS3 Subject =~ /\bPrezado (a) Cliente CredCard|Resgate agora suas Milhas|Não perca GRANDES ofertas|cruzeiro dos seus sonhos|Quanto MAIS vinhos, MAIS desconto/i
 score       SA_SEUSPONTOS3 10
@@ -181,9 +185,29 @@ body        SA_SPAMWEBMAIL1 /Equipe de Webmail 2022|houve congestionamento em no
 score       SA_SPAMWEBMAIL1 10
 describe    SA_SPAMWEBMAIL1 Phishing Webmail 1
 
-body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)/i
+body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)|implantação de uma empresa no Paraguai|Passo a Passo para abrir uma empresa no Paraguai|Instrutor Brasil -  Educ Corporativa/i
 describe    SA_DEAR_USER Spam caro usuário
 score       SA_DEAR_USER 10
+
+body        SA_PONTOSESFERA1 /keep or update current credentials|pontos acumulados através do programa|Santander Esfera|cartão de crédito Santander podem juntar pontos Esfera/i
+describe    SA_PONTOSESFERA1 Spam pontos esfera 1
+score       SA_PONTOSESFERA1 10
+
+header      SA_PONTOSESFERA2 Subject =~ /\bSeus Pontos do Programa Empresas Vencem|Processo STJ - Pagamento inadimplente/i
+score       SA_PONTOSESFERA2 10
+describe    SA_PONTOSESFERA2 Spam pontos esfera 2
+
+body        SA_SAUDEEMPRESA1 /exclusivamente para titulares e dependentes Porto Seguro Saúde|descontos de até 30% em parcerias de aluguel de carros|Conselho Regional de Psicologia/i
+describe    SA_SAUDEEMPRESA1 Spam saude empresa 1
+score       SA_SAUDEEMPRESA1 10
+
+header      SA_SAUDEEMPRESA2 Subject =~ /\bA saúde de sua empresa é com a|Atualização do laudo do|Imposto de Circulação de Mercadorias e Serviços/i
+score       SA_SAUDEEMPRESA2 10
+describe    SA_SAUDEEMPRESA2 Spam saude empresa 1
+
+body        SA_SAUDEEMPRESA3 /percentual de água consumida nos processos produtivos|essencialidade e relevância dos insumos e EXCLUSÃO do ICMS|elaboração de laudos técnicos para créditos de impostos/i
+describe    SA_SAUDEEMPRESA3 Spam saude empresa 3
+score       SA_SAUDEEMPRESA3 10
 
 header      SA_BRADESCO1 Subject =~ /\bResgate de Pontos Bradesco Epresarial|Atendimento Itau-Digital|Atualização do sistema de TIC|Video e Foto para Pessoa Juridica ou Fisica/i
 score       SA_BRADESCO1 10
@@ -221,7 +245,7 @@ header      SA_PHISHING3 Subject =~ /\bTaxa de importacao pendente|realize o pag
 score       SA_PHISHING3 10
 describe    SA_PHISHING3 Phishing conta de e-mail 3
 
-header      SA_PHISHING4 Subject =~ /\bCumprimento de sentença|cPanel is delaying|incoming messages|Aproveite a chance|de viver a vida ao máximo|pending Messages|Validation error/i
+header      SA_PHISHING4 Subject =~ /\bCumprimento de sentença|cPanel is delaying|incoming messages|Aproveite a chance|de viver a vida ao máximo|pending Messages|Validation error|Password Error/i
 score       SA_PHISHING4 10
 describe    SA_PHISHING4 Phishing conta de e-mail 4
 
@@ -237,7 +261,7 @@ body        SA_PHISHING7 /Sua caixa postal excedeu o limite|Atualize sua conta d
 score       SA_PHISHING7 10
 describe    SA_PHISHING7 Phishing conta de e-mail 7
 
-header      SA_PROMO1 Subject =~ /\bMega queima de estoque|Canecas e Copos com SUPER DESCONTOS|Did you get my last email|Business investment|o secreto para economizar dinheiro/i
+header      SA_PROMO1 Subject =~ /\bMega queima de estoque|Canecas e Copos com SUPER DESCONTOS|Did you get my last email|Business investment|o secreto para economizar dinheiro|Top Sneakers Sales/i
 score       SA_PROMO1 10
 describe    SA_PROMO1 Spam promoções 1
 
@@ -245,7 +269,7 @@ header      SA_BRINDES1 Subject =~ /\bBrindes com status de presente|Binance|Tem
 score       SA_BRINDES1 10
 describe    SA_BRINDES1 Spam brindes 1
 
-body        SA_BRINDES2 /Brindes com status de presente|sua marca indo para todos os lugares|sacolas e mochilas PERSONALIZADAS|Atendemos todo o brasil!|expires starting today/i
+body        SA_BRINDES2 /Brindes com status de presente|sua marca indo para todos os lugares|sacolas e mochilas PERSONALIZADAS|Atendemos todo o brasil|expires starting today|sylvain nicolas/i
 score       SA_BRINDES2 10
 describe    SA_BRINDES2 Spam brindes 2
 
@@ -256,6 +280,10 @@ describe    SA_BRINDES3 Spam brindes 3
 body        SA_BRINDES4 /POTENCIALIZAR SEUS RESULTADOS|IMPULSIONAR O SEU SUCESSO|fortalecer a presença digital da sua empresa|o livro que se tornou sucesso de vendas|os melhores vinhos nacionais/i
 score       SA_BRINDES4 10
 describe    SA_BRINDES4 Spam brindes 4
+
+body        SA_BRINDES5 /Sra. Esso Agnes|República do Benin|BGFIBANK no BENIN|acidente de avião na Líbia|compartilhar meus últimos momentos entrando em contato com você|850 Million dollars|Nicholas Toms/i
+score       SA_BRINDES5 10
+describe    SA_BRINDES5 Spam brindes 5
 
 body        SA_ADVOGADO1 /advogado Mustafa Ayvaz|perdeu a vida devido à doença de Coronavírus|como beneficiário e compartilhados de acordo|detalhes de como a transação será iniciada/i
 score       SA_ADVOGADO1 10
@@ -372,6 +400,10 @@ describe    SA_VIRUSZIP4 Phishing contendo virus zipado com senha 4
 header      SA_VIRUSZIP5 Subject =~ /\bSua conta digital vivo chegou [A-Za-z0-9_-]+\@/
 score       SA_VIRUSZIP5 10
 describe    SA_VIRUSZIP5 Phishing contendo virus zipado com senha 5
+
+header      SA_VIRUSZIP6 Subject =~ /\bID - [A-Za-z0-9_-]+\@/
+score       SA_VIRUSZIP6 10
+describe    SA_VIRUSZIP6 Phishing contendo virus zipado com senha 6
 
 header      __SUBJ_PAGAMENTO Subject =~ /\bPagamento do pedido/i
 mimeheader  __MIME_ANEXOS  Content-Type =~ /\.(zip|rar|tar|gz)\b/i
