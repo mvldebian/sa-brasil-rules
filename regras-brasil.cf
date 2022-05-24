@@ -393,7 +393,6 @@ header      SA_ZIMBRA6 Subject =~ /\bcPanel está retrasando|Todos os Dias na Lo
 score       SA_ZIMBRA6 10
 describe    SA_ZIMBRA6 Spam Zimbra infectado 6
 
-
 body        SA_ADVOGADO1 /advogado Mustafa Ayvaz|perdeu a vida devido à doença de Coronavírus|como beneficiário e compartilhados de acordo|detalhes de como a transação será iniciada|Comprovante de Pagamento da Fatura/i
 score       SA_ADVOGADO1 10
 describe    SA_ADVOGADO1 Spam advogados 1
