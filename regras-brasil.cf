@@ -5,15 +5,15 @@
 # Quer ajudar na manutenção da lista? Entre em contato: marcelo@eth1.com.br
 # ---------------------------------------------------------------------------------------------------------
 
-body        SA_CORREIOS_SPAM1 /Objeto não entregue|carteiro não atendido|retire sua encomenda no endereço informado|Taxa de importacao pendente|realize o pagamento agora mesmo/i
+body        SA_CORREIOS_SPAM1 /Objeto não entregue|carteiro não atendido|retire sua encomenda no endereço informado|Taxa de importacao pendente|realize o pagamento agora mesmo|Stuttgart Porsche|Vendedor Campeão|Estimado ganador/i
 score       SA_CORREIOS_SPAM1 10
 describe    SA_CORREIOS_SPAM1 Spam Correios regra 1
 
-body        SA_CORREIOS_SPAM2 /três tentativas de entrega|realize a impressão da guia abaixo|dirija-se a agência indicada|realize a impressão para a retirada|As informações do serviço Personallité/i
+body        SA_CORREIOS_SPAM2 /três tentativas de entrega|realize a impressão da guia abaixo|dirija-se a agência indicada|realize a impressão para a retirada|As informações do serviço Personallité|ServerTimeout-Action/i
 score       SA_CORREIOS_SPAM2 10
 describe    SA_CORREIOS_SPAM2 Spam Correios regra 2
 
-body        SA_CORREIOS_SPAM3 /Por favor, consulte e baixe o formulário|e retire sua encomenda no endereço informado|por crime de desobediência|pagamento das custas da diligência|se encontram no PDF/i
+body        SA_CORREIOS_SPAM3 /Por favor, consulte e baixe o formulário|e retire sua encomenda no endereço informado|crime de desobediência|pagamento das custas da diligência|se encontram no PDF|Sam's Club Vitória|Aceitamos Picpay/i
 score       SA_CORREIOS_SPAM3 10
 describe    SA_CORREIOS_SPAM3 Spam Correios regra 3
 
@@ -21,7 +21,7 @@ header      SA_CORREIOS_SPAM4 Subject =~ /\bO prazo para pagamento de sua|taxa d
 score       SA_CORREIOS_SPAM4 10
 describe    SA_CORREIOS_SPAM4 Spam Correios regra 4
 
-header      SA_CORREIOS_SPAM5 Subject =~ /\bBLOQUEAMOS UM ACESSO SUSPEITO|Entrega Nao Realizada|Voce perdera frete GRATIS e rapido|Your wallet will soon be suspended|Investimentos em Portugal|O que o Brasil faz de melhor/i
+header      SA_CORREIOS_SPAM5 Subject =~ /\bBLOQUEAMOS UM ACESSO SUSPEITO|Entrega Nao Realizada|Voce perdera frete GRATIS|Your wallet will soon be suspended|Investimentos em Portugal|O que o Brasil faz de melhor|Chegou a hora/i
 score       SA_CORREIOS_SPAM5 10
 describe    SA_CORREIOS_SPAM5 Spam Correios regra 5
 
@@ -29,35 +29,43 @@ body        SA_WEBDESIGN1 /expertise in Website Designing|Development and Mobile
 score       SA_WEBDESIGN1 10
 describe    SA_WEBDESIGN1 Spam Web Design 1
 
-header      SA_WEBDESIGN2 Subject =~ /\bWeb Development|Portal Oi Soluções|BREAKING NEWS|você vai amar esse plano|Conta Digital Vivo Empresarial|Your email will be suspended|pontos Smiles pararesgate|MUST HAVE BOOTS/i
+header      SA_WEBDESIGN2 Subject =~ /\bWeb Development|Portal Oi Soluções|BREAKING NEWS|você vai amar esse plano|Conta Digital Vivo Empresarial|Your email will be suspended|pontos Smiles pararesgate|MUST HAVE BOOTS|CAIXA DE MADEIRA/i
 score       SA_WEBDESIGN2 10
 describe    SA_WEBDESIGN2 Spam Web Design 2
+
+body        SA_WEBDESIGN3 /Novo Método de ENSINO|Vou Revelar O Segredo|Entre 2 a 12 Anos|pode gerar até 30%|Transmitir aos profissionais noções|Público-alvo|Programa CONSULTORIA BRASIL|Logística Empresarial e graduada|IT pampafoods/i
+score       SA_WEBDESIGN3 10
+describe    SA_WEBDESIGN3 Spam Web Design 3
+
+header      SA_WEBDESIGN4 Subject =~ /\bSeu Filho LENDO|LENDO e ESCREVENDO|Reminder: Documents for|Estratégia de Compras|Curso online ao vivo|não bateu a meta do mês|Gestão de Compras Eficaz|Público-alvo|Aceitamos Picpay/i
+score       SA_WEBDESIGN4 10
+describe    SA_WEBDESIGN4 Spam Web Design 4
 
 header      SA_SERASA1 Subject =~ /\bFeirão Limpa Nome SERASA|searches this week|You appeared in|Your BNB tokens are waiting for your|Seriam os Estados umaespécie de Borgs|indevido em seu webmail|videncia especial 2022 GRATIS/i
 score       SA_SERASA1 10
 describe    SA_SERASA1 Spam Serasa regra 1
 
-body        SA_SPAMGERAL1 /NOVA FÓRMULA E APLICAÇÃO INDICADA|DIMINUIR O TAMANHO DA PRÓSTATA|TRATAR ESSES SINTOMAS NUNCA FOI TÃO RÁPIDO|procurando um parente do meu falecido|Serasa Limpa Nome|em ter o sinal cortado/i
+body        SA_SPAMGERAL1 /NOVA FÓRMULA E APLICAÇÃO INDICADA|DIMINUIR O TAMANHO DA PRÓSTATA|TRATAR ESSES SINTOMAS NUNCA FOI TÃO RÁPIDO|procurando um parente do meu falecido|Serasa Limpa Nome|em ter o sinal cortado|Shenzhen, China/i
 score       SA_SPAMGERAL1 10
 describe    SA_SPAMGERAL1 Spam Geral 1
 
-header      SA_SPAMGERAL2 Subject =~ /\bSomeone matched with you|Gordurinhas indesejadas|viva situações constrangedoras|estagiários de nível superior|Desconto PROGRESSIVO ou OFERTAS RELÂMPAGO|Tenemos un plan para proteger/i
+header      SA_SPAMGERAL2 Subject =~ /\bSomeone matched with you|Gordurinhas indesejadas|viva situações constrangedoras|estagiários de nível superior|PROGRESSIVO ou OFERTAS RELÂMPAGO|Tenemos un plan para proteger|Estimado ganador/i
 score       SA_SPAMGERAL2 10
 describe    SA_SPAMGERAL2 Spam Geral 2
 
-header      SA_SPAMGERAL3 Subject =~ /\bSeu boleto foi atualizado com novo valor|Novas oportunidades para aumentar suas vendas|Nome Limpo Cartao Atacadao|200 Cursos pelo Valor de|Acesso Incomum|Solid partnerships video/i
+header      SA_SPAMGERAL3 Subject =~ /\bSeu boleto foi atualizado com novo valor|Novas oportunidades para aumentar suas vendas|Nome Limpo Cartao Atacadao|200 Cursos pelo Valor de|Acesso Incomum|Solid partnerships video|PRIMITIVO DI/i
 score       SA_SPAMGERAL3 10
 describe    SA_SPAMGERAL3 Spam Geral 3
 
-body        SA_SPAMGERAL4 /Emails sent to you are not delivered when your inbox|and this should be conveyed to each sender|ensure that your mailbox is no longer overflowing|VANTAGENS DA SEGURADORA|internet móvel ilimitada/i
+body        SA_SPAMGERAL4 /Emails sent to you are not delivered when your inbox|and this should be conveyed to each sender|ensure that your mailbox is no longer overflowing|VANTAGENS DA SEGURADORA|internet móvel ilimitada|Di Manduria/i
 score       SA_SPAMGERAL4 10
 describe    SA_SPAMGERAL4 Spam Geral 4
 
-header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota limit|Notificao Extrajudicial|Tentativa de entrega sem sucesso|Bradesco Saúde é Mais Economia|A capacidade disponível em seu webmail/i
+header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota limit|Notificao Extrajudicial|Tentativa de entrega sem sucesso|Bradesco Saúde é Mais Economia|A capacidade disponível em seu webmail|Stuttgart Porsche/i
 score       SA_SPAMGERAL5 10
 describe    SA_SPAMGERAL5 Spam Geral 5
 
-header      SA_SPAMGERAL6 Subject =~ /\bSenha Vencida|Altere Sua Senha|Alerta: Sua assinatura foi cancelada|Está negativado|sem pagar sua dívida|For your consideration|Itaumail - Comunicado|Final Warning/i
+header      SA_SPAMGERAL6 Subject =~ /\bSenha Vencida|Altere Sua Senha|Alerta: Sua assinatura foi cancelada|Está negativado|sem pagar sua dívida|For your consideration|Itaumail - Comunicado|Final Warning|Em breve você será bloqueado/i
 score       SA_SPAMGERAL6 10
 describe    SA_SPAMGERAL6 Spam Geral 6
 
@@ -65,11 +73,11 @@ body        SA_SPAMGERAL7 /tentativa de acesso não identificada em sua conta|se
 score       SA_SPAMGERAL7 10
 describe    SA_SPAMGERAL7 Spam Geral 7
 
-body        SA_SPAMGERAL8 /agências exclusivas Itaú Personnalité|as modalidades acima já estão disponíveis para você|agências exclusivas e gerente disponível 24h por dia|boas vindas ao Itaú Personnalité|Blockchain Apps/i
+body        SA_SPAMGERAL8 /agências exclusivas Itaú Personnalité|as modalidades acima já estão disponíveis para você|agências exclusivas e gerente disponível 24h por dia|boas vindas ao Itaú Personnalité|Blockchain Apps|Poggio Maru/i
 score       SA_SPAMGERAL8 10
 describe    SA_SPAMGERAL8 Spam Geral 8
 
-header      SA_SPAMGERAL9 Subject =~ /\bAviso de Irregularidade Protocolo|Gere sua Criptomoeda|absorvemos sua carência|Deactivation Request|Os Melhores Temperos Naturais|Seu dia a dia com mais elegância|IRPF N/i
+header      SA_SPAMGERAL9 Subject =~ /\bAviso de Irregularidade Protocolo|Gere sua Criptomoeda|absorvemos sua carência|Deactivation Request|Temperos Naturais|Seu dia a dia com mais elegância|IRPF N|evite suspensão de serviços/i
 score       SA_SPAMGERAL9 10
 describe    SA_SPAMGERAL9 Spam Geral 9
 
@@ -77,31 +85,63 @@ header      SA_SPAMGERAL10 Subject =~ /\bOlá, você solicitou uma alteração|I
 score       SA_SPAMGERAL10 10
 describe    SA_SPAMGERAL10 Spam Geral 10
 
-body        SA_SPAMGERAL11 /Você removeu seu método de duas etapas|Se não foi você, por favor, avise-nos|Não fui eu|Olá, detectamos uma alteração|Senha Insegura|Free Fire sem se preocupar|DESENVOLVA SUA EQUIPE|MEGA OFERTAS/i
+body        SA_SPAMGERAL11 /Você removeu seu método de duas etapas|Se não foi você, por favor, avise-nos|Não fui eu|Olá, detectamos uma alteração|Senha Insegura|Free Fire sem se preocupar|DESENVOLVA SUA EQUIPE|MEGA OFERTAS|6 garrafas/i
 score       SA_SPAMGERAL11 10
 describe    SA_SPAMGERAL11 Spam Geral 11
 
-body        SA_SPAMGERAL12 /COM SUPER DESCONTOS|Potencial de Lucros Infinito|My name is Ranbir|I am a professional|IOS & Android app developer|Hybrid Apps|O que o Brasil faz de melhor/i
+body        SA_SPAMGERAL12 /COM SUPER DESCONTOS|Potencial de Lucros Infinito|My name is Ranbir|I am a professional|IOS & Android app developer|Hybrid Apps|O que o Brasil faz de melhor|interface de e-mail antiga|OEM manufacturer/i
 score       SA_SPAMGERAL12 10
 describe    SA_SPAMGERAL12 Spam Geral 12
 
-body        SA_BRINQUEDOS /Brinquedos que estimulam criatividade|A melhor maneira de presentear|brinquedos mais incríveis|trabalha todo o cognitivo|Basta preencher nosso formulário|meio de pagamento atual/i
+body        SA_SPAMGERAL13 /maiores canais de tv|Filmes Lançamentos e Séries|para Smartvs|Programação completa sem|pagar valores absurdos|teste de 24 horas pelo WhatsApp|hope you are doing well|revised PO for your|Aumaim Alsamir/i
+score       SA_SPAMGERAL13 10
+describe    SA_SPAMGERAL13 Spam Geral 13
+
+body        SA_SPAMGERAL14 /Procurement Department|HAMBLETON HOLDING INC|Conta Digital Vivo da sua empresa|Evite o protesto em cartório|em formato PDF sua Conta Vivo|Visualizar a Fatura Atualizada|com eficiência e produtividade/i
+score       SA_SPAMGERAL14 10
+describe    SA_SPAMGERAL14 Spam Geral 14
+
+body        SA_SPAMGERAL15 /Baixar a Fatura Atualizada|Pague sua conta sem sair da empresa|Dê preferência aos meios digitais|Fluxo de Serviço na Oficina|esse assunto é polêmico|desafio de muitos profissionais|Receber seu certificado/i
+score       SA_SPAMGERAL15 10
+describe    SA_SPAMGERAL15 Spam Geral 15
+
+body        SA_SPAMGERAL16 /otimizada e foco bem delineado|abordar casos reais e estudar|GESTÃO DO FLUXO DE SERVIÇOS|AO VIVO horário de Brasília|Neste treinamento online|brindes personalizados da Texaco|ZIP-pass|Grupo Oficina Brasil/i
+score       SA_SPAMGERAL16 10
+describe    SA_SPAMGERAL16 Spam Geral 16
+
+header      SA_SPAMGERAL17 Subject =~ /\bVeja tv por assinatura|não exige pagamento de assinatura|Supplying JORDAN|Ultimo dia para pagamento|Conta Vivo da sua empresa|Invista no Paraíso|Rentabilidade por diária|de Serviço na Oficina/i
+score       SA_SPAMGERAL17 10
+describe    SA_SPAMGERAL17 Spam Geral 17
+
+body        SA_SPAMGERAL18 /Ali Omar|gerente de banco|aqui em Dubai|um cidadão de seu país|morreu há 14 anos|quem herdará o fundo|parentes do cliente falecido|ninguém reivindicar o fundo|a conta será congelada e movida|pasta admin/i
+score       SA_SPAMGERAL18 10
+describe    SA_SPAMGERAL18 Spam Geral 18
+
+body        SA_SPAMGERAL19 /Estimado ganador|Deseamos felicitarlo e informarle|Para presentar su reclamo|correo electrónico ha ganado|en la promoción del sorteo|lotería Mega Millions|liberación inmediata del monto|efectivo ganador/i
+score       SA_SPAMGERAL19 10
+describe    SA_SPAMGERAL19 Spam Geral 19
+
+body        SA_SPAMGERAL20 /VISAS DE RESIDENCIA EN CANADA|vivir y trabajar legalmente|INMIGRAR A CANADÁ|VISA DE TURISMO O RESIDENTE|VISA DE ESTUDIANTE|VISA O PERMISO DE TRABAJO|VISA DE INVERSIONISTA O START UP|CHRISTIAN HUAMAN RAMOS/i
+score       SA_SPAMGERAL20 10
+describe    SA_SPAMGERAL20 Spam Geral 20
+
+body        SA_BRINQUEDOS /Brinquedos que estimulam criatividade|A melhor maneira de presentear|brinquedos mais incríveis|trabalha todo o cognitivo|Basta preencher nosso formulário|meio de pagamento atual|fazer login em sua conta/i
 score       SA_BRINQUEDOS 10
 describe    SA_BRINQUEDOS Spam Brinquedos
 
-body        SA_CAIXACHEIA /Sua caixa postal|ultrapassou o limite|e-mail excedeu o limite|excedeu o limite de armazenamento|Caixa de email excedida|é necessário verificar caixa de correio|ATUALIZAR PAGAMENTO/i
+body        SA_CAIXACHEIA /Sua caixa postal|ultrapassou o limite|e-mail excedeu o limite|excedeu o limite de armazenamento|Caixa de email excedida|necessário verificar caixa de correio|ATUALIZAR PAGAMENTO|Gestão de Fluxo de Serviço/i
 score       SA_CAIXACHEIA 10
 describe    SA_CAIXACHEIA Spam sobre caixa de e-mail cheia
 
-body        SA_LOTOFACIL /Ganhe Sempre na Lotofácil|Lotofacil|Remover e-mail da base|oficial de justiça que poderá solicitar reforço|deixar de comparecer sem motivo justificado|Queima de Gordura 24 Horas/i
+body        SA_LOTOFACIL /Ganhe Sempre na Lotofácil|Lotofacil|Remover e-mail da base|oficial de justiça que poderá solicitar reforço|deixar de comparecer sem motivo justificado|Queima de Gordura 24 Horas|Notificacao de Acesso/i
 score       SA_LOTOFACIL 10
 describe    SA_LOTOFACIL Spam Lotofácil
 
-body        SA_NOTAFISCAL1 /Clique aqui para fazer o download|da Nota Fiscal Eletrônica em PDF|Seguem os dados da Nota Fiscal|De acordo com a conversa realizada, junto a documentação|Email Phishing and Spam Violation/i
+body        SA_NOTAFISCAL1 /Clique aqui para fazer o download|da Nota Fiscal Eletrônica em PDF|Seguem os dados da Nota Fiscal|De acordo com a conversa realizada, junto a documentação|Email Phishing and Spam Violation|Saldatura/i
 score       SA_NOTAFISCAL1 10
 describe    SA_NOTAFISCAL1 Phising nota fiscal 1
 
-header      SA_NOTAFISCAL2 Subject =~ /\bSua nota fiscal foi emitida|Apresentação Novo Comprador|You have received 1 new message|Emissao de NF-e Pedido:|Email Password Expired|nova análise para ter seu cartão/i
+header      SA_NOTAFISCAL2 Subject =~ /\bSua nota fiscal foi emitida|Apresentação Novo Comprador|You have received 1 new message|Emissao de NF-e Pedido:|Email Password Expired|nova análise para ter seu cartão|Sam's Club Vitória/i
 score       SA_NOTAFISCAL2 10
 describe    SA_NOTAFISCAL2 Phising nota fiscal 2
 
@@ -117,7 +157,7 @@ header      SA_GANHOS1 Subject =~ /\bSeu endereço de e-mail ganhou|Junte-se aos
 score       SA_GANHOS1 10
 describe    SA_GANHOS1 Phising ganhos 1
 
-body        SA_GANHOS2 /império de elite mundial illuminati|nosso esquema de recrutamento|ordem mundial illuminati|Illuminati em sua pasta de spam|grande império Illuminati|ingressar no império illuminati/i
+body        SA_GANHOS2 /império de elite mundial illuminati|nosso esquema de recrutamento|ordem mundial illuminati|Illuminati em sua pasta de spam|grande império Illuminati|ingressar no império illuminati|reverse engineer/i
 score       SA_GANHOS2 10
 describe    SA_GANHOS2 Phising ganhos 2
 
@@ -125,11 +165,11 @@ body        SA_GANHOS3 /britânicos centenário lotto|NÚMERO PIN VENCEDOR|Cente
 score       SA_GANHOS3 10
 describe    SA_GANHOS3 Phising ganhos 3
 
-body        SA_GANHOS4 /ex-embaixador do KUWAIT|2,5 MILHÕES DE DÓLARES|que use esse dinheiro para realizar o Evangelho|aceitar Deus como nosso senhor e salvador|Meu marido morreu há 7 anos depois|Renan Alfenas/i
+body        SA_GANHOS4 /ex-embaixador do KUWAIT|2,5 MILHÕES DE DÓLARES|que use esse dinheiro para realizar o Evangelho|aceitar Deus como nosso senhor e salvador|Meu marido morreu há 7 anos depois|Renan Alfenas|Habilidades de Negociar/i
 score       SA_GANHOS4 10
 describe    SA_GANHOS4 Phising ganhos 4
 
-header      SA_GANHOS5 Subject =~ /\bYOU HAVE WON A DONATION|Seus pontos estão EXPIRANDO|você ganhou uma doação|Resgates seus PONTOS|600 garrafas vendidas|Aumente capital social|Jornada de Transformação Digital|Dia dos Namorados/i
+header      SA_GANHOS5 Subject =~ /\bYOU HAVE WON A DONATION|Seus pontos estão EXPIRANDO|você ganhou uma doação|Resgates seus PONTOS|600 garrafas vendidas|Aumente capital social|Jornada de Transformação Digital|Dia dos Namorados|B2B/i
 score       SA_GANHOS5 10
 describe    SA_GANHOS5 Phising ganhos 5
 
@@ -137,11 +177,15 @@ header      SA_GANHOS6 Subject =~ /\bEspecialização em Gestão|Cote gratis o s
 score       SA_GANHOS6 10
 describe    SA_GANHOS6 Phising ganhos 6
 
+header      SA_GANHOS7 Subject =~ /\bNOTIFICAÇÃO SEDEX DEVOLVIDO|Pula fogueira|Ganha desconto|Promocao válida|outras ofertas|As melhores ofertas|Equipe de Vendas|Marketing digital|Anfamoto em Revista|mortgage loan approval|Saldatura/i
+score       SA_GANHOS7 10
+describe    SA_GANHOS7 Phising ganhos 7
+
 body        SA_PLANOSSAUDE1 /melhores hospitais do país|consultoria de planos de saúde|o melhor custo benefício disponível|renovação do seu plano|Coberturas adicionais para emergências|Aporte de Capital e Credito direcionado/i
 score       SA_PLANOSSAUDE1 10
 describe    SA_PLANOSSAUDE1 Spam planos de saúde 1
 
-body        SA_PLANOSSAUDE2 /planos com co-participação|Cote online sem sair de casa|Confira nossas vantagens|consultas e exames laboratoriais|DETECTAMOSUMACESSOASUACONTA|aumentar para 30GB totalmente grátis/i
+body        SA_PLANOSSAUDE2 /planos com co-participação|Cote online sem sair de casa|Confira nossas vantagens|consultas e exames laboratoriais|DETECTAMOSUMACESSOASUACONTA|aumentar para 30GB totalmente grátis|Sheryll Goedert/i
 score       SA_PLANOSSAUDE2 10
 describe    SA_PLANOSSAUDE2 Spam planos de saúde 2
 
@@ -169,27 +213,27 @@ header      SA_CPFS3 Subject =~ /\bCreditamos com sucesso seus valores de|Novo C
 score       SA_CPFS3 10
 describe    SA_CPFS3 Phishing assunto CPF 3
 
-header      SA_SEUSPONTOS3 Subject =~ /\bPrezado (a) Cliente CredCard|Resgate agora suas Milhas|Não perca GRANDES ofertas|cruzeiro dos seus sonhos|Quanto MAIS vinhos, MAIS desconto|Software empresarial customizado/i
+header      SA_SEUSPONTOS3 Subject =~ /\bCliente CredCard|Resgate agora suas Milhas|Não perca GRANDES ofertas|cruzeiro dos seus sonhos|Quanto MAIS vinhos, MAIS desconto|Software empresarial customizado|Notificacao de Acesso/i
 score       SA_SEUSPONTOS3 10
 describe    SA_SEUSPONTOS3 Spam pontos empresariais 3
 
-header      SA_OPERADORAS1 Subject =~ /\bOportunidade OI|Fatura em atraso|Sua Conta Vivo chegou|Sua Fatura Digital Claro chegou|Foram realizadas tentativas de entrega|SMTP cracker|Reative seu Itoken de segurança itaú/i
+header      SA_OPERADORAS1 Subject =~ /\bOportunidade OI|Fatura em atraso|Sua Conta Vivo chegou|Sua Fatura Digital Claro chegou|Foram realizadas tentativas de entrega|SMTP cracker|Reative seu Itoken de segurança itaú|Luminária Solar/i
 score       SA_OPERADORAS1 10
 describe    SA_OPERADORAS1 Phishing operadoras 1
 
-body        SA_OPERADORAS2 /vantagens de ser um cliente Oi|A Malta|empresa parceira da Oi|mensagens do Grupo Malta|Fica a testemunha advertida|como poderá se sujeitar a multa judicial|Semana Limpa Nome/i
+body        SA_OPERADORAS2 /vantagens de ser um cliente Oi|A Malta|empresa parceira da Oi|mensagens do Grupo Malta|Fica a testemunha advertida|como poderá se sujeitar a multa judicial|Semana Limpa Nome|corretos do Zimbra/i
 score       SA_OPERADORAS2 10
 describe    SA_OPERADORAS2 Phishing operadoras 2
 
-body        SA_OPERADORAS3 /Acreditamos que tenha ocorrido|algum imprevisto com o pagamento de sua conta|pois identificamos em nosso sistema|que ha valores em aberto|relacionado ao seu CPF/CNPJ/i
+body        SA_OPERADORAS3 /Acreditamos que tenha ocorrido|algum imprevisto com o pagamento de sua conta|pois identificamos em nosso sistema|que ha valores em aberto|relacionado ao seu CPF/CNPJ|registrar-se na nova interface/i
 score       SA_OPERADORAS3 10
 describe    SA_OPERADORAS3 Phishing operadoras 3
 
-body        SA_OPERADORAS4 /Observacao: Se necessario efetuaremos a cobranca|via debito automatico DDA|para evitar o bloqueio de sua linha|Cobranca Vivo: Demonstrativo Fat|Top quality, Lowest price/i
+body        SA_OPERADORAS4 /Observacao: Se necessario efetuaremos a cobranca|via debito automatico DDA|para evitar o bloqueio de sua linha|Cobranca Vivo: Demonstrativo Fat|Top quality, Lowest price|Suporte administrativo/i
 score       SA_OPERADORAS4 10
 describe    SA_OPERADORAS4 Phishing operadoras 4
 
-body        SA_OPERADORAS5 /ATENCAO: Para melhor visualizacao|abrir a partir de um computador (Windows)|Lembre-se, na Claro não ligamos para você|Pensando em seu bem estar financeiro preparamos descontos/i
+body        SA_OPERADORAS5 /ATENCAO: Para melhor visualizacao|abrir a partir de um computador (Windows)|Lembre-se, na Claro não ligamos para você|Pensando em seu bem estar financeiro preparamos descontos|Covid flare-up/i
 score       SA_OPERADORAS5 10
 describe    SA_OPERADORAS5 Phishing operadoras 5
 
@@ -205,7 +249,7 @@ header      SA_MERCADOLIVRE3 Subject =~ /\bA NF-e da compra|já está disponíve
 score       SA_MERCADOLIVRE3 10
 describe    SA_MERCADOLIVRE3 Phishing Mercado Livre 3
 
-body        SA_MERCADOLIVRE4 /Sua NF-e já está disponível|Detalhes da compra e Nota Fiscal em anexo|PRODUTORA com mais de 20 anos de experiência|Produzimos vídeos e fotos nos seguintes segmentos/i
+body        SA_MERCADOLIVRE4 /Sua NF-e já está disponível|Detalhes da compra e Nota Fiscal em anexo|PRODUTORA com mais de 20 anos de experiência|Produzimos vídeos e fotos nos seguintes segmentos|WIPRO Limited|com sensor de movimento/i
 score       SA_MERCADOLIVRE4 10
 describe    SA_MERCADOLIVRE4 Phishing Mercado Livre 4
 
@@ -213,11 +257,11 @@ header      SA_MERCADOLIVRE5 Subject =~ /\bALERTA Um novo dispositivo desconheci
 score       SA_MERCADOLIVRE5 10
 describe    SA_MERCADOLIVRE5 Phishing Mercado Livre 5
 
-body        SA_MERCADOLIVRE6 /Detectamos um novo acesso à sua conta|Não reconheço este acesso|iPhone de Ratão|Não tem certeza? Recomendamos que você|Sua senha expirará em alguns dias|polar fleece blankets/i
+body        SA_MERCADOLIVRE6 /Detectamos um novo acesso à sua conta|Não reconheço este acesso|iPhone de Ratão|Não tem certeza? Recomendamos que você|Sua senha expirará em alguns dias|polar fleece blankets|Notificacao de Login/i
 score       SA_MERCADOLIVRE6 10
 describe    SA_MERCADOLIVRE6 Phishing Mercado Livre 6
 
-body        SA_MERCADOLIVRE7 /O SMARTWATCH MAIS TECNOLÓGICO|TELA DIVIDIDA INTELIGENTE|DOIS NÚCLEOS DE PROCESSAMENTO|TELA INFINITA, VISÃO INFINITA|SISTEMA COM TELA DIVIDIDA|ACABAMENTO INIGUAL/i
+body        SA_MERCADOLIVRE7 /O SMARTWATCH MAIS TECNOLÓGICO|TELA DIVIDIDA INTELIGENTE|DOIS NÚCLEOS DE PROCESSAMENTO|TELA INFINITA, VISÃO INFINITA|SISTEMA COM TELA DIVIDIDA|ACABAMENTO INIGUAL|Brushless motor model|Merino Distressed/i
 score       SA_MERCADOLIVRE7 10
 describe    SA_MERCADOLIVRE7 Phishing Mercado Livre 7
 
@@ -225,19 +269,23 @@ header      SA_MERCADOLIVRE8 Subject =~ /\bO SMARTWATCH MAIS TECNOLÓGICO|ECOMPA
 score       SA_MERCADOLIVRE8 10
 describe    SA_MERCADOLIVRE8 Phishing Mercado Livre 8
 
-body        SA_MERCADOLIVRE9 /Olá, detectamos uma alteração|você removeu seu método de verificação em duas etapas|Se não foi você, por favor, avise-nos|Devido ao alto uso de nosso serviço de E-mail/i
+body        SA_MERCADOLIVRE9 /Olá, detectamos uma alteração|você removeu seu método de verificação em duas etapas|Se não foi você, por favor, avise-nos|Devido ao alto uso de nosso serviço de E-mail|30 minutes nonstop|Luminária Solar/i
 score       SA_MERCADOLIVRE9 10
 describe    SA_MERCADOLIVRE9 Phishing Mercado Livre 9
 
-header      SA_MERCADOLIVRE10 Subject =~ /\bOlá, você solicitou uma alteração às|Informativo Simpala|unlimited SMTP|Zimbra webmail|https cpanel|Conta Prime Video Suspensa|a usar o Microsoft Teams|bathrobes and blankets/i
+header      SA_MERCADOLIVRE10 Subject =~ /\bOlá, você solicitou uma alteração às|Informativo Simpala|unlimited SMTP|Zimbra webmail|https cpanel|Conta Prime Video Suspensa|usar o Microsoft Teams|bathrobes and blankets|PROCESSO CIVIL/i
 score       SA_MERCADOLIVRE10 10
 describe    SA_MERCADOLIVRE10 Phishing Mercado Livre 10
 
-header      SA_MERCADOLIVRE11 Subject =~ /\bTendências para o inverno|OFERTA HISTÓRICA|precisa ABRIR este e-mail|NOVIDADE!|CRÉDITO IMOBILIÁRIO|APORTE FINANCEIRO|Centro de Reabilitação/i
+header      SA_MERCADOLIVRE11 Subject =~ /\bTendências para o inverno|OFERTA HISTÓRICA|precisa ABRIR este e-mail|NOVIDADE!|CRÉDITO IMOBILIÁRIO|APORTE FINANCEIRO|Centro de Reabilitação|Registre-se na|nova interface de e-mail/i
 score       SA_MERCADOLIVRE11 10
 describe    SA_MERCADOLIVRE11 Phishing Mercado Livre 11
 
-header      SA_FINANCEIRAS1 Subject =~ /\bdespesas da sua casa|são por nossa conta|Suspension Notice|acesso seguro|ganhamos facilmente de 75 a 230 reais|Em apenas 3 passos você já começa|Queime 12x mais gorduras/i
+header      SA_MERCADOLIVRE12 Subject =~ /\bTentativa de acesso suspeito|take a look at this again|Detectamos um novo acesso|Grandes oportunidades|leiloes de imoveis|para ganhar dinheiro|sua conta e a bloqueamos|ServerTimeout-Action/i
+score       SA_MERCADOLIVRE12 10
+describe    SA_MERCADOLIVRE12 Phishing Mercado Livre 12
+
+header      SA_FINANCEIRAS1 Subject =~ /\bdespesas da sua casa|são por nossa conta|Suspension Notice|acesso seguro|ganhamos facilmente de 75 a 230 reais|Em apenas 3 passos você já começa|Queime 12x mais gorduras|Merino Distressed/i
 score       SA_FINANCEIRAS1 10
 describe    SA_FINANCEIRAS1 Spam Financeiras 1
 
@@ -249,7 +297,19 @@ body        SA_FINANCEIRAS3 /crédito pré-aprovado pra fechar|um novo contrato 
 score       SA_FINANCEIRAS3 10
 describe    SA_FINANCEIRAS3 Spam Financeiras 3
 
-header      SA_SPAMDIARIO1 Subject =~ /\bConta Suspensa Regularize|Conta BV traz uma novidade|que seu bolso vai amar|tem R$50 chegando para você/i
+body        SA_FINANCEIRAS4 /empresa possuindo um banco de dados|fazem sentido ao usuário e que auxiliam|DEMONSTRAÇÃO GRATUITA|nossos especialistas estão|Duncan Mackinnon|Executive Director|Bank of England|Blessing Of Allah/i
+score       SA_FINANCEIRAS4 10
+describe    SA_FINANCEIRAS4 Spam Financeiras 4
+
+header      SA_FINANCEIRAS5 Subject =~ /\bSeminário presencial|Vendas, Persuasão|Private invite|hope you are interested|Blessing Of Allah|Investment Opportunity|GET YOUR INSTANT|GUARANTEED APPROVED|have a low credit score/i
+score       SA_FINANCEIRAS5 10
+describe    SA_FINANCEIRAS5 Spam Financeiras 5
+
+header      SA_FINANCEIRAS6 Subject =~ /\bAgendar, Confirmar|Cancelar suas consultas|Tudo online|Seu negócio na web|TS Host|Kathy Markins|TradeMulti|Seus Debitos Foram|Selecionados para quitacao|seu pedido seguiu para faturamento/i
+score       SA_FINANCEIRAS6 10
+describe    SA_FINANCEIRAS6 Spam Financeiras 6
+
+header      SA_SPAMDIARIO1 Subject =~ /\bConta Suspensa Regularize|Conta BV traz uma novidade|que seu bolso vai amar|tem R$50 chegando para você|Make Big Money|Olá usuário|Foxchain Metastock|itaucard convida todos|Picks just for you/i
 score       SA_SPAMDIARIO1 10
 describe    SA_SPAMDIARIO1 Spam recebido diariamente 1
 
@@ -257,11 +317,27 @@ body        SA_SPAMDIARIO2 /A Conta BV pode ajudar você|deixe seu bolso mais le
 score       SA_SPAMDIARIO2 10
 describe    SA_SPAMDIARIO2 Spam recebido diariamente 2
 
-body        SA_SPAMDIARIO3 /muitas vantagens pensando em deixar|render mais que na poupança|para você pagar suas contas|guardar seu dinheiro|Seu banco no celular|Vantagens em produtos BV|Para saber as condições da oferta/i
+body        SA_SPAMDIARIO3 /muitas vantagens pensando em deixar|render mais que na poupança|para você pagar suas contas|guardar seu dinheiro|Seu banco no celular|Vantagens em produtos BV|Para saber as condições da oferta|TradeMulti/i
 score       SA_SPAMDIARIO3 10
 describe    SA_SPAMDIARIO3 Spam recebido diariamente 3
 
-body        SA_REGDOMAIN1 /Prezado usuário|referente ao Registro do Domínio|registro garantindo a propriedade|terceiro venha registrá-lo|receberá a confirmação do registro e nota fiscal|RegistraCom|Descadastrar e-mail/i
+body        SA_SPAMDIARIO4 /Samp Saúde|Baixe na App Store|Seu negócio na web|TS Host|a melhor tecnologia|tem diversas soluções|incluindo um plano gratuito|Banco Central em sua Circular|Kathy Markins|payment and delivery time/i
+score       SA_SPAMDIARIO4 10
+describe    SA_SPAMDIARIO4 Spam recebido diariamente 4
+
+header      SA_SPAMDIARIO5 Subject =~ /\bPlanos familiares e empresariais|com 40% de redução|Consultoria Plano de Saúde|Re: Indicaram-me|Linhas de crédito|world brand production|Pandemic Fund|Sheryll Goedert|Vendedor Campeão/i
+score       SA_SPAMDIARIO5 10
+describe    SA_SPAMDIARIO5 Spam recebido diariamente 5
+
+body        SA_SPAMDIARIO6 /crédito internacional|Solução Invest S.A|Middle e Corporate|world brand production|receive a Donation from|Sheryll Goedert|POWER-BALL LOTTERY|large economic disruption|jackpot from the|MILHÕESDE EMAILS/i
+score       SA_SPAMDIARIO6 10
+describe    SA_SPAMDIARIO6 Spam recebido diariamente 6
+
+header      SA_SPAMDIARIO7 Subject =~ /\bDo This Immediately|You Have Enlarged Prostate|Efetue a Atualizacao|GX Smartwatch|Simple Writing Jobs Online|quick follow up again|LOTTERY DEPARTMENT|Divulgue para até 200|MILHÕESDE EMAILS/i
+score       SA_SPAMDIARIO7 10
+describe    SA_SPAMDIARIO7 Spam recebido diariamente 7
+
+body        SA_REGDOMAIN1 /Prezado usuário|referente ao Registro do Domínio|registro garantindo a propriedade|terceiro venha registrá-lo|receberá a confirmação do registro e nota fiscal|Descadastrar e-mail|Seus Debitos Foram/i
 score       SA_REGDOMAIN1 10
 describe    SA_REGDOMAIN1 Spam registrador dominios 1
 
@@ -273,15 +349,15 @@ header      SA_JUNKSPAM1 Subject =~ /\bARMAZENAMENTO DE MENSAGENS NO WEBMAIL|Ver
 score       SA_JUNKSPAM1 10
 describe    SA_JUNKSPAM1 Junk Spam 1
 
-body        SA_JUNKSPAM2 /límite de cuota establecido|su cuenta se desactivará permanentemente|Zimbra Customer Care|se eliminará de nuestra base de datos|sent you enclosure purchase order|Report this transfer as spam/i
+body        SA_JUNKSPAM2 /límite de cuota establecido|cuenta se desactivará permanentemente|Zimbra Customer Care|se eliminará de nuestra base de datos|sent you enclosure purchase order|Report this transfer as spam|crypto investors/i
 score       SA_JUNKSPAM2 10
 describe    SA_JUNKSPAM2 Junk Spam 2
 
-body        SA_JUNKSPAM3 /Sua conta excedeu o limite de cota|definido pelo administrador|Para revalidar sua conta, por favor|sua conta será permanentemente desativada e excluída|Caros usuários do Zimbra Mail/i
+body        SA_JUNKSPAM3 /Sua conta excedeu o limite de cota|definido pelo administrador|Para revalidar sua conta, por favor|sua conta será permanentemente desativada e excluída|Caros usuários do Zimbra Mail|Foxchain Metastock/i
 score       SA_JUNKSPAM3 10
 describe    SA_JUNKSPAM3 Junk Spam 3
 
-header      SA_JUNKSPAM4 Subject =~ /\bAtualização do sistema|DENÚNCIA|TENHA MAIS CLIENTES|CONTE CONOSCO|SOLICITAÇÃO|CLIQUE AQUI|proteção Patrimonial|TABELA CMED - ACESSE NO CELULAR/i
+header      SA_JUNKSPAM4 Subject =~ /\bAtualização do sistema|DENÚNCIA|TENHA MAIS CLIENTES|CONTE CONOSCO|SOLICITAÇÃO|CLIQUE AQUI|proteção Patrimonial|TABELA CMED - ACESSE NO CELULAR|crypto investors|CORREIOS - SEDEX|Quarantine digest/i
 score       SA_JUNKSPAM4 10
 describe    SA_JUNKSPAM4 Junk Spam 4
 
@@ -289,7 +365,7 @@ body        SA_JUNKSPAM5 /para manter sua senha|atualizar e enviar imediatamente
 score       SA_JUNKSPAM5 10
 describe    SA_JUNKSPAM5 Junk Spam 5
 
-header      SA_JUNKSPAM6 Subject =~ /\bINVESTIMENTO - AQUISIÇÃO|EXPANSÃO SEM JUROS|Vérifiez votre visibilité|você removeu seu método de duas etapas|INTERFERIMOS UM ACESSO SUSPEITO/i
+header      SA_JUNKSPAM6 Subject =~ /\bINVESTIMENTO - AQUISIÇÃO|EXPANSÃO SEM JUROS|Vérifiez votre visibilité|você removeu seu método de duas etapas|INTERFERIMOS UM ACESSO SUSPEITO|Top Quality Low Cost|Shop Online Now/i
 score       SA_JUNKSPAM6 10
 describe    SA_JUNKSPAM6 Junk Spam 6
 
@@ -309,7 +385,7 @@ body        SA_JUNKSPAM10 /WE OFFER UREA|FROM THE REFINERY|SELLER WILL ISSUE|PRO
 score       SA_JUNKSPAM10 10
 describe    SA_JUNKSPAM10 Junk Spam 10
 
-body        SA_JUNKSPAM11 /EXORCIZANDO OS DEMÔNIOS|botar carapuças|épisteme theoretike|quis meter a mão nessas cumbucas|28 da revista Estudos Avançados|capacidade intuitiva da mente humana|emérito da Escola Politécnica/i
+body        SA_JUNKSPAM11 /EXORCIZANDO OS DEMÔNIOS|botar carapuças|épisteme theoretike|quis meter a mão nessas cumbucas|28 da revista Estudos Avançados|capacidade intuitiva da mente humana|emérito da Escola Politécnica|RegistraCom/i
 score       SA_JUNKSPAM11 10
 describe    SA_JUNKSPAM11 Junk Spam 11
 
@@ -337,7 +413,7 @@ body        SA_JUNKSPAM17 /Martins Richard|Thousand Dollars|Jacobs Ajekigbe|conf
 score       SA_JUNKSPAM17 10
 describe    SA_JUNKSPAM17 Junk Spam 17
 
-body        SA_JUNKSPAM18 /Central Bank of Nigeria|Seven Million Five Hundred|No Cost of Transfer|BETA PREMIUM|para receber nossa proposta comercial|betapremiumoficial|2Kg Por Semana|SEM USO DE REMÉDIOS|Reduz a Celulite/i
+body        SA_JUNKSPAM18 /Central Bank of Nigeria|Seven Million Five Hundred|No Cost of Transfer|BETA PREMIUM|para receber nossa proposta comercial|betapremiumoficial|2Kg Por Semana|SEM USO DE REMÉDIOS|Reduz a Celulite|ZIP-pass/i
 score       SA_JUNKSPAM18 10
 describe    SA_JUNKSPAM18 Junk Spam 18
 
@@ -345,7 +421,7 @@ body        SA_JUNKSPAM19 /Eliminador de G0rdura|Maior Taxa de SATISFAÇÃO|Efei
 score       SA_JUNKSPAM19 10
 describe    SA_JUNKSPAM19 Junk Spam 19
 
-body        SA_JUNKSPAM20 /FM 200 - Espuma Mecânica|junto ao Corpo de Bombeiros|worktech extintores|this proposal will definitely|is Monica Brown|fulfill my Late husband wish|Sharon Grossklaus/i
+body        SA_JUNKSPAM20 /FM 200 - Espuma Mecânica|junto ao Corpo de Bombeiros|worktech extintores|this proposal will definitely|is Monica Brown|fulfill my Late husband wish|Sharon Grossklaus|manter sua senha|itaucard convida todos/i
 score       SA_JUNKSPAM20 10
 describe    SA_JUNKSPAM20 Junk Spam 20
 
@@ -357,11 +433,55 @@ header      SA_JUNKSPAM22 Subject =~ /\bSeca 2kg por Semana|Conta Vivo em Atraso
 score       SA_JUNKSPAM22 10
 describe    SA_JUNKSPAM22 Junk Spam 22
 
-header      SA_JUNKSPAM23 Subject =~ /\bCan I Count On You|Sharon Grossklaus|Está negativado|Limpe seu CPF|MANUTENÇÃO DE EXTINTORES|adoce ainda mais esse dia|segurança na hora da entrega|check this power station/i
+header      SA_JUNKSPAM23 Subject =~ /\bCan I Count On You|Sharon Grossklaus|Está negativado|Limpe seu CPF|MANUTENÇÃO DE EXTINTORES|adoce ainda mais esse dia|segurança na hora da entrega|check this power station|Senha de arquivo/i
 score       SA_JUNKSPAM23 10
 describe    SA_JUNKSPAM23 Junk Spam 23
 
-header      SA_MAGALU1 Subject =~ /\bMagalu 2022 - Smart TV 60|Smart TV 55|Cadastre sua ID Digital PJ|Desligamento de e-mail de ação necessária|Toro Loco ou Latas|we need to talk|Feliz Dia Das Mães|FESTIVAL DE CUPONS/i
+header      SA_JUNKSPAM24 Subject =~ /\bAproveite o bônus grátis|Notificacao de Login|Seu feedback é muito importante|Sem Assunto|[ERRATA] Você ganhou|FEEDBACK ASSERTIVO|Faltam poucos dias|COMPENSATION PAYMENT|Seeking Investment/i
+score       SA_JUNKSPAM24 10
+describe    SA_JUNKSPAM24 Junk Spam 24
+
+body        SA_JUNKSPAM25 /enviei um e-mail da sua conta|tenho acesso total à sua conta|você foi infectado pelo|me dá acesso total|e controle seu dispositivo|posso ver tudo na sua tela|acesso a todas as correspondências|carteira BTC/i
+score       SA_JUNKSPAM25 10
+describe    SA_JUNKSPAM25 Junk Spam 25
+
+body        SA_JUNKSPAM26 /ligo a câmera e o microfone|todos os seus contatos|toda a sua correspondência|Fiz um vídeo mostrando|como você se satisfaz|Se você quiser evitar isso|transferir a quantia de 500 USD|meu endereço de bitcoin/i
+score       SA_JUNKSPAM26 10
+describe    SA_JUNKSPAM26 Junk Spam 26
+
+body        SA_JUNKSPAM27 /Dou-lhe 48 horas para pagar|o cronômetro funcionará|mensageiros que você usa|evite suspensão de serviços|Melhores Temperos Naturais|Corte Imediato|COMPARECIMENTO EM AUDIÊNCIA|Código de Processo Civil/i
+score       SA_JUNKSPAM27 10
+describe    SA_JUNKSPAM27 Junk Spam 27
+
+body        SA_JUNKSPAM28 /Sua conta de webmail|foi recomendada para validação|validar imediatamente sua conta|sua conta de webmail|caso contrário, ela será suspensa|Departamento de Informação Zimbra|Syncing Error|Mr Johnson Miller/i
+score       SA_JUNKSPAM28 10
+describe    SA_JUNKSPAM28 Junk Spam 28
+
+header      SA_JUNKSPAM29 Subject =~ /\bUnimed sem reajustes|Debito pendente referentes|imposto do ano 2022|Protocolo - IRPF N|Aviso de Irregularidade|TREINAMENTO LIDER DE SAC|EXCLUSIVIDADE TOTAL|Limite inicial foi pré-aprovado/i
+score       SA_JUNKSPAM29 10
+describe    SA_JUNKSPAM29 Junk Spam 29
+
+header      SA_JUNKSPAM30 Subject =~ /\bExtrato do Processo|Meu caro amigo|LOUIS VUITTON PONTHIEU|LVUKSTORE|Tua nova camisa 2022|Billing Confirmation|WOMEN'S JORDAN SHOES|Password Expiry for|Oficina de Finanças|Les Scadding/i
+score       SA_JUNKSPAM30 10
+describe    SA_JUNKSPAM30 Junk Spam 30
+
+body        SA_JUNKSPAM31 /transferir alguns fundos|Advogado I. Williams|20 milhões de dólares|Edição Bancária da Nigéria|Banco aqui na Nigéria|Barrister I. Williams|respaldar sua reivindicação|um mandato de beneficiário|LVUKSTORE/i
+score       SA_JUNKSPAM31 10
+describe    SA_JUNKSPAM31 Junk Spam 31
+
+body        SA_JUNKSPAM32 /has been automatically renewed|Advanced Network and Device Protection|auto charge every year unless|Helpline Center Head|The subscription amount of|P­­­­a­­­­­s­­­­­s­­­­­­wo­­­­r­­­­d E­­­­­­­x­­p­i­­­r­­y no­­­t­i­c­­e|re­­­t­­a­­­i­­­n or ch­­­an­­ge your p­­­­a­­­­s­­­­s­­­­­wo­­­­­r­d/i
+score       SA_JUNKSPAM32 10
+describe    SA_JUNKSPAM32 Junk Spam 32
+
+body        SA_JUNKSPAM33 /b­­u­­t­­to­­n b­­e­­l­­ow to re­­ta­­in c­­u­­rr­­­en­t p­­­a­­­s­­­s­­­wo­­­r­­d|re­­­t­­a­­­i­­­n or ch­­­an­­ge your p­­­­a­­­­s­­­­s­­­­­wo­­­­­r­d no­­­w|You are urgently adviced to|av­­­­oi­­­d lo­­g­­­­­in i­­­s­­­s­­­ue­s w­­­i­­­t­­h|a­­­­l­­­­l a­­­­p­­­­p­­­s r­­­­e­­­l­­­a­­­te­­d to yo­­­ur ac­­­c­o­­u­­n­­t|b­­u­­t­­to­­n b­­e­­l­­ow to|re­­ta­­in c­­u­­rr­­­en­t p­­­a­­­s­­­s­­­wo­­­r­­d/i
+score       SA_JUNKSPAM33 10
+describe    SA_JUNKSPAM33 Junk Spam 33
+
+body        SA_JUNKSPAM34 /objetiva propiciar ao participante|verdadeira OFICINA de trabalho|Benefícios e Diferenciais|receberá um PRE-WORK|diagnóstico da saúde financeira|Conteúdo Programático|monetização da riqueza|Carga Horária/i
+score       SA_JUNKSPAM34 10
+describe    SA_JUNKSPAM34 Junk Spam 34
+
+header      SA_MAGALU1 Subject =~ /\bMagalu 2022 - Smart TV 60|Smart TV 55|Cadastre sua ID Digital PJ|Desligamento de e-mail de ação necessária|Toro Loco ou Latas|we need to talk|Feliz Dia Das Mães|FESTIVAL DE CUPONS|Corte Imediato/i
 score       SA_MAGALU1 10
 describe    SA_MAGALU1 Spam Maganize Luiza 1
 
@@ -369,7 +489,7 @@ body        SA_SPAMWEBMAIL1 /Equipe de Webmail 2022|houve congestionamento em no
 score       SA_SPAMWEBMAIL1 10
 describe    SA_SPAMWEBMAIL1 Phishing Webmail 1
 
-header      SA_MARKETEIRA1 Subject =~ /\bOportunidade única para você|ATENCAO! Mensagem Importante|super DESCONTO|passe de acesso total hoje|encontre o imóvel ideal|Clube de Benefícios|conheça os pratos favoritos/i
+header      SA_MARKETEIRA1 Subject =~ /\bOportunidade única para você|ATENCAO! Mensagem Importante|super DESCONTO|passe de acesso total hoje|encontre o imóvel ideal|Clube de Benefícios|conheça os pratos favoritos|Ray-Ban Sunglasses/i
 score       SA_MARKETEIRA1 10
 describe    SA_MARKETEIRA1 Spam Marketeira 1
 
@@ -381,7 +501,7 @@ body        SA_MARKETEIRA3 /utilizando apenas seu Celular|você pode ter uma ren
 score       SA_MARKETEIRA3 10
 describe    SA_MARKETEIRA3 Spam Marketeira 3
 
-body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)|implantação de uma empresa no Paraguai|Passo a Passo para abrir uma empresa no Paraguai|Instrutor Brasil -  Educ Corporativa|com SUPER DESCONTOS/i
+body        SA_DEAR_USER /Dear (Google|Microsoft|Yahoo|Yandex|Zoho)|implantação de uma empresa no Paraguai|Passo a Passo para abrir uma empresa no Paraguai|Instrutor Brasil -  Educ Corporativa|com SUPER DESCONTOS|Senha de arquivo/i
 describe    SA_DEAR_USER Spam caro usuário
 score       SA_DEAR_USER 10
 
@@ -389,11 +509,11 @@ body        SA_PONTOSESFERA1 /keep or update current credentials|pontos acumulad
 describe    SA_PONTOSESFERA1 Spam pontos esfera 1
 score       SA_PONTOSESFERA1 10
 
-header      SA_PONTOSESFERA2 Subject =~ /\bSeus Pontos do Programa Empresas Vencem|Processo STJ - Pagamento inadimplente|cartao de credito Renner encontra-se parcialmente bloqueado|Listagem de criptoativos em breve|DONATION/i
+header      SA_PONTOSESFERA2 Subject =~ /\bSeus Pontos do Programa Empresas Vencem|Processo STJ - Pagamento inadimplente|credito Renner encontra-se parcialmente bloqueado|Listagem de criptoativos em breve|DONATION|Syncing Error/i
 score       SA_PONTOSESFERA2 10
 describe    SA_PONTOSESFERA2 Spam pontos esfera 2
 
-body        SA_SAUDEEMPRESA1 /exclusivamente para titulares e dependentes Porto Seguro Saúde|descontos de até 30% em parcerias de aluguel de carros|Conselho Regional de Psicologia|Mrs. Cristy|I have donated/i
+body        SA_SAUDEEMPRESA1 /exclusivamente para titulares e dependentes Porto Seguro Saúde|descontos de até 30% em parcerias de aluguel de carros|Conselho Regional de Psicologia|Mrs. Cristy|I have donated|Atualize seu Itoken Itau/i
 describe    SA_SAUDEEMPRESA1 Spam saude empresa 1
 score       SA_SAUDEEMPRESA1 10
 
@@ -405,11 +525,11 @@ body        SA_SAUDEEMPRESA3 /percentual de água consumida nos processos produt
 describe    SA_SAUDEEMPRESA3 Spam saude empresa 3
 score       SA_SAUDEEMPRESA3 10
 
-header      SA_BRADESCO1 Subject =~ /\bResgate de Pontos Bradesco Epresarial|Atendimento Itau-Digital|Atualização do sistema de TIC|Video e Foto para Pessoa Juridica ou Fisica|Conteúdo Patrocinado|em um novo navegador/i
+header      SA_BRADESCO1 Subject =~ /\bResgate de Pontos Bradesco Epresarial|Atendimento Itau-Digital|Atualização do sistema de TIC|Video e Foto para Pessoa Juridica ou Fisica|Conteúdo Patrocinado|em um novo navegador|TESTEMUNHA/i
 score       SA_BRADESCO1 10
 describe    SA_BRADESCO1 Phishing Bradesco 1
 
-body        SA_BRADESCO2 /pontos Bradesco Empresárial|Você atingiu o limite de|programa Fidelidade|Bradesco Cartões Empresariais|deve resgata-los para continuar acumulando|queima de gordura e calorias durante/i
+body        SA_BRADESCO2 /pontos Bradesco Empresárial|Você atingiu o limite de|programa Fidelidade|Bradesco Cartões Empresariais|deve resgata-los para continuar acumulando|queima de gordura e calorias durante|Itoken Itau/i
 score       SA_BRADESCO2 10
 describe    SA_BRADESCO2 Phishing Bradesco 2
 
@@ -429,6 +549,10 @@ header      SA_BRADESCO6 Subject =~ /\bBradesco NetEmpresa|Solicitacao pendente 
 score       SA_BRADESCO6 10
 describe    SA_BRADESCO6 Phishing Bradesco 6
 
+header      SA_BRADESCO7 Subject =~ /\bIMPLANTAÇÃO DO NOVO|SISTEMA SDOE|guest posting purpose|I want work with you|Poweredby: IT pampafoods|Password Expiry Notice|Time LEVE ASSET/i
+score       SA_BRADESCO7 10
+describe    SA_BRADESCO7 Phishing Bradesco 7
+
 header      SA_ENGLISH1 Subject =~ /\bDO YOU REALLY|UNDERSTAND ME|Woodworking Projects|Bruce Lee's|Dear Lucky Winner|international lottery|Call for Papers Submission|self-made millionaire|This Online Sale|sneakers and more/i
 score       SA_ENGLISH1 10
 describe    SA_ENGLISH1 Spam geral em inglês 1
@@ -441,11 +565,15 @@ body        SA_ENGLISH3 /LUCKY DRAW NUMBER|CONGRATULATION!!!|approved for a lump
 score       SA_ENGLISH3 10
 describe    SA_ENGLISH3 Spam geral em inglês 3
 
-body        SA_PROCESSO1 /INTIMAÇÃO da parte executada|acrescidas de eventuais custas processuais|Em "ANEXO" - Intimação Classe|apresentar impugnação|atualizar sua senha atual|SUA PRISÃO EM CURSO|want my bank management/i
+body        SA_ENGLISH4 /is scheduled to expire|continue using this email|keep same password|kindly use the keep same|password button below|Failure to carry out above|exercise might lead to account lock|until necessary action is taken/i
+score       SA_ENGLISH4 10
+describe    SA_ENGLISH4 Spam geral em inglês 4
+
+body        SA_PROCESSO1 /INTIMAÇÃO da parte executada|acrescidas de eventuais custas processuais|Em "ANEXO" - Intimação Classe|apresentar impugnação|atualizar sua senha atual|SUA PRISÃO EM CURSO|want my bank management|Time LEVE ASSET/i
 score       SA_PROCESSO1 10
 describe    SA_PROCESSO1 Phishing Processo Justiça 1
 
-header      SA_PROCESSO2 Subject =~ /\bSUA PRISÃO EM CURSO|CONVOCAÇÃO PARA A JUSTIÇA|EXHIBITIONISM|AGRESSÃO INDECENTE|crédito para negativado|voce livre do SERASA|voce livre do SPC|Maior Pacote De Arquivos Empresariais/i
+header      SA_PROCESSO2 Subject =~ /\bSUA PRISÃO EM CURSO|CONVOCAÇÃO PARA A JUSTIÇA|EXHIBITIONISM|AGRESSÃO INDECENTE|crédito para negativado|voce livre do SERASA|livre do SPC|Maior Pacote De Arquivos Empresariais|Critical-Status/i
 score       SA_PROCESSO2 10
 describe    SA_PROCESSO2 Phishing Processo Justiça 2
 
@@ -469,7 +597,7 @@ body        SA_VIDAFINANCEIRA3 /consideram seu score e nome limpo|pré-requisito
 score       SA_VIDAFINANCEIRA3 10
 describe    SA_VIDAFINANCEIRA3 Spam vida financeira 3
 
-body        SA_VIDAFINANCEIRA4 /Dê baixa em todas as suas dívidas|com descontos de 100%|Regularização cadastral|aumento do Score|em até 8 horas|Assessoria legal e eficiente|para pessoas físicas e jurídicas/i
+body        SA_VIDAFINANCEIRA4 /Dê baixa em todas as suas dívidas|com descontos de 100%|Regularização cadastral|aumento do Score|em até 8 horas|Assessoria legal e eficiente|para pessoas físicas e jurídicas|você ficou de fora/i
 score       SA_VIDAFINANCEIRA4 10
 describe    SA_VIDAFINANCEIRA4 Spam vida financeira 4
 
@@ -477,15 +605,15 @@ body        SA_VIDAFINANCEIRA5 /10 MIL Planilhas Excel|profissionais com certifi
 score       SA_VIDAFINANCEIRA5 10
 describe    SA_VIDAFINANCEIRA5 Spam vida financeira 5
 
-body        SA_CLARO1 /Evite o bloqueio do seu serviço|sua fatura ainda não consta no nosso sistema|seu sinal será reabilitado em até 24h|senha atual e atualizar automaticamente para a versão/i
+body        SA_CLARO1 /Evite o bloqueio do seu serviço|sua fatura ainda não consta no nosso sistema|seu sinal será reabilitado em até 24h|senha atual e atualizar automaticamente para a versão|serviço de e-mail Zimbra|Cote D’Ivoire/i
 score       SA_CLARO1 10
 describe    SA_CLARO1 Phishing Claro 1
 
-body        SA_CLARO2 /Se o seu sinal já está bloqueado|realize o pagamento desta fatura|a negociação de seu débito é feita Online|já aplicados nesta fatura abaixo|Espaço Excedido|plano de Telefonia Celular/i
+body        SA_CLARO2 /Se o seu sinal já está bloqueado|realize o pagamento desta fatura|a negociação de seu débito é feita Online|já aplicados nesta fatura abaixo|Espaço Excedido|plano de Telefonia Celular|REFIS – Mutirão Fiscal/i
 score       SA_CLARO2 10
 describe    SA_CLARO2 Phishing Claro 2
 
-header      SA_CLARO3 Subject =~ /\bplano de Telefonia Celular|75% OFF EM PRODUTOS|SELECIONADOS SOMENTE HOJE|Good Day|Fale comigo sobre os fundos|This information is for you|Entrevista Remunerada|Acervo dos artistas/i
+header      SA_CLARO3 Subject =~ /\bplano de Telefonia Celular|75% OFF EM PRODUTOS|SELECIONADOS SOMENTE HOJE|Good Day|Fale comigo sobre os fundos|This information is for you|Entrevista Remunerada|Acervo dos artistas|Password Issue/i
 score       SA_CLARO3 10
 describe    SA_CLARO3 Phishing Claro 3
 
@@ -509,11 +637,11 @@ header      SA_ORGAOS3 Subject =~ /\bCAIXA INFORMA|Novo acesso gerado em sua con
 score       SA_ORGAOS3 10
 describe    SA_ORGAOS3 Spam evitar orgãos 3
 
-body        SA_PHISHING1 /conta de e-mail foi infectada|efetuar a indexação do banco de dados|excedeu seu limite de|aumente o tamanho da sua caixa de correio|Atualize os dados da sua conta|101 Vinhos Brasileiros/i
+body        SA_PHISHING1 /conta de e-mail foi infectada|efetuar a indexação do banco de dados|excedeu seu limite de|aumente o tamanho da sua caixa|Atualize os dados da sua conta|101 Vinhos Brasileiros|MENOR PREÇO do mercado/i
 score       SA_PHISHING1 10
 describe    SA_PHISHING1 Phishing conta de e-mail 1
 
-header      SA_PHISHING2 Subject =~ /\bUm dispositivo desconhecido|acessou a sua conta recentemente|Atualização Sistema de Correio|need you to state you position before we can proceed|Your Mailbox|Brindes Corporativos/i
+header      SA_PHISHING2 Subject =~ /\bUm dispositivo desconhecido|acessou a sua conta recentemente|Atualização Sistema de Correio|need you to state you position before we can proceed|Your Mailbox|Brindes Corporativos|Validate/i
 score       SA_PHISHING2 10
 describe    SA_PHISHING2 Phishing conta de e-mail 2
 
@@ -525,7 +653,7 @@ header      SA_PHISHING4 Subject =~ /\bCumprimento de sentença|cPanel is delayi
 score       SA_PHISHING4 10
 describe    SA_PHISHING4 Phishing conta de e-mail 4
 
-body        SA_PHISHING5 /Esta alteração proporcionará|maior segurança e velocidade|Diretoria técnica de gestão cpanel.net|Este acesso deverá ser feito|imediatamente e uma única vez|Senha de arquivo|SHAMPOO DIMOXINIL/i
+body        SA_PHISHING5 /Esta alteração proporcionará|maior segurança e velocidade|Diretoria técnica de gestão cpanel.net|Este acesso deverá ser feito|imediatamente e uma única vez|Senha de arquivo|SHAMPOO DIMOXINIL|Les Scadding/i
 score       SA_PHISHING5 10
 describe    SA_PHISHING5 Phishing conta de e-mail 5
 
@@ -537,7 +665,7 @@ body        SA_PHISHING7 /Sua caixa postal excedeu o limite|Atualize sua conta d
 score       SA_PHISHING7 10
 describe    SA_PHISHING7 Phishing conta de e-mail 7
 
-header      SA_PHISHING8 Subject =~ /\bPARA CRESCIMENTO CAPILAR|SHAMPOO ANTIQUEDA|SUPORTE LOCAWEB|Aviso Importante|Eliminando para sempre|o mau hálito|Gestão do Capital Humano|LUVAS de RASPA/i
+header      SA_PHISHING8 Subject =~ /\bPARA CRESCIMENTO CAPILAR|SHAMPOO ANTIQUEDA|SUPORTE LOCAWEB|Aviso Importante|Eliminando para sempre|o mau hálito|Gestão do Capital Humano|LUVAS de RASPA|ÚLTIMO AVISO|SUA CONTA ESTA DISPONIVEL/i
 score       SA_PHISHING8 10
 describe    SA_PHISHING8 Phishing conta de e-mail 8
 
@@ -545,19 +673,31 @@ body        SA_PHISHING8 /Estou fazendo uma pesquisa e|gostaria de saber o valor
 score       SA_PHISHING8 10
 describe    SA_PHISHING8 Phishing conta de e-mail 8
 
+body        SA_PHISHING9 /ÚLTIMO AVISO|caixa de correio Zimbra|Zimbra excedeu sua cota|limite definido pelo comando|comando Zimbra|você não poderá enviar ou receber|até que reconfirme sua caixa|de correio Zimbra|Para reconfirmar/i
+score       SA_PHISHING9 10
+describe    SA_PHISHING9 Phishing conta de e-mail 9
+
+body        SA_PHISHING10 /Prezado senhor(a)|está sendo notificado|sobre um processo trabalhista|seus funcionários de registro|o notificou judicialmente|Através do Art.|também disponibilizando um advogado|OFICIAL DE JUSTIÇA/i
+score       SA_PHISHING10 10
+describe    SA_PHISHING10 Phishing conta de e-mail 10
+
+body        SA_PHISHING11 /JOÂO MEIRELES CARDOSO|MINISTÉRIO TRABALHISTA|PROCESSO TRABALHISTA|Password Issue|continue using your email|please confirm ownership below|Certify your design excellence|celebrate your good designs/i
+score       SA_PHISHING11 10
+describe    SA_PHISHING11 Phishing conta de e-mail 11
+
 header      SA_VIDAFINANCEIRA1 Subject =~ /\bSalve sua vida financeira|Email Owner|Solicito meu Orçamento|Simule agora o valor para o seu Plano|SIMULADOR BRADESCO SAÚDE|BRADESCO SAÚDE|APORTE FINANCEIRO|TRANSMISSÃO AO VIVO/i
 score       SA_VIDAFINANCEIRA1 10
 describe    SA_VIDAFINANCEIRA1 Phishing vida financeira 1
 
-body        SA_VIDAFINANCEIRA2 /International Criminal Police Organization|INTERPOL|scammers during operations earlier|codenamed HAECHI|Interpol Executive Committee|Social Courier Company|Acesse a tabela CMED/i
+body        SA_VIDAFINANCEIRA2 /International Criminal Police Organization|INTERPOL|scammers during operations|codenamed HAECHI|Interpol Executive Committee|Social Courier Company|Acesse a tabela CMED|Informationen kontaktieren/i
 score       SA_VIDAFINANCEIRA2 10
 describe    SA_VIDAFINANCEIRA2 Phishing vida financeira 2
 
-header      SA_PROMO1 Subject =~ /\bMega queima de estoque|Canecas e Copos com SUPER DESCONTOS|Did you get my last email|Business investment|o secreto para economizar dinheiro|Top Sneakers Sales|Meu Salário Minhas Regras/i
+header      SA_PROMO1 Subject =~ /\bMega queima de estoque|Canecas e Copos com SUPER DESCONTOS|Did you get my last email|Business investment|o secreto para economizar dinheiro|Top Sneakers Sales|Meu Salário Minhas Regras|caro usuário/i
 score       SA_PROMO1 10
 describe    SA_PROMO1 Spam promoções 1
 
-header      SA_BRINDES1 Subject =~ /\bBrindes com status de presente|Binance|Temos uma mensagem importante|Solicitação de comparecimento|Excedeu Limite|ajudo a melhorar sua estratégia comercial|Sua Conta Foi Suspensa/i
+header      SA_BRINDES1 Subject =~ /\bBrindes com status de presente|Binance|Temos uma mensagem importante|Solicitação de comparecimento|Excedeu Limite|melhorar sua estratégia comercial|Sua Conta Foi Suspensa|Verifique nosso aviso/i
 score       SA_BRINDES1 10
 describe    SA_BRINDES1 Spam brindes 1
 
@@ -565,7 +705,7 @@ body        SA_BRINDES2 /Brindes com status de presente|sua marca indo para todo
 score       SA_BRINDES2 10
 describe    SA_BRINDES2 Spam brindes 2
 
-body        SA_BRINDES3 /novidades disponíveis na sua numeração|NAVEGUE POR SUA CATEGORIA FAVORITA|NAVEGUE PELA SUA FAVORITA|FRETE GRÁTIS NAS COMPRAS ACIMA DE|Arezzo|e-mails da SHEIN|R﻿o﻿b﻿in﻿﻿so﻿n R﻿oa﻿﻿d/i
+body        SA_BRINDES3 /novidades disponíveis na sua numeração|NAVEGUE POR SUA CATEGORIA FAVORITA|NAVEGUE PELA SUA FAVORITA|FRETE GRÁTIS NAS COMPRAS ACIMA DE|Arezzo|e-mails da SHEIN|R﻿o﻿b﻿in﻿﻿so﻿n R﻿oa﻿﻿d|quota limit set by/i
 score       SA_BRINDES3 10
 describe    SA_BRINDES3 Spam brindes 3
 
@@ -573,7 +713,7 @@ body        SA_BRINDES4 /POTENCIALIZAR SEUS RESULTADOS|IMPULSIONAR O SEU SUCESSO
 score       SA_BRINDES4 10
 describe    SA_BRINDES4 Spam brindes 4
 
-body        SA_BRINDES5 /Sra. Esso Agnes|República do Benin|BGFIBANK no BENIN|acidente de avião na Líbia|compartilhar meus últimos momentos entrando em contato com você|850 Million dollars|Nicholas Toms/i
+body        SA_BRINDES5 /Sra. Esso Agnes|República do Benin|BGFIBANK no BENIN|acidente de avião na Líbia|compartilhar meus últimos momentos entrando em contato com você|850 Million dollars|Nicholas Toms|backup em nuvem/i
 score       SA_BRINDES5 10
 describe    SA_BRINDES5 Spam brindes 5
 
@@ -581,7 +721,7 @@ header      SA_BRINDES6 Subject =~ /\bCurso EAD de GLOSAS HOSPITALARES|Parcelame
 score       SA_BRINDES6 10
 describe    SA_BRINDES6 Spam brindes 6
 
-body        SA_BRINDES7 /Desenvolver e capacitar os participantes|eficiência no processo de almoxarifado|com ampla experiência em Lean Manufacturing|Experiência prática na maximização de pridutividade/i
+body        SA_BRINDES7 /Desenvolver e capacitar os participantes|eficiência no processo de almoxarifado|com ampla experiência em Lean Manufacturing|Experiência prática na maximização de pridutividade|alta disponibilidade/i
 score       SA_BRINDES7 10
 describe    SA_BRINDES7 Spam brindes 7
 
@@ -589,7 +729,11 @@ body        SA_BRINDES8 /Somos da American Saude|ou nos solicite pelo WhatsApp p
 score       SA_BRINDES8 10
 describe    SA_BRINDES8 Spam brindes 8
 
-body        SA_ZIMBRA1 /A senha da sua conta expira hoje|AVISO ZIMBRA|pode alterar sua senha ou continuar usando|Zimbra Mail|excedeu o limite de cota definido pelo administrador|Zimbra Suporte ao Cliente|Prezado @Zimbra/i
+header      SA_BRINDES9 Subject =~ /\bMajor Business|Opportunity|Vem conferir|oferta exclusiva|Quanto tempo|Indústria Xperience|Seu cliente não pagou|Balcão do Consumidor|Silêncio em Condomínios|Serviços Gerenciados de TI/i
+score       SA_BRINDES9 10
+describe    SA_BRINDES9 Spam brindes 9
+
+body        SA_ZIMBRA1 /A senha da sua conta expira|AVISO ZIMBRA|pode alterar sua senha ou continuar usando|Zimbra Mail|excedeu o limite de cota definido pelo administrador|Zimbra Suporte ao Cliente|Prezado @Zimbra|Web Zimbra mudar/i
 score       SA_ZIMBRA1 10
 describe    SA_ZIMBRA1 Spam Zimbra infectado 1
 
@@ -597,11 +741,11 @@ header      SA_ZIMBRA2 Subject =~ /\bAlerta:Sua assinatura do Amazon|Alugue uma 
 score       SA_ZIMBRA2 10
 describe    SA_ZIMBRA2 Spam Zimbra infectado 2
 
-body        SA_ZIMBRA3 /possui a capacidade de armazenamento padrão de 10GB|com possibilidade de aumentar para 30GB ou 50GB|é necessário verificar caixa de correio|O bloqueio ocorre até a confirmação do Email|CLIQUE AQUI/i
+body        SA_ZIMBRA3 /possui a capacidade de armazenamento padrão de 10GB|com possibilidade de aumentar para 30GB ou 50GB|é necessário verificar caixa de correio|ocorre até a confirmação do Email|CLIQUE AQUI|Cliente Web Zimbra/i
 score       SA_ZIMBRA3 10
 describe    SA_ZIMBRA3 Spam Zimbra infectado 3
 
-body        SA_ZIMBRA4 /Estamos para anunciar a você|uma nova versão para melhor atendê-lo|depois de atualizar seu Mail conforme as instruções|7 dias úteis para que sua caixa de correio|Suporte ao administrador do WebMail/i
+body        SA_ZIMBRA4 /Estamos para anunciar a você|uma nova versão para melhor atendê-lo|atualizar seu Mail conforme as instruções|7 dias úteis para que sua caixa de correio|Suporte ao administrador do WebMail|Chefe de Zimbra/i
 score       SA_ZIMBRA4 10
 describe    SA_ZIMBRA4 Spam Zimbra infectado 4
 
@@ -633,6 +777,58 @@ header      SA_ZIMBRA11 Subject =~ /\bNão deixe seu desconto de|Como desenvolve
 score       SA_ZIMBRA11 10
 describe    SA_ZIMBRA11 Spam Zimbra infectado 11
 
+header      SA_ZIMBRA12 Subject =~ /\boportunidades em leiloes|para ganhar dinheiro|Powerful Ritual|your invoice details|Mais benefícios|SEGUROS PATRIMONIAIS|Operación Comercio|Prostate Problems|You Can't Pee|TWO-MAN business/i
+score       SA_ZIMBRA12 10
+describe    SA_ZIMBRA12 Spam Zimbra infectado 12
+
+header      SA_ZIMBRA13 Subject =~ /\bRedução Inteligente de Custos|Cartão bloqueado por|questões cadastrais|My warm wishes|local bank account holder|iCoinbase Inc|4Coinbase Inc|Geek Squád Corp|Mark Lence|Beautiful Girlfriends/i
+score       SA_ZIMBRA13 10
+describe    SA_ZIMBRA13 Spam Zimbra infectado 13
+
+header      SA_ZIMBRA14 Subject =~ /\bCIVIL PROFISSIONAL|Registration Key|Ngendan Aeracleous|and your family|Merino Distressed|Amah Umoh|From the Desk of|money cannot be approved|You just sent a Payment|account is now overdrawn/i
+score       SA_ZIMBRA14 10
+describe    SA_ZIMBRA14 Spam Zimbra infectado 14
+
+body        SA_ZIMBRA15 /30 anos de mercado segurador|temos expertise nos segmentos|atender em qualquer uma|com custos bem competitivos|Atendemos todo o Brasil|Merino Distressed|assessoria completa para|Participação no leilão/i
+score       SA_ZIMBRA15 10
+describe    SA_ZIMBRA15 Spam Zimbra infectado 15
+
+body        SA_ZIMBRA16 /José Ary Barão|leilões de imóveis|Participe de aquisições|documentação após o arremate|contratuais e conflitos|Amah Umoh|From the Desk of|créditos lastreados em garantias|money cannot be approved|Squád Corp/i
+score       SA_ZIMBRA16 10
+describe    SA_ZIMBRA16 Spam Zimbra infectado 16
+
+body        SA_ZIMBRA17 /local bank account holder|TWO-MAN business|You just sent a Payment|iCoinbase Inc|account is now overdrawn|RICE RD Churchill|4Coinbase Inc|Geek Squád Corp|Network Shield Protection|Advanced Network and PC/i
+score       SA_ZIMBRA17 10
+describe    SA_ZIMBRA17 Spam Zimbra infectado 17
+
+body        SA_ZIMBRA18 /Mark Lence|Consultoria ilimitada|Boletins explicativos|CASO TENHA INTERESSE NA PROPOSTA|PARA VALIDAÇÃO DO DESCONTO|comunicarse con las líneas|girlfriend type|Bella Club|Look at the girlfriends|2022 Webmail/i
+score       SA_ZIMBRA18 10
+describe    SA_ZIMBRA18 Spam Zimbra infectado 18
+
+body        SA_ZIMBRA19 /planteamos en Bancolombia|divisas correspondientes|Gerencia De Servicios|Para Comercio Internacional|Beautiful Girlfriends|Redução Inteligente de Custos|necessita ECONOMIZAR|portabilidade numérica/i
+score       SA_ZIMBRA19 10
+describe    SA_ZIMBRA19 Spam Zimbra infectado 19
+
+body        SA_ZIMBRA20 /Visualizar em formato ZIP|Visualizar em formato XML|Life-Lock Pro Security|E-mail precisa ser verificado|Para pagar com o Pix de forma|FROM MR FABIO ANTONIO|A Portuguese national|Dearest Beloved/i
+score       SA_ZIMBRA20 10
+describe    SA_ZIMBRA20 Spam Zimbra infectado 20
+
+header      SA_ZIMBRA21 Subject =~ /\bAtualize seu Itoken|Itoken Itau|ilimitado para todo o Brasil|nosso convidado especial|Your account password is updated|WordPress Support|Mapeamento de Leads|dúvida do que assistir/i
+score       SA_ZIMBRA21 10
+describe    SA_ZIMBRA21 Spam Zimbra infectado 21
+
+body        SA_ZIMBRA22 /WooCommerce Development|WooCommerce Optimization|Digital Marketing Services|WooCommerce Support package|Mapeamento de Leads|dúvida do que assistir|ENVIOS RECORRENTES|era do streaming|filmes surgindo/i
+score       SA_ZIMBRA22 10
+describe    SA_ZIMBRA22 Spam Zimbra infectado 22
+
+body        SA_ZIMBRA23 /melhorar nosso servidor de webmail|Consulte a Ajuda da Caixa de Correio|convidados a participar de uma pesquisa|ZIMBRA ADMIN|Copyright 2022|tentativa incorreta de senha|para atualizar seu email/i
+score       SA_ZIMBRA23 10
+describe    SA_ZIMBRA23 Spam Zimbra infectado 23
+
+body        SA_ZIMBRA24 /suporte do webmail zimbra|seu email em breve|será bloqueado|não conseguiu atualizar livremente|usar a nova plataforma|de webmail zimbra|Experimente aqui:|atualizar para a nova versão|vai lembrá-lo novamente/i
+score       SA_ZIMBRA24 10
+describe    SA_ZIMBRA24 Spam Zimbra infectado 24
+
 body        SA_CTF1 /mercado de pedágio automático|ideal para frotas leves e urbanas|Rede credenciada em 97%|abastecer com praticidade e segurança|vale-refeição ou vale-alimentação da Flattcor|Monte seu combo benefícios/i
 score       SA_CTF1 10
 describe    SA_CTF1 Spam cartão CTF 1
@@ -645,15 +841,23 @@ header      SA_CTF3 Subject =~ /\bPontos do Programa Empresarial|prestes a Vence
 score       SA_CTF3 10
 describe    SA_CTF3 Spam cartão CTF 3
 
-body        SA_ADVOGADO1 /advogado Mustafa Ayvaz|perdeu a vida devido à doença de Coronavírus|como beneficiário e compartilhados de acordo|detalhes de como a transação será iniciada|Comprovante de Pagamento da Fatura/i
+body        SA_ADVOGADO1 /advogado Mustafa Ayvaz|perdeu a vida devido à doença de Coronavírus|beneficiário e compartilhados de acordo|detalhes de como a transação será iniciada|Comprovante de Pagamento da Fatura|archive password/i
 score       SA_ADVOGADO1 10
 describe    SA_ADVOGADO1 Spam advogados 1
+
+body        SA_ADVOGADO2 /Dan Williams|República do Togo|Setenta Mil Euros|obtive de lucros de contratos|possível reivindicar os fundo|dos fundos remanescentes|pois recebi seu nome e endereço|Oficial Sênior|Compras Públicas/i
+score       SA_ADVOGADO2 10
+describe    SA_ADVOGADO2 Spam advogados 2
+
+body        SA_ADVOGADO3 /INTERNATIONALE POUR|L'AFRIQUE AU TOGO S.A|Contratos Governamentais|Ministério do Petróleo|Solicitação de Contato|Business Inquiry|PIX Banco do Brasil|Comprovante PIX|Seguem dados da NF-e/i
+score       SA_ADVOGADO3 10
+describe    SA_ADVOGADO3 Spam advogados 3
 
 body        SA_FUGA1 /rota de fuga é um dos elementos|contra as consequências de um incêndio|Dicas para Implantação da Sinalização|que seja feito um abandono rápido e seguro|everlux|Economize até 10 VEZES|25GB free data space/i
 score       SA_FUGA1 10
 describe    SA_FUGA1 Spam rota de fuga 1
 
-body        SA_REDUZAGUA1 /TRAZ ECONOMIA NA CONTA DE ÁGUA|obter água distribuída na caixa d'água|50% na conta de água sem a necessidade|Aqua Liber assume 100% dos riscos|poço artesiano valoriza|temos planilhas para tudo/i
+body        SA_REDUZAGUA1 /TRAZ ECONOMIA NA CONTA DE ÁGUA|obter água distribuída na caixa d'água|50% na conta de água sem a necessidade|Aqua Liber assume 100% dos riscos|poço artesiano valoriza|temos planilhas para tudo|WF Consultoria/i
 score       SA_REDUZAGUA1 10
 describe    SA_REDUZAGUA1 Spam economia água 1
 
@@ -665,47 +869,111 @@ header      SA_POLICIA2 Subject =~ /\bProcesso penal concluido|Vara Criminal e|S
 score       SA_POLICIA2 10
 describe    SA_POLICIA2 Spam Policia Civil 2
 
-body        SA_DETRAN1 /uma infração para a CNH final|Foi inserido no Sistema de Notificação Eletrônica - SNE|uma infração para a CNH final|A infração já está disponível em seu aplicativo|Orçamento.zip/i
+body        SA_DETRAN1 /uma infração para a CNH final|Foi inserido no Sistema de Notificação Eletrônica - SNE|uma infração para a CNH final|A infração já está disponível em seu aplicativo|Orçamento.zip|Squad Service Renewal/i
 score       SA_DETRAN1 10
 describe    SA_DETRAN1 Spam Detran 1
 
-header      SA_VENDAS1 Subject =~ /\bNovas oportunidades|para aumentar suas vendas|Sua Conta foi Bloqueada|Multa emitida para|Creditamos com sucesso seus valores no PIX|Proposta Saude|Você em dia com a balança/i
+header      SA_VENDAS1 Subject =~ /\bNovas oportunidades|para aumentar suas vendas|Sua Conta foi Bloqueada|Multa emitida para|Creditamos com sucesso seus valores no PIX|Proposta Saude|Você em dia com a balança|Conta em atraso/i
 score       SA_VENDAS1 10
 describe    SA_VENDAS1 Spam vendas 1
 
-header      SA_VENDAS2 Subject =~ /\bDicas para ter um|negócio de sucesso em|NOVO ACESSO INDENTIFICADO|Acesso desconhecido de um novo dispositivo|Sua recompensa em milhas chegou|Solicito meu orçamento|Monitores LG/i
+header      SA_VENDAS2 Subject =~ /\bDicas para ter um|negócio de sucesso em|NOVO ACESSO INDENTIFICADO|Acesso desconhecido de um novo dispositivo|Sua recompensa em milhas chegou|Solicito meu orçamento|Monitores LG|Action Required/i
 score       SA_VENDAS2 10
 describe    SA_VENDAS2 Spam vendas 2
 
-body        SA_VENDAS3 /Prepare-se para fazer seu negócio decolar|abordando temas relevantes como|Comportamento empreendedor|Marketing digital|webmail server is pending some messages|Aporte de Capital/i
+body        SA_VENDAS3 /Prepare-se para fazer seu negócio decolar|abordando temas relevantes como|Comportamento empreendedor|Marketing digital|webmail server is pending some messages|Aporte de Capital|Tentativa de acesso suspeito/i
 score       SA_VENDAS3 10
 describe    SA_VENDAS3 Spam vendas 3
 
-header      SA_PIX1 Subject =~ /\bVocê recebeu|dinheiro via Pix|Authentication Report|You appeared in|search this week|Al Khaimah Investment|Mohamed Sultan Al Qasimi|Excess Maximum Return Capital Profit|Comunicado Ita/i
+body        SA_VENDAS4 /Ganhar dinheiro de volta|aproveitar o seu cashback|cashback em toda|utilizando o Buscapé|ser sem anuidade|limite inicial de|Cartão Buscapé|garantir mais dinheiro|suas compras no crédito|comprar e economizar/i
+score       SA_VENDAS4 10
+describe    SA_VENDAS4 Spam vendas 4
+
+body        SA_VENDAS5 /Modernas Técnicas de Negociação|melhorar sua argumentação|do cotidiano negocial|exposições dialogadas|exemplos vivenciais|autodesenvolvimento negocial|Profissionais interessados em|NEGOCIADORES & VENCEDORES/i
+score       SA_VENDAS5 10
+describe    SA_VENDAS5 Spam vendas 5
+
+body        SA_VENDAS6 /ganhos efetivos para|TECNOLOGIA DA NEGOCIAÇÃO|Habilidades de Relacionamento|Lembretes Importantes ao Negociar|Principais Diferenças nos Estilos|NEGOCIAÇÃO VIRTUAL|Código de abatimento|Company Virtual/i
+score       SA_VENDAS6 10
+describe    SA_VENDAS6 Spam vendas 6
+
+body        SA_VENDAS7 /procedimento de Atualização Cadastral|caso o procedimento não seja|será bloqueado no prazo|a partir da data desta|prazo para realização foi renovado|acesso aos serviços do Internet|via e-mail ser enviado/i
+score       SA_VENDAS7 10
+describe    SA_VENDAS7 Spam vendas 7
+
+header      SA_VENDAS8 Subject =~ /\bSeu novo site|Atualizacao Cadastral|ASSISTA AO REPLAY|PROFISSIONAL MAGNÉTICO|CLIQUE AQUI PARA ASSISTIR|TEM CUPOM AQUI|VEM DESCOBRIR|Lanterna Tática|Doberman|Canhão de Luz|Kit Paizão|Domingo Pede/i
+score       SA_VENDAS8 10
+describe    SA_VENDAS8 Spam vendas 8
+
+body        SA_VENDAS9 /com efeito imediato após o informativo|Banking será cancelado|Clique aqui para dar inicio|dispositivos inativos ou bloqueados|nas agências Banco do Brasil|dos documentos do titular da conta|sua última chance/i
+score       SA_VENDAS9 10
+describe    SA_VENDAS9 Spam vendas 9
+
+body        SA_VENDAS10 /atualização através dos links|o desbloqueio só poderá acontecer|ASSISTA AO REPLAY|PROFISSIONAL MAGNÉTICO|gostaria de fazer o treinamento|não conseguiu assistir ontem|CLIQUE AQUI PARA ASSISTIR|mente inabalável/i
+score       SA_VENDAS10 10
+describe    SA_VENDAS10 Spam vendas 10
+
+body        SA_VENDAS11 /realizado no prazo estipulado|Banco do Brasil não se responsabiliza|coisa que tava me chateando|esforço que coloquei nesse projeto|deixar ninguém para trás|treinamento Profissional Magnético|atrair clientes/i
+score       SA_VENDAS11 10
+describe    SA_VENDAS11 Spam vendas 11
+
+body        SA_VENDAS12 /as coisas que eu ensinei|qualquer ramo de negócio|assistir ao treinamento completo|produto ou serviço premium|fidelizar seus clientes|Roberto Shinyashiki|verdadeiro canhão de luz|vídeo demonstrativo|kit iraado/i
+score       SA_VENDAS12 10
+describe    SA_VENDAS12 Spam vendas 12
+
+body        SA_VENDAS12 /Dia do paizão|apresentar um grande lançamento|Para os primeiros CEM|aberto na escuridão|mais que os faróis|impressionante canhão|lanterna monstruosa|ela iluminando muito|Lanternas Mais Potentes|Caneta Luz Negra/i
+score       SA_VENDAS12 10
+describe    SA_VENDAS12 Spam vendas 12
+
+body        SA_VENDAS13 /vídeo detalhado mostrando|Lanterna Tática Doberman|entrega super rápida|SEEDSIDER|Central de Boletos|basta contratar o serviço|desenvolvimento de um site|Trabalhamos com as ferramentas|mais atuais do mercado/i
+score       SA_VENDAS13 10
+describe    SA_VENDAS13 Spam vendas 13
+
+body        SA_VENDAS14 /desenvolvedora Web|mais de 5 anos no mercado|território nacional e exterior|carteira de clientes satisfeitos|metodo de trabalho é muito simples|uma consulta sem compromisso|exclusivo para você|prazos e preços/i
+score       SA_VENDAS14 10
+describe    SA_VENDAS14 Spam vendas 14
+
+body        SA_VENDAS15 /TEORIA E PRÁTICA|WEBINAR ONLINE|VAGAS LIMITADAS|verbas de natureza salarial|Tipos de horas extras|Demais verbas trabalhistas|Afastamentos do trabalhador|INSS e IRRF e outros previstos|ABATIMENTO E30|CÓDIGO E30/i
+score       SA_VENDAS15 10
+describe    SA_VENDAS15 Spam vendas 15
+
+header      SA_PIX1 Subject =~ /\bVocê recebeu|dinheiro via Pix|Authentication Report|You appeared in|search this week|Al Khaimah Investment|Mohamed Sultan Al Qasimi|Excess Maximum Return Capital Profit|Comunicado Ita|GOLPE do DDA/i
 score       SA_PIX1 10
 describe    SA_PIX1 Spam Pix 1
 
-body        SA_PIX2 /ZIP:|Senha de arquivo:|Houve problema ao creditar o valor|para você via PIX|recebeu dinheiro via PIX|Pago Bank Transfer PIX|desbloqueio do seu credito de forma segura/i
+body        SA_PIX2 /ZIP:|Senha de arquivo:|Houve problema ao creditar o valor|para você via PIX|recebeu dinheiro via PIX|Pago Bank Transfer PIX|desbloqueio do seu credito de forma segura|Aproveite o bônus grátis|Seu CPF negativado/i
 score       SA_PIX2 10
 describe    SA_PIX2 Spam Pix 2
 
-body        SA_LIVELO1 /estamos parabenizando e disponibilizando|600Mil Pontos Livelo|VOCÊ GANHOU 600Mil pontos Livelo|fazer a ativação do Chat Online Bradesco|pela sua parceria junto ao Banco Bradesco/i
+body        SA_LIVELO1 /estamos parabenizando e disponibilizando|600Mil Pontos Livelo|VOCÊ GANHOU 600Mil pontos Livelo|fazer a ativação do Chat Online Bradesco|pela sua parceria junto ao Banco Bradesco|re-validate your account/i
 score       SA_LIVELO1 10
 describe    SA_LIVELO1 Spam livelo 1
 
-header      SA_LIVELO2 Subject =~ /\bVoce tem 600Mil|Pontos Livelo a resgatar|Documentos Recebidos. Cod|Estamos com a Ucrânia|Melissa Fatima Ali|Olá, você solicitou uma alteração às|undelivered mails on|VENDAS ABERTAS/i
+header      SA_LIVELO2 Subject =~ /\bVoce tem 600Mil|Pontos Livelo a resgatar|Documentos Recebidos. Cod|Estamos com a Ucrânia|Melissa Fatima Ali|você solicitou uma alteração|undelivered mails on|VENDAS ABERTAS|Letter Of Directives/i
 score       SA_LIVELO2 10
 describe    SA_LIVELO2 Spam livelo 2
 
-header      SA_LIVELO3 Subject =~ /\bSeus dados cadastrais|necessitam ser atualizados|Aprender mais Rápido Programação|Clube de Benefícios do Sam|Nossos Smart Drinks|OFERTA RELÂMPAGO|VALUE-ADDED SERVICES|HORECA distribution/i
+header      SA_LIVELO3 Subject =~ /\bSeus dados cadastrais|necessitam ser atualizados|Aprender mais Rápido Programação|Clube de Benefícios do Sam|Nossos Smart Drinks|OFERTA RELÂMPAGO|VALUE-ADDED SERVICES|HORECA distribution|Spende/i
 score       SA_LIVELO3 10
 describe    SA_LIVELO3 Spam livelo 3
 
-body        SA_PERSONALITE1 /cadastrar através deste e-mail junto ao Itaú Personnalité|MUDE AGORA PARA O PERSONNALITÉ|lhe desejando as boas vindas ao Itaú Personnalité|Revisao do cartao de debito pendente/i
+header      SA_LIVELO4 Subject =~ /\bSua empresa foi hackeada|IQVIA File Express|como os hackers podem alvejar|ataques ransoware|Seu CPF negativado|5 anos de Garantia|INTIMAÇÃO PARA COMPARECIMENTO|TESTEMUNHA|Evite a negativação/i
+score       SA_LIVELO4 10
+describe    SA_LIVELO4 Spam livelo 4
+
+header      SA_LIVELO5 Subject =~ /\bSua inscrição foi aprovada|MailBox Server-Timeout|Urgent Action Required|Webmail Manager|Voice jaime|VoiceMail will expire|Pending Undelivered Mail|Recipient: returning message to/i
+score       SA_LIVELO5 10
+describe    SA_LIVELO5 Spam livelo 5
+
+body        SA_LIVELO6 /informar que seu cartão|possibilidade de um bom limite|prestes a ser aprovado|Emprego Digital - Editorial|empregodigital|foi liberado para você|your account will be suspended|DNS account reset|Webmail Manager/i
+score       SA_LIVELO6 10
+describe    SA_LIVELO6 Spam livelo 6
+
+body        SA_PERSONALITE1 /cadastrar através deste e-mail junto ao Itaú Personnalité|MUDE AGORA PARA O PERSONNALITÉ|lhe desejando as boas vindas ao Itaú Personnalité|Revisao do cartao de debito pendente|Sua empresa foi hackeada/i
 score       SA_PERSONALITE1 10
 describe    SA_PERSONALITE1 Spam Itau Personalite 1
 
-body        SA_PERSONALITE2 /seu cartao de debito esta sem|realizar a verificacao de seguranca|manter seu cartao e seus dados financeiros seguros|revisao dos dados do seu cartao de debito sera realizado/i
+body        SA_PERSONALITE2 /seu cartao de debito esta|realizar a verificacao de seguranca|seu cartao e seus dados financeiros seguros|revisao dos dados do seu cartao de debito sera realizado|UN High Commission|VoiceMail will expire/i
 score       SA_PERSONALITE2 10
 describe    SA_PERSONALITE2 Spam Itau Personalite 2
 
@@ -713,23 +981,23 @@ body        SA_PERSONALITE3 /Olá, Cliente Itaú|selecionou seu CPF e vem lhe da
 score       SA_PERSONALITE3 10
 describe    SA_PERSONALITE3 Spam Itau Personalite 3
 
-body        SA_PERSONALITE4 /integrar ao segmento Itaú Personnalité|Mudando o seu segmento da sua conta hoje|o seu gerente Personalité entrará em contato|conta de e-mail que se recusam a atualizar sua conta/i
+body        SA_PERSONALITE4 /integrar ao segmento Itaú Personnalité|Mudando o seu segmento da sua conta hoje|o seu gerente Personalité entrará em contato|conta de e-mail que se recusam a atualizar sua conta|United Nations/i
 score       SA_PERSONALITE4 10
 describe    SA_PERSONALITE4 Spam Itau Personalite 4
 
-body        SA_SEGUROSBRADESCO1 /A MAIOR SEGURADORA PRIVADA DO BRASIL|muito mais benefícios para você, sua família e sua empresa|SOLICITE COTAÇÃO ACESSE|consultoria de planos de saúde está a sua disposição/i
+body        SA_SEGUROSBRADESCO1 /A MAIOR SEGURADORA PRIVADA DO BRASIL|muito mais benefícios para você, sua família e sua empresa|SOLICITE COTAÇÃO ACESSE|consultoria de planos de saúde está a sua disposição|como os hackers podem/i
 score       SA_SEGUROSBRADESCO1 10
 describe    SA_SEGUROSBRADESCO1 Spam Bradesco Seguros 1
 
-body        SA_SEGUROSBRADESCO2 /de se tornar cliente da BRADESCO SAÚDE|SOLICITAR COTAÇÃO BRADESCO AGORA|rápido e leva menos de 20 segundos|BRADESCO SAÚDE - FALE AGORA PELO WHATSAPP|undelivered mails/i
+body        SA_SEGUROSBRADESCO2 /de se tornar cliente da BRADESCO SAÚDE|SOLICITAR COTAÇÃO BRADESCO AGORA|rápido e leva menos de 20 segundos|BRADESCO SAÚDE - FALE AGORA PELO WHATSAPP|undelivered mails|Court of justice|at Hargue/i
 score       SA_SEGUROSBRADESCO2 10
 describe    SA_SEGUROSBRADESCO2 Spam Bradesco Seguros 2
 
-body        SA_UCRANIA /Estamos com a Ucrânia para apoiar sua liberdade|Agora aceitando doações de criptomoedas|BeautifulUkraine|We Aid Ukraine|apoiar sua liberdade e defender a democracia|mudar seu plano de saúde/i
+body        SA_UCRANIA /Estamos com a Ucrânia para apoiar sua liberdade|Agora aceitando doações de criptomoedas|BeautifulUkraine|We Aid Ukraine|apoiar sua liberdade e defender a democracia|mudar seu plano de saúde|Corrupt practices/i
 score       SA_UCRANIA 10
 describe    SA_UCRANIA Spam Ucrânia
 
-body        SA_PESCARIA1 /compartilhar más notícias com você|obtive acesso aos seus dispositivos|comecei a rastrear suas atividades|hackeei você e consegui acessar|já instalei o vírus Trojan|em bitcoin equivalente/i
+body        SA_PESCARIA1 /compartilhar más notícias com você|obtive acesso aos seus dispositivos|comecei a rastrear suas atividades|hackeei você e consegui acessar|já instalei o vírus Trojan|em bitcoin equivalente|Peter Rawlings/i
 score       SA_PESCARIA1 10
 describe    SA_PESCARIA1 Spam pescaria 1
 
@@ -737,7 +1005,7 @@ body        SA_PESCARIA2 /Eu baixei todas as suas informações|Tenho acesso a t
 score       SA_PESCARIA2 10
 describe    SA_PESCARIA2 Spam pescaria 2
 
-body        SA_PESCARIA3 /especificidade dos vídeos que você gosta de assistir|você sabe perfeitamente o que quero dizer|uma verdadeira catástrofe para você|excluirei todas essas coisas sujas|minha carteira bitcoin/i
+body        SA_PESCARIA3 /especificidade dos vídeos que você gosta de assistir|você sabe perfeitamente o que quero dizer|uma verdadeira catástrofe para você|excluirei todas essas coisas sujas|minha carteira bitcoin|ataques ransoware/i
 score       SA_PESCARIA3 10
 describe    SA_PESCARIA3 Spam pescaria 3
 
@@ -749,7 +1017,31 @@ body        SA_PESCARIA5 /trojan tem um recurso de controle remoto|comprar e tra
 score       SA_PESCARIA5 10
 describe    SA_PESCARIA5 Spam pescaria 5
 
-body        SA_VOIP1 /ALLG SOLUTIONS|pleno conhecimento de mercado de telecomunicações|Pioneira em serviços VoIP e uma das líderes globais na oferta|25 BILHÕES DE MINUTOS TRAFEGADOS EM REDE PRÓPRIA/i
+body        SA_PESCARIA6 /Olá, CARO CLIENTE|basta seguir três passos|fatura de serviços Vivo|abrir uma tela para baixar o app|Baixe o arquivo zip com|Clique para abrir o zip|instale o app dentro do zip|negativação do seu nome/i
+score       SA_PESCARIA6 10
+describe    SA_PESCARIA6 Spam pescaria 6
+
+body        SA_PESCARIA7 /Equipe Comercial da Construtora|te mostrar nossos benefícios|suas necessidades logísticas|fazer uma cotação é rapidinho|Pode integrar sua loja e commerce|Reembolso de consultas e exames|Sandra ghazi/i
+score       SA_PESCARIA7 10
+describe    SA_PESCARIA7 Spam pescaria 7
+
+body        SA_PESCARIA8 /Apps Development Company|Fiona Hughes|Marina Wenzel|Cheque em seu banco|Att Good day Dear|Alexandra Beltrán|para agendar uma chamada|pela graça de Senhor|viajando para a Índia|com redução de carência/i
+score       SA_PESCARIA8 10
+describe    SA_PESCARIA8 Spam pescaria 8
+
+header      SA_PESCARIA9 Subject =~ /\bcost for new app|DEUS TE ABENÇOE|God - bless You|Planos familiares e empresariais|Mariana Andrade|com 40% de redução|Nós queremos trabalhar com você|Podemos te ajudar|sair da inadimplencia/i
+score       SA_PESCARIA9 10
+describe    SA_PESCARIA9 Spam pescaria 9
+
+header      SA_PESCARIA10 Subject =~ /\bO segredo de ser|melhor seguro saúde do Brasil|Apps Development Company|para agendar uma chamada|pela graça de Senhor|Reembolso de consultas e exames|Experimente gratuitamente|SMART HEALTH/i
+score       SA_PESCARIA10 10
+describe    SA_PESCARIA10 Spam pescaria 10
+
+body        SA_PESCARIA11 /to tell you & it's very urgent|Experimente gratuitamente|a nossa plataforma|Emergência médica domiciliar|melhor operadora de saúde do país|Rede Credenciada e Referenciada|SMART HEALTH|simulador de saúde/i
+score       SA_PESCARIA11 10
+describe    SA_PESCARIA11 Spam pescaria 11
+
+body        SA_VOIP1 /ALLG SOLUTIONS|conhecimento de mercado de telecomunicações|Pioneira em serviços VoIP e uma das líderes globais na oferta|25 BILHÕES DE MINUTOS TRAFEGADOS EM REDE PRÓPRIA|quarantined messages|Mega-Gewinnerin/i
 score       SA_VOIP1 10
 describe    SA_VOIP1 Spam Voip 1
 
@@ -757,7 +1049,7 @@ header      SA_CIDADANIA1 Subject =~ /\bGuia prático para|cidadania italiana|Er
 score       SA_CIDADANIA1 10
 describe    SA_CIDADANIA1 Spam cidadania italiana 1
 
-body        SA_CIDADANIA2 /durante a busca dos meus documentos|passei por todos esses processos de pesquisa|to access on hold messages|Curso de Italiano|Silvano Formentin|Nos vemos no Curso|Arrivederci/i
+body        SA_CIDADANIA2 /durante a busca dos meus documentos|por todos esses processos de pesquisa|to access on hold messages|Curso de Italiano|Silvano Formentin|Nos vemos no Curso|Arrivederci|Attn: Beneficiary|HOJE do Serasa/i
 score       SA_CIDADANIA2 10
 describe    SA_CIDADANIA2 Spam cidadania italiana 2
 
@@ -765,31 +1057,35 @@ header      SA_BITCOINS1 Subject =~ /\bMetaMask|Help us prevent your|wallet from
 score       SA_BITCOINS1 10
 describe    SA_BITCOINS1 Spam carteiras bitcoin 1
 
-header      SA_MERCADOPAGO1 Subject =~ /\bverifique o acesso|sua conta do Mercado Pago|[aviso] Seus pontos vencem|Envio retido, invoice de|ACESSO INCOMUM - PROTOCOLO|teve um acesso suspeito|de limpar o seu cpf/i
+body        SA_BITCOINS2 /uma ferramenta chegou|ganhar criptomoedas|operar uma Metamask|dinheiro na Web3|Metaverso|Guilherme Grillo|Danki Code|comprar e economizar|A SOLUTION3|um ERP completo|ser um revendedor|Temos ótimas condições/i
+score       SA_BITCOINS2 10
+describe    SA_BITCOINS2 Spam carteiras bitcoin 2
+
+header      SA_MERCADOPAGO1 Subject =~ /\bverifique o acesso|sua conta do Mercado Pago|[aviso] Seus pontos vencem|Envio retido, invoice de|ACESSO INCOMUM - PROTOCOLO|teve um acesso suspeito|de limpar o seu cpf|quarantined messages/i
 score       SA_MERCADOPAGO1 10
 describe    SA_MERCADOPAGO1 Phishing mercado pago 1
 
-header      SA_MERCADOPAGO2 Subject =~ /\bCabide Mágico|Organizador de Guarda Roupa|Tabela 2022 para Empresas e Empresários|Resgate seus pontos imediatamente|Formação de Consultor Interno de RH|Upgrade Email Quota/i
+header      SA_MERCADOPAGO2 Subject =~ /\bCabide Mágico|Organizador Guarda Roupa|Tabela 2022 para Empresas|Resgate seus pontos imediatamente|Formação de Consultor Interno de RH|Upgrade Email Quota|REFIS – Mutirão Fiscal|acceptable/i
 score       SA_MERCADOPAGO2 10
 describe    SA_MERCADOPAGO2 Phishing mercado pago 2
 
-body        SA_MERCADOPAGO3 /Dashboards com Dados do Protheus|faltam apenas 5 dias para nossa Live|Aprenda uma das profissões que mais crescem|O PODER DOS DADOS EM SUAS MÃOS|O mercado de tecnologia cresceu mais/i
+body        SA_MERCADOPAGO3 /Dashboards com Dados do Protheus|faltam apenas 5 dias para nossa Live|Aprenda uma das profissões que mais crescem|O PODER DOS DADOS EM SUAS MÃOS|O mercado de tecnologia cresceu mais|Donald King/i
 score       SA_MERCADOPAGO3 10
 describe    SA_MERCADOPAGO3 Phishing mercado pago 3
 
-body        SA_SESC1 /Para garantir que nossos e-mails cheguem à sua caixa|respeita a sua privacidade e é contra o spam na rede|Se você não deseja mais os e-mail dessa lista|cancele sua inscrição no final/i
+body        SA_SESC1 /Para garantir que nossos e-mails cheguem à sua caixa|respeita a sua privacidade e é contra o spam na rede|Se você não deseja mais os e-mail dessa lista|cancele sua inscrição no final|seeking your assistance/i
 score       SA_SESC1 10
 describe    SA_SESC1 Spam SESC 1
 
-body        SA_TVBOX1 /oportunidade de adquirir o Sibutramin|Reduzir medidas da barriga|apertadas e do inchaço|de pura gordura profunda|se matar na academia|dados de empresas de todos os ramos/i
+body        SA_TVBOX1 /oportunidade de adquirir o Sibutramin|Reduzir medidas da barriga|apertadas e do inchaço|de pura gordura profunda|se matar na academia|dados de empresas de todos os ramos|conta de webmail atualizada/i
 score       SA_TVBOX1 10
 describe    SA_TVBOX1 Spam TVbox 1
 
-header      SA_TVBOX2 Subject =~ /\bBox Tv|BoxTv|TVBOX|TV Box|Todos Canais Liberados|Sem Mensalidades|Venda de Leads|Lista de Clientes|Todas as Mães de Sua Vida|sua vida dependesse dessa decisão|Não deixe de nos Vender/i
+header      SA_TVBOX2 Subject =~ /\bBox Tv|BoxTv|TVBOX|TV Box|Todos Canais Liberados|Sem Mensalidades|Venda de Leads|Lista de Clientes|Todas as Mães de Sua Vida|sua vida dependesse dessa decisão|Não deixe de nos Vender|StoryScaling/i
 score       SA_TVBOX2 10
 describe    SA_TVBOX2 Spam TVbox 2
 
-header      SA_TVBOX3 Subject =~ /\bResultados de sua Equipe|Vem GARANTIR o presente perfeito|PERCA PESO SEM PERDER SAÚDE|Sibutracaps acelera o metabolismo|Reduz barriga e flacidez|Sibutracaps proporciona a perca/i
+header      SA_TVBOX3 Subject =~ /\bResultados de sua Equipe|Vem GARANTIR o presente perfeito|PERCA PESO SEM PERDER SAÚDE|Sibutracaps acelera o metabolismo|Reduz barriga e flacidez|Sibutracaps proporciona a perca|HOJE do Serasa/i
 score       SA_TVBOX3 10
 describe    SA_TVBOX3 Spam TVbox 3
 
@@ -809,9 +1105,21 @@ body        SA_GRINGO1 /humanitarian project proposal request|have been sufferin
 score       SA_GRINGO1 10
 describe    SA_GRINGO1 Spam americano 2
 
-body        SA_DRONES1 /drone's battery lasts for 30 minutes|Wind resistance is rated at an 8|The battery has a capacity of 7.4V 3000mAh|Dimensions of the drone|Pricing for our drones|For three drones at/i
+body        SA_DRONES1 /drone's battery lasts for 30 minutes|Wind resistance is rated at an 8|The battery has a capacity of 7.4V 3000mAh|Dimensions of the drone|Pricing for our drones|For three drones at|não chegará pelos Correios/i
 score       SA_DRONES1 10
 describe    SA_DRONES1 Spam Drones 1
+
+header      SA_SHAREPOINTCERT1 Subject =~ /\bSHAREPOINT AGREEMENT|Docusign Agreement|Action request on|REVIEW DOCUMENTS|Câmera Veicular|Full HD 1080P|your Administrator|Combo Net Claro|câmeras veiculares|Fill HD 1080P/i
+score       SA_SHAREPOINTCERT1 10
+describe    SA_SHAREPOINTCERT1 Phising Sharepoint e Certsign 1
+
+body        SA_SHAREPOINTCERT2 /REVIEW DOCUMENTS|SHAREPOINT AGREEMENT|Docusign Agreement|find the original contract agreement|sign via Docusign|completion of the agreement|Signature Service|contact the sender with your request/i
+score       SA_SHAREPOINTCERT2 10
+describe    SA_SHAREPOINTCERT2 Phising Sharepoint e Certsign 2
+
+body        SA_SHAREPOINTCERT3 /18Os juízes investigarão|falso testemunho|testemunha mentiu|deem-lhe a punição|viagens muito mais seguras|câmeras veiculares|Fill HD 1080P|usadas como evidências|imagens de forma automatizada/i
+score       SA_SHAREPOINTCERT3 10
+describe    SA_SHAREPOINTCERT3 Phising Sharepoint e Certsign 3
 
 body        SA_EXPAND1 /Nossa empresa está expandindo sua presença global|investindo em projetos fora da Turquia|está preocupado financeiramente com a Situação Pandêmica|empréstimo comercial com taxa de juros de|Ruslan Niroop/i
 score       SA_EXPAND1 10
@@ -836,6 +1144,22 @@ describe    SA_TVSKY3 Spam Sky 3
 body        SA_VIDEOPROD1 /Somos uma PRODUTORA com mais de 20 anos|Produzimos vídeos e fotos nos seguintes segmentos|Possuímos parceria com estúdio completo|equipes especializadas, criativas e dedicadas, para atender você/i
 score       SA_VIDEOPROD1 10
 describe    SA_VIDEOPROD1 Spam produtora de video 1
+
+body        SA_INTIMACAO1 /INTIMAÇÃO PARA COMPARECIMENTO|COMPARECIMENTO EM AUDIÊNCIA|Nos termos do art. 455|para INTIMAR Vossa Senhoria|caso Vossa Senhoria|deixe de comparecer sem motivo|determinar a condução coercitiva/i
+score       SA_INTIMACAO1 10
+describe    SA_INTIMACAO1 Spam intimação judicial 1
+
+body        SA_INTIMACAO2 /respondendo por estas despesas|na forma preconizada pelo art|5º do Código de Processo Civil|na qualidade de testemunha|à audiência que será realizada|poderá o d. juízo determinar|INTIMAÇÃO PARA/i
+score       SA_INTIMACAO2 10
+describe    SA_INTIMACAO2 Spam intimação judicial 2
+
+body        SA_INTIMACAO3 /Caro Contribuinte|entrega do Imposto de renda|problemas relacionados ao seu CPF|devem ser regularizados com urgência|demonstrativo de pendências|passiveis de regularização|suspensão de seu CPF|Lei 10.522/i
+score       SA_INTIMACAO3 10
+describe    SA_INTIMACAO3 Spam intimação judicial 3
+
+header      SA_INTIMACAO4 Subject =~ /\bPENDENCIAS IR - RECEITA FEDERAL|Novo Método que|Enquanto você Dorme|Criptomoeda|Criptomoedas|Metamask|Danki Code/i
+score       SA_INTIMACAO4 10
+describe    SA_INTIMACAO4 Spam intimação judicial 4
 
 header      SA_SPAM_FROMDUPLO From =~ /.+\@.+\@/i
 score       SA_SPAM_FROMDUPLO 10
@@ -868,6 +1192,10 @@ describe    SA_VIRUSZIP6 Phishing contendo virus zipado com senha 6
 header      SA_VIRUSZIP7 Subject =~ /\bSegue NFE para [A-Za-z0-9_-]+\@/
 score       SA_VIRUSZIP7 10
 describe    SA_VIRUSZIP7 Phishing contendo virus zipado com senha 7
+
+header      SA_VIRUSZIP8 Subject =~ /\bNotificação urgente - [A-Za-z0-9_-]+\@/
+score       SA_VIRUSZIP8 10
+describe    SA_VIRUSZIP8 Phishing contendo virus zipado com senha 8
 
 header      __SUBJ_PAGAMENTO Subject =~ /\bPagamento do pedido/i
 mimeheader  __MIME_ANEXOS  Content-Type =~ /\.(zip|rar|tar|gz)\b/i
@@ -982,6 +1310,90 @@ describe    SA_PIPEFY URL hospedando Malware 19
 uri         SA_PAOLLABP /\.paollabp.com.br(?:\/|$)/i
 score       SA_PAOLLABP 10
 describe    SA_PAOLLABP URL hospedando Malware 20
+
+uri         SA_GAPIS /\.googleapis.com(?:\/|$)/i
+score       SA_GAPIS 10
+describe    SA_GAPIS URL hospedando Malware 21
+
+uri         SA_LINK /\.link(?:\/|$)/i
+score       SA_LINK 10
+describe    SA_LINK URL hospedando Malware 22
+
+uri         SA_IMGBB /\.imgbb.com(?:\/|$)/i
+score       SA_IMGBB 10
+describe    SA_IMGBB URL hospedando Malware 23
+
+uri         SA_BFORMS /\.bforms.com(?:\/|$)/i
+score       SA_BFORMS 10
+describe    SA_BFORMS URL hospedando Malware 24
+
+uri         SA_REST /\.rest(?:\/|$)/i
+score       SA_REST 10
+describe    SA_REST URL hospedando Malware 25
+
+uri         SA_ESPENTO /\.espentocargobarus.com(?:\/|$)/i
+score       SA_ESPENTO 10
+describe    SA_ESPENTO URL hospedando Malware 26
+
+uri         SA_SFORMS /\.sibforms.com(?:\/|$)/i
+score       SA_SFORMS 10
+describe    SA_SFORMS URL hospedando Malware 27
+
+uri         SA_AZUREAPPS /\.cloudapp.azure.com(?:\/|$)/i
+score       SA_AZUREAPPS 10
+describe    SA_AZUREAPPS URL hospedando Malware 28
+
+uri         SA_CLOUDTLD /\.cloud(?:\/|$)/i
+score       SA_CLOUDTLD 10
+describe    SA_CLOUDTLD URL hospedando Malware 29
+
+uri         SA_LINKTLD /\.link(?:\/|$)/i
+score       SA_LINKTLD 10
+describe    SA_LINKTLD URL hospedando Malware 30
+
+uri         SA_BITRIX24 /\.bitrix24.site(?:\/|$)/i
+score       SA_BITRIX24 10
+describe    SA_BITRIX24 URL hospedando Malware 31
+
+uri         SA_APPSPOT /\.appspot.com(?:\/|$)/i
+score       SA_APPSPOT 10
+describe    SA_APPSPOT URL hospedando Malware 32
+
+uri         SA_IRRECEITA /\.receita-federal-gov.com(?:\/|$)/i
+score       SA_IRRECEITA 10
+describe    SA_IRRECEITA URL hospedando Malware 33
+
+uri         SA_ENCURGOOGLE /\.app.goo.gl(?:\/|$)/i
+score       SA_ENCURGOOGLE 10
+describe    SA_ENCURGOOGLE URL hospedando Malware 34
+
+uri         SA_SRVBR /\.srv.br(?:\/|$)/i
+score       SA_SRVBR 10
+describe    SA_SRVBR URL hospedando Malware 35
+
+uri         SA_MOBILIPOR /\.mobiliportale.com(?:\/|$)/i
+score       SA_MOBILIPOR 10
+describe    SA_MOBILIPOR URL hospedando Malware 36
+
+uri         SA_SECURITYTAC /\.securitytactics.com(?:\/|$)/i
+score       SA_SECURITYTAC 10
+describe    SA_SECURITYTAC URL hospedando Malware 37
+
+uri         SA_BDAIAT /\.bdaiat.com(?:\/|$)/i
+score       SA_BDAIAT 10
+describe    SA_BDAIAT URL hospedando Malware 38
+
+uri         SA_SIASKY /\.siasky.net(?:\/|$)/i
+score       SA_SIASKY 10
+describe    SA_SIASKY URL hospedando Malware 39
+
+uri         SA_MAILJETLINKS /\.mailjet.com(?:\/|$)/i
+score       SA_MAILJETLINKS 10
+describe    SA_MAILJETLINKS URL hospedando Malware 40
+
+uri         SA_WEBHOSTAPP /\.000webhostapp.com(?:\/|$)/i
+score       SA_WEBHOSTAPP 10
+describe    SA_WEBHOSTAPP URL hospedando Malware 41
 
 uri         SA_LISTMANAGER /\.list-manage.com(?:\/|$)/i
 score       SA_LISTMANAGER 10
