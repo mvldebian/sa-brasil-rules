@@ -81,7 +81,7 @@ body        SA_SPAMGERAL4 /Emails sent to you are not delivered when your inbox|
 score       SA_SPAMGERAL4 30
 describe    SA_SPAMGERAL4 Spam Geral 4
 
-header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota|Notificao Extrajudicial|Tentativa de entrega sem sucesso|Bradesco Saúde é Mais Economia|A capacidade disponível em seu webmail|Stuttgart Porsche|Bitcoin Deposit|Atendemos pelas operadoras TIM|REGISTRO DE EMAIL OBRIGATÓRIO|Aceitamos Picpay|Corpo de Bombeiros - Vencimento de Vistoria|Pedido (/i
+header      SA_SPAMGERAL5 Subject =~ /\bThe mailbox has reached your quota|Notificao Extrajudicial|Tentativa de entrega sem sucesso|Bradesco Saúde é Mais Economia|A capacidade disponível em seu webmail|Stuttgart Porsche|Bitcoin Deposit|Atendemos pelas operadoras TIM|REGISTRO DE EMAIL OBRIGATÓRIO|Aceitamos Picpay|Corpo de Bombeiros - Vencimento de Vistoria|Pedido/i
 score       SA_SPAMGERAL5 40
 describe    SA_SPAMGERAL5 Spam Geral 5
 
@@ -89,11 +89,11 @@ header      SA_SPAMGERAL6 Subject =~ /\bSenha Vencida|Altere Sua Senha|Alerta: S
 score       SA_SPAMGERAL6 40
 describe    SA_SPAMGERAL6 Spam Geral 6
 
-body        SA_SPAMGERAL7 /tentativa de acesso não identificada em sua conta|senha precisa ser trocada o mais breve|Senha Vencida|conta de e-mail poderá ser desativada definitivamente e seus dados apagados|Jogo NFT|Commerce Apps|seus pontos creditados na sua conta|Business Apps|interested in Developing a Mobile|Y؜o؜؜u؜؜؜r؜ do؜؜m؜؜؜a؜i؜n؜ ؜؜؜n؜a؜m؜e؜؜ ؜؜؜ha؜s؜؜ b؜ee؜؜n؜ ؜e؜xp؜؜؜i؜r؜؜؜e؜d/i
+body        SA_SPAMGERAL7 /tentativa de acesso não identificada em sua conta|senha precisa ser trocada o mais breve|Senha Vencida|conta de e-mail poderá ser desativada definitivamente e seus dados apagados|Jogo NFT|Commerce Apps|seus pontos creditados na sua conta|Business Apps|interested in Developing a Mobile|Your domain name has been expired/i
 score       SA_SPAMGERAL7 10
 describe    SA_SPAMGERAL7 Spam Geral 7
 
-body        SA_SPAMGERAL8 /agências exclusivas Itaú Personnalité|as modalidades acima já estão disponíveis para você|agências exclusivas e gerente disponível 24h por dia|boas vindas ao Itaú Personnalité|Blockchain Apps|Poggio Maru|working with an Indian based company|intensive experience in creating apps|Travel App|U؜p؜da؜t؜e؜ ؜i؜t ؜no؜w ؜o؜r ؜r؜isk ؜lo؜s؜i؜ng ؜y؜ou؜r p؜roduct؜s|OzempiGotas/i
+body        SA_SPAMGERAL8 /agências exclusivas Itaú Personnalité|as modalidades acima já estão disponíveis para você|agências exclusivas e gerente disponível 24h por dia|boas vindas ao Itaú Personnalité|Blockchain Apps|Poggio Maru|working with an Indian based company|intensive experience in creating apps|Travel App|Update it now or risk losing your products|OzempiGotas/i
 score       SA_SPAMGERAL8 20
 describe    SA_SPAMGERAL8 Spam Geral 8
 
@@ -345,9 +345,9 @@ body        SA_OPERADORAS2 /vantagens de ser um cliente Oi|A Malta|empresa parce
 score       SA_OPERADORAS2 10
 describe    SA_OPERADORAS2 Phishing operadoras 2
 
-body        SA_OPERADORAS3 /Acreditamos que tenha ocorrido|algum imprevisto com o pagamento de sua conta|pois identificamos em nosso sistema|que ha valores em aberto|relacionado ao seu CPF/CNPJ|registrar-se na nova interface|Share_Point|COM TECNOLOGIA NANO|Compra no credito de|Emily Blunt|John Krasinski|Como forma de equalizar o erro de nosso software/i
-score       SA_OPERADORAS3 30
-describe    SA_OPERADORAS3 Phishing operadoras 3
+body        SA_OPERADORAS3   m{Acreditamos que tenha ocorrido|algum imprevisto com o pagamento de sua conta|pois identificamos em nosso sistema|que ha valores em aberto|relacionado ao seu CPF/CNPJ|registrar-se na nova interface|Share_Point|COM TECNOLOGIA NANO|Compra no credito de|Emily Blunt|John Krasinski|Como forma de equalizar o erro de nosso software}i
+score       SA_OPERADORAS3   30
+describe    SA_OPERADORAS3   Phishing operadoras 3
 
 body        SA_OPERADORAS4 /Observacao: Se necessario efetuaremos a cobranca|via debito automatico DDA|evitar o bloqueio de sua linha|Cobranca Vivo: Demonstrativo Fat|Top quality, Lowest price|Suporte administrativo|Nigerian Liquefied|Gas is really expensive|de informar que a nota fiscal referente|Como forma de neutralizar o erro de nosso sistema/i
 score       SA_OPERADORAS4 30
@@ -417,7 +417,7 @@ body        SA_FINANCEIRAS3 /crédito pré-aprovado pra fechar|um novo contrato 
 score       SA_FINANCEIRAS3 30
 describe    SA_FINANCEIRAS3 Spam Financeiras 3
 
-body        SA_FINANCEIRAS4 /empresa possuindo um banco de dados|fazem sentido ao usuário e que auxiliam|DEMONSTRAÇÃO GRATUITA|nossos especialistas estão|Duncan Mackinnon|Executive Director|Bank of England|Blessing Of Allah|Password Expiry Notification|Account will be  automatically deleted after|Ma­il­b­ox Su­pp­o­rt|Kristalina Georgieva|previous conversation with my colleague/i
+body        SA_FINANCEIRAS4 /empresa possuindo um banco de dados|fazem sentido ao usuário e que auxiliam|DEMONSTRAÇÃO GRATUITA|nossos especialistas estão|Duncan Mackinnon|Executive Director|Bank of England|Blessing Of Allah|Password Expiry Notification|Account will be  automatically deleted after|Mailbox Support|Kristalina Georgieva|previous conversation with my colleague/i
 score       SA_FINANCEIRAS4 30
 describe    SA_FINANCEIRAS4 Spam Financeiras 4
 
@@ -617,11 +617,11 @@ body        SA_JUNKSPAM31 /transferir alguns fundos|Advogado I. Williams|20 milh
 score       SA_JUNKSPAM31 10
 describe    SA_JUNKSPAM31 Junk Spam 31
 
-body        SA_JUNKSPAM32 /has been automatically renewed|Advanced Network and Device Protection|auto charge every year unless|Helpline Center Head|The subscription amount of|P­­­­a­­­­­s­­­­­s­­­­­­wo­­­­r­­­­d E­­­­­­­x­­p­i­­­r­­y no­­­t­i­c­­e|re­­­t­­a­­­i­­­n or ch­­­an­­ge your p­­­­a­­­­s­­­­s­­­­­wo­­­­­r­d|Garcia Charles Gilbert|Aconselhamos que você esvazie e atualize sua conta|Vuelva a confirmar la propiedad de la cuenta|Account security check/i
+body        SA_JUNKSPAM32 /has been automatically renewed|Advanced Network and Device Protection|auto charge every year unless|Helpline Center Head|The subscription amount of|Password Expiry notice|retain or change your password|Garcia Charles Gilbert|Aconselhamos que você esvazie e atualize sua conta|Vuelva a confirmar la propiedad de la cuenta|Account security check/i
 score       SA_JUNKSPAM32 10
 describe    SA_JUNKSPAM32 Junk Spam 32
 
-body        SA_JUNKSPAM33 /b­­u­­t­­to­­n b­­e­­l­­ow to re­­ta­­in c­­u­­rr­­­en­t p­­­a­­­s­­­s­­­wo­­­r­­d|re­­­t­­a­­­i­­­n or ch­­­an­­ge your p­­­­a­­­­s­­­­s­­­­­wo­­­­­r­d no­­­w|You are urgently adviced to|av­­­­oi­­­d lo­­g­­­­­in i­­­s­­­s­­­ue­s w­­­i­­­t­­h|a­­­­l­­­­l a­­­­p­­­­p­­­s r­­­­e­­­l­­­a­­­te­­d to yo­­­ur ac­­­c­o­­u­­n­­t|b­­u­­t­­to­­n b­­e­­l­­ow to|re­­ta­­in c­­u­­rr­­­en­t p­­­a­­­s­­­s­­­wo­­­r­­d|La Cantera Parkway Bldg|Programa de Pontos Bradesco: Voce com Pontos Livelo|Presidente do FMI|Account Security Check|hoje para manter sua senha/i
+body        SA_JUNKSPAM33 /button below to retain current password|retain or change your password now|You are urgently adviced to|avoid login issues with|all apps related to your account|button below to|retain current password|La Cantera Parkway Bldg|Programa de Pontos Bradesco: Voce com Pontos Livelo|Presidente do FMI|Account Security Check|hoje para manter sua senha/i
 score       SA_JUNKSPAM33 10
 describe    SA_JUNKSPAM33 Junk Spam 33
 
@@ -973,7 +973,7 @@ body        SA_ENGLISH4 /is scheduled to expire|continue using this email|kindly
 score       SA_ENGLISH4 30
 describe    SA_ENGLISH4 Spam geral em inglês 4
 
-body        SA_PROCESSO1 /INTIMAÇÃO da parte executada|acrescidas de eventuais custas processuais|Em "ANEXO" - Intimação Classe|apresentar impugnação|atualizar sua senha atual|SUA PRISÃO EM CURSO|want my bank management|Time LEVE ASSET|fazer as necessidades no lugar certo|seu amor para um cantinho especial|Fountainbrook Blvd Apt|Sa­­­­­­­­­­­­­­­­bre­­­­­­­­­­­­­­­­ Suppo­­­­­­­­­­­­rt|Administrator Service/i
+body        SA_PROCESSO1 /INTIMAÇÃO da parte executada|acrescidas de eventuais custas processuais|Em "ANEXO" - Intimação Classe|apresentar impugnação|atualizar sua senha atual|SUA PRISÃO EM CURSO|want my bank management|Time LEVE ASSET|fazer as necessidades no lugar certo|seu amor para um cantinho especial|Fountainbrook Blvd Apt|Sabre Support|Administrator Service/i
 score       SA_PROCESSO1 10
 describe    SA_PROCESSO1 Phishing Processo Justiça 1
 
@@ -989,7 +989,7 @@ body        SA_PROCESSO4 /contra menores em sites privados|A SUA CONVOCAÇÃO PA
 score       SA_PROCESSO4 30
 describe    SA_PROCESSO4 Phishing Processo Justiça 4
 
-body        SA_VIDAFINANCEIRA1 /Rosângela Carvalho|Vizale Soluções Administrativas|Consultoria de Crédito e Serviços|Órgãos de Proteção ao Crédito|passam por dificuldades financeiras|excelência recuperando o nome da pessoa|Um novo dispositivo conectou a conta|Viaje com a família pra um destino diferente|CRIMES CIBERNÉTICOS do FBI|Sa­­­­­­­­­­­­­­­­bre­­­­­­­­­­­­­­­­ Suppo­­­­­­­­­­­­rt|Segue lista de desligamentos/i
+body        SA_VIDAFINANCEIRA1 /Rosângela Carvalho|Vizale Soluções Administrativas|Consultoria de Crédito e Serviços|Órgãos de Proteção ao Crédito|passam por dificuldades financeiras|excelência recuperando o nome da pessoa|Um novo dispositivo conectou a conta|Viaje com a família pra um destino diferente|CRIMES CIBERNÉTICOS do FBI|Sabre Support|Segue lista de desligamentos/i
 score       SA_VIDAFINANCEIRA1 30
 describe    SA_VIDAFINANCEIRA1 Spam vida financeira 1
 
@@ -1585,7 +1585,7 @@ body        SA_PESCARIA18 /Grandes empresas fazem|E-mail Marketing|Envio de e-ma
 score       SA_PESCARIA18 30
 describe    SA_PESCARIA18 Spam pescaria 18
 
-body        SA_PESCARIA19 /refe‍rente ao Re‍gist­ro do|im‌p‍o‌rt‍a­nte o re­gi​s­t​ro garan​t​i‌n‌do|a pr‍opr​i​e؜da‍d‌e do nome|evitan؜do que um te​r​cei­r‍o ve​n‌h­a|con​t​a​t؜o com no​sso SAC infor­ma​ndo|RegistraCom|Comprobante Fiscal digital|Se Anexa el seguiente|WARNING FROM CENTRAL|BANK Of NIGERIA|Um mega desconto para voce viajar|Sindicato pdf foi assinado por todos|vossas actividades ilegais/i
+body        SA_PESCARIA19 /referente ao Registro do|importante o registro garantindo|a propriedade do nome|evitando que um terceiro venha|contato com nosso SAC informando|RegistraCom|Comprobante Fiscal digital|Se Anexa el seguiente|WARNING FROM CENTRAL|BANK Of NIGERIA|Um mega desconto para voce viajar|Sindicato pdf foi assinado por todos|vossas actividades ilegais/i
 score       SA_PESCARIA19 10
 describe    SA_PESCARIA19 Spam pescaria 19
 
@@ -3869,9 +3869,9 @@ header      SA_TRASH507 Subject =~ /\bCopo Termico|Cerveja Polar|473ML por|ate 6
 score       SA_TRASH507 80
 describe    SA_TRASH507 Spam Trash geral 507
 
-body        SA_TRASH506 /Abra em um computador Windows|Em desfavor do comunicado|Segue abaixo todos os detalhes sobre o mesmo|Curso de ingles e espanhol|Morei nos EUA|4 anos falo fluente|Favor de no responder este mensaje|Orden de Pago|Ghanaian man married|Tema Branch|Use the link below to access the Power Point|para final de ano natal e ano novo|Advogados Foronda/i
-score       SA_TRASH506 30
-describe    SA_TRASH506 Spam Trash geral 506
+body        SA_TRASH506B /Abra em um computador Windows|Em desfavor do comunicado|Segue abaixo todos os detalhes sobre o mesmo|Curso de ingles e espanhol|Morei nos EUA|4 anos falo fluente|Favor de no responder este mensaje|Orden de Pago|Ghanaian man married|Tema Branch|Use the link below to access the Power Point|para final de ano natal e ano novo|Advogados Foronda/i
+score       SA_TRASH506B 30
+describe    SA_TRASH506B Spam Trash geral 506B
 
 body        SA_TRASH507 /Estimado Cliente|del presente le notificamos que|usted ha girado instrucciones|para realizar la siguiente|Este correo es exclusivamente de|y nos ponemos a sus|Powered by Thinkific|Thinkific|Himalayan ice hack|Williams Anderson|Sent via Cloze|This mail grants access to this item|Linaldo Lima|ingles dez dos meus 14 anos|Cadastral Pendente - Protocolo/i
 score       SA_TRASH507 30
@@ -3897,13 +3897,13 @@ body        SA_TRASH512 /Seu sistema foi hackeado|Todos os dados do seu disposit
 score       SA_TRASH512 30
 describe    SA_TRASH512 Spam Trash geral 512
 
-body        SA_TRASH512 /Posso ver toda a lista de seus contatos|do telefone e de todas as redes sociais|para toda a lista de seus contatos|se masturba|e-mail e dos redes sociais com um clique|Transfira 1200 USD|minha carteira bitcoin|Bradesco Diamond|Caro vencedor|PROCURANDO SUA AJUDA|Miss Michelle|Perry Wealth|fomos autorizados pelo BANCO DE INVESTIMENTO/i
-score       SA_TRASH512 30
-describe    SA_TRASH512 Spam Trash geral 512
+body        SA_TRASH512B /Posso ver toda a lista de seus contatos|do telefone e de todas as redes sociais|para toda a lista de seus contatos|se masturba|e-mail e dos redes sociais com um clique|Transfira 1200 USD|minha carteira bitcoin|Bradesco Diamond|Caro vencedor|PROCURANDO SUA AJUDA|Miss Michelle|Perry Wealth|fomos autorizados pelo BANCO DE INVESTIMENTO/i
+score       SA_TRASH512B 30
+describe    SA_TRASH512B Spam Trash geral 512B
 
-body        SA_TRASH513 /posso enviar os dados de seus e-mails|e mensageiros para todo o mundo|quiser evitar esse desenvolvimento de eventos|escreva na caixa de pesquisa do Google|Comprar bitcoin|BTC Wallet|senhas nas redes sociais|deliverability problems and data loss|Protocolo Banco Central do Bradesco|receive confirmation within the aforementioned period/i
-score       SA_TRASH513 30
-describe    SA_TRASH513 Spam Trash geral 513
+body        SA_TRASH513B /posso enviar os dados de seus e-mails|e mensageiros para todo o mundo|quiser evitar esse desenvolvimento de eventos|escreva na caixa de pesquisa do Google|Comprar bitcoin|BTC Wallet|senhas nas redes sociais|deliverability problems and data loss|Protocolo Banco Central do Bradesco|receive confirmation within the aforementioned period/i
+score       SA_TRASH513B 30
+describe    SA_TRASH513B Spam Trash geral 513B
 
 header      SA_TRASH514 Subject =~ /\bAlerta armazenamento|Limite excedido|Putut Endro|Andanawarih|Portable Wi-Fi Routers|The perfect romantic rose|gift is here|to ensure your loved|one feels truly loved|Bradesco 40|Breakfast Mistake|Atualize sua conta para Diamond|Compra com cartao credito aprovado|UNIPESSOAL LTDA|Comprobante Electronico|Proof of Payment|Nao conseguimos processar seus dados|Sua recompensa de|30 dias ou menos|Domine o Excel|gratuito no Instagram/i
 score       SA_TRASH514 40
@@ -3913,9 +3913,9 @@ header      SA_TRASH515 Subject =~ /\bUnimed Nova tabela 40|Vem pra Unimed|3 bon
 score       SA_TRASH515 40
 describe    SA_TRASH515 Spam Trash geral 515
 
-body        SA_TRASH516 /Seu e-mail possui a capacidade de armazenamento|com possibilidade de aumentar para|30GB ou 50GB|Limite excedido|caso a conta seja bloqueada|enviar ou receber novas mensagens|Putut Endro Andanawarih|BNI Asset|Windows Administrator shared the|bloqueamos sua conta porque foi considerada uma|FMI a investigar o motivo|DADOS DE EMPRESAS PREMIUM/i
-score       SA_TRASH516 30
-describe    SA_TRASH516 Spam Trash geral 516
+body        SA_TRASH516B /Seu e-mail possui a capacidade de armazenamento|com possibilidade de aumentar para|30GB ou 50GB|Limite excedido|caso a conta seja bloqueada|enviar ou receber novas mensagens|Putut Endro Andanawarih|BNI Asset|Windows Administrator shared the|bloqueamos sua conta porque foi considerada uma|FMI a investigar o motivo|DADOS DE EMPRESAS PREMIUM/i
+score       SA_TRASH516B 30
+describe    SA_TRASH516B Spam Trash geral 516B
 
 header      SA_TRASH517 Subject =~ /\bLembrete de vencimento de|Empresarial em Rede Nacional|Maior Economia|SLOWS Metabolism|relativo ao Processo no|Vossa Senhoria esta sendo|High blood sugar|New discovery leaves doctors|Covid Relief|Precisando de investidor para seu|PROCURANDO SUA AJUDA|Important Profile Update|O resgate foi autorizado com sucesso|precisa ser quitada hoje/i
 score       SA_TRASH517 40
@@ -3937,13 +3937,13 @@ header      SA_TRASH521 Subject =~ /\bRESGATE SEUS PONTOS|Cosmoprof Worldwide|20
 score       SA_TRASH521 40
 describe    SA_TRASH521 Spam Trash geral 521
 
-header      SA_TRASH522 Subject =~ /\bJudicial Processo|Oportunidade para o seu|no subject|inicie o ano com o melhor|Licenciamento 2023 do seu veículo foi liberado|Importante: Seu pacote|Poop Try This|8-Second Hack|clear for more space|Marketing Analyst|Kindly Review|PIX BLOQUEADO POR SUSPEITA DE FRAUDE|compra suspeita congelada|Notificação de Não Conformidade para/i
-score       SA_TRASH522 40
-describe    SA_TRASH522 Spam Trash geral 522
+header      SA_TRASH522B Subject =~ /\bJudicial Processo|Oportunidade para o seu|no subject|inicie o ano com o melhor|Licenciamento 2023 do seu veículo foi liberado|Importante: Seu pacote|Poop Try This|8-Second Hack|clear for more space|Marketing Analyst|Kindly Review|PIX BLOQUEADO POR SUSPEITA DE FRAUDE|compra suspeita congelada|Notificação de Não Conformidade para/i
+score       SA_TRASH522B 40
+describe    SA_TRASH522B Spam Trash geral 522B
 
-body        SA_TRASH523 /Your inbox mailbox is full|You can no longer move messages|to your inbox mailbox|To make room in your inbox mailbox|delete any items you don't need|and empty your Deleted Items folder|mailboxes and storage limits|have a new DropBox|POP coverage|REGULARIZAR MINHA CONTA BRADESCO|Ivan Herbert|Importante do Sistema de Webmail|Dettagli account per/i
-score       SA_TRASH523 30
-describe    SA_TRASH523 Spam Trash geral 523
+body        SA_TRASH523B /Your inbox mailbox is full|You can no longer move messages|to your inbox mailbox|To make room in your inbox mailbox|delete any items you don't need|and empty your Deleted Items folder|mailboxes and storage limits|have a new DropBox|POP coverage|REGULARIZAR MINHA CONTA BRADESCO|Ivan Herbert|Importante do Sistema de Webmail|Dettagli account per/i
+score       SA_TRASH523B 30
+describe    SA_TRASH523B Spam Trash geral 523B
 
 header      SA_TRASH524 Subject =~ /\bDiamond Informa|Atualize sua conta para Diamond|fruit mixture triggers|hard wood in 93|Your Password Has Expired|Warm Up And Save|Thousands On Electricity Bills|Como Enxugar 500g|de Gordura|HAGA CLIC|Action Required: For Account|UP Atualizacao Obrigatoria-ID|compra suspeita congelada|Shared message in your INBOX|de juros e multas de|Sua tarifa Free Flow precisa ser regularizada|Regularize sua passagem agora/i
 score       SA_TRASH524 50
@@ -3957,165 +3957,165 @@ header      SA_TRASH526 Subject =~ /\bQuanto mais pontos melhor|The perfect roma
 score       SA_TRASH526 40
 describe    SA_TRASH526 Spam Trash geral 526
 
-body        SA_TRASH527 /Warm Up And Save Thousands|On Electricity Bills With This|Revolutionary Product|Fast warming-up technology|Low power consumption|Highly portable|EcoWarm Pro|Dr Now do TLC|Gordura da Barriga|stop your tinnitus|Atendimento Referencial Protocolado|Valor recebido bloqueado|smelly ACV solutions|Inclusão de Protesto em Cartório/i
-score       SA_TRASH527 30
-describe    SA_TRASH527 Spam Trash geral 527
+body        SA_TRASH527B /Warm Up And Save Thousands|On Electricity Bills With This|Revolutionary Product|Fast warming-up technology|Low power consumption|Highly portable|EcoWarm Pro|Dr Now do TLC|Gordura da Barriga|stop your tinnitus|Atendimento Referencial Protocolado|Valor recebido bloqueado|smelly ACV solutions|Inclusão de Protesto em Cartório/i
+score       SA_TRASH527B 30
+describe    SA_TRASH527B Spam Trash geral 527B
 
-body        SA_TRASH528 /an army veteran to release the protocol|that has shaped the entire pharma industry|For more than 40 years|the Germans have kept this penis growth|secret locked away from the public|Quanto mais pontos melhor|possui a capacidade de armazenamento|Sra Marina Wenzel|doar para fins de caridade|Kindly be inform your password to/i
-score       SA_TRASH528 30
-describe    SA_TRASH528 Spam Trash geral 528
+body        SA_TRASH528B /an army veteran to release the protocol|that has shaped the entire pharma industry|For more than 40 years|the Germans have kept this penis growth|secret locked away from the public|Quanto mais pontos melhor|possui a capacidade de armazenamento|Sra Marina Wenzel|doar para fins de caridade|Kindly be inform your password to/i
+score       SA_TRASH528B 30
+describe    SA_TRASH528B Spam Trash geral 528B
 
-body        SA_TRASH529 /Identificamos um comportamento incomum|na sua conta suportewebmail|por esse motivo confirme sua titularidade|acessando a URL abaixo|No longer have to decide between|giving the loving gift of|a soft toy or roses|DropBox DocSend file|Chingy Jordan|Para liberar 200gb gratuitamente|use the below button to continue with the same password/i
-score       SA_TRASH529 30
-describe    SA_TRASH529 Spam Trash geral 529
+body        SA_TRASH529B /Identificamos um comportamento incomum|na sua conta suportewebmail|por esse motivo confirme sua titularidade|acessando a URL abaixo|No longer have to decide between|giving the loving gift of|a soft toy or roses|DropBox DocSend file|Chingy Jordan|Para liberar 200gb gratuitamente|use the below button to continue with the same password/i
+score       SA_TRASH529B 30
+describe    SA_TRASH529B Spam Trash geral 529B
 
 header      SA_TRASH530 Subject =~ /\bClaro Net se encontra pendente|undelivered emails to your mailbox|Capital Empresarial e Pessoal|PORTO SEGURO CONSORCIO|Take Your Love to New|qualificada para trabalhar na Netflix|Atendimento Referencial Protocolado|PAGAMENTO RECUSADO PROTOCOLO|Contato Financeiro|Linaldo Lima|Secure Messaging Notification|Dettagli account per|A falta de pagamento da sua passagem|registrada com risco de|em seu nome possui passagem em aberto/i
 score       SA_TRASH530 40
 describe    SA_TRASH530 Spam Trash geral 530
 
-header      SA_TRASH531 Subject =~ /\bHAGA CLIC PARA REVALIDAR SU CORREO|Email Account Server|Gerente Senior Account TIM|Kindly reply|My name is|Mrs Lovelyn Raya|from Indonesia|Web Prices|BTC wallet Details|YOUR BANK ACCOUNT DETAILS|Armazenamento Excedido|30GB ou 50GB|Seu email locaweb|Am outsourcing personnel|Seu resgate com funcao saque|Aderimos ao Ifood Beneficios/i
-score       SA_TRASH531 40
-describe    SA_TRASH531 Spam Trash geral 531
+header      SA_TRASH531B Subject =~ /\bHAGA CLIC PARA REVALIDAR SU CORREO|Email Account Server|Gerente Senior Account TIM|Kindly reply|My name is|Mrs Lovelyn Raya|from Indonesia|Web Prices|BTC wallet Details|YOUR BANK ACCOUNT DETAILS|Armazenamento Excedido|30GB ou 50GB|Seu email locaweb|Am outsourcing personnel|Seu resgate com funcao saque|Aderimos ao Ifood Beneficios/i
+score       SA_TRASH531B 40
+describe    SA_TRASH531B Spam Trash geral 531B
 
-body        SA_TRASH532 /Ha alcanzado su límite de|ancho de banda de almacenamiento de correo|La mayor parte de su correo entrante|CLICK TO RE-VALIDATE YOUR EMAIL|volver a validar su cuenta de correo|Email Account Server|MARTINS OFFOR|Caixa de Entrada sera Suspensa|Seu email locaweb|atingiu limite de armazenamento|Favorde revisar la factura adjunta/i
-score       SA_TRASH532 30
-describe    SA_TRASH532 Spam Trash geral 532
+body        SA_TRASH532B /Ha alcanzado su límite de|ancho de banda de almacenamiento de correo|La mayor parte de su correo entrante|CLICK TO RE-VALIDATE YOUR EMAIL|volver a validar su cuenta de correo|Email Account Server|MARTINS OFFOR|Caixa de Entrada sera Suspensa|Seu email locaweb|atingiu limite de armazenamento|Favorde revisar la factura adjunta/i
+score       SA_TRASH532B 30
+describe    SA_TRASH532B Spam Trash geral 532B
 
-body        SA_TRASH533 /represent high profile silent investors|your country as a means|expanding business interests abroad|been mandated to source|trustworthy partners to work with|direct loan financing|with easy repayment terms|iToken Pendente de|Marketing Analyst|Para continuar enviando e recebendo email|asícumplir con nuestras obligaciones|cento e cinquenta mil/i
-score       SA_TRASH533 30
-describe    SA_TRASH533 Spam Trash geral 533
+body        SA_TRASH533B /represent high profile silent investors|your country as a means|expanding business interests abroad|been mandated to source|trustworthy partners to work with|direct loan financing|with easy repayment terms|iToken Pendente de|Marketing Analyst|Para continuar enviando e recebendo email|asícumplir con nuestras obligaciones|cento e cinquenta mil/i
+score       SA_TRASH533B 30
+describe    SA_TRASH533B Spam Trash geral 533B
 
-body        SA_TRASH534 /lenders who want to invest|that can guarantee|good return on investment|your company or any of your|current investment or projects|revert back to me for possible|business cooperation|Investment Consultant|USDOLLS|107 mil pontos BRADESCO|Compra no cartao de credito de|Katharine Boettcher|pagamento para continuar assistindo à Netflix/i
-score       SA_TRASH534 30
-describe    SA_TRASH534 Spam Trash geral 534
+body        SA_TRASH534B /lenders who want to invest|that can guarantee|good return on investment|your company or any of your|current investment or projects|revert back to me for possible|business cooperation|Investment Consultant|USDOLLS|107 mil pontos BRADESCO|Compra no cartao de credito de|Katharine Boettcher|pagamento para continuar assistindo à Netflix/i
+score       SA_TRASH534B 30
+describe    SA_TRASH534B Spam Trash geral 534B
 
-body        SA_TRASH535 /Alan Garnett|projects that need funding|I am a professional Web|Designer since 1996|Repair and Redesign your website|Wendy Jane Williams|foundation for the Orphanage|cliente Banco Bradesco tem pontos em dobro|The following account|Meu falecido pai depositou uma quantia em dinheiro|Aumente Sua Testosterona|la factura fue expedida correctamente/i
-score       SA_TRASH535 30
-describe    SA_TRASH535 Spam Trash geral 535
+body        SA_TRASH535B /Alan Garnett|projects that need funding|I am a professional Web|Designer since 1996|Repair and Redesign your website|Wendy Jane Williams|foundation for the Orphanage|cliente Banco Bradesco tem pontos em dobro|The following account|Meu falecido pai depositou uma quantia em dinheiro|Aumente Sua Testosterona|la factura fue expedida correctamente/i
+score       SA_TRASH535B 30
+describe    SA_TRASH535B Spam Trash geral 535B
 
-header      SA_TRASH536 Subject =~ /\bSetor de nota fiscal em aberto|Social e Corporativa|Correios Informa: Entrega nao Realizada|Clube de Paris|ATM Master Express|GOLD CARD WORLD WIDE|ATM MASTER|EXPRESS CARD|New service update Ref|Resgate seus pontos ou troque por|Segue Guia para pagamento|Mailbox Authentication|Potente Para Despertar|Programação feriado de carnaval/i
-score       SA_TRASH536 40
-describe    SA_TRASH536 Spam Trash geral 536
+header      SA_TRASH536B Subject =~ /\bSetor de nota fiscal em aberto|Social e Corporativa|Correios Informa: Entrega nao Realizada|Clube de Paris|ATM Master Express|GOLD CARD WORLD WIDE|ATM MASTER|EXPRESS CARD|New service update Ref|Resgate seus pontos ou troque por|Segue Guia para pagamento|Mailbox Authentication|Potente Para Despertar|Programação feriado de carnaval/i
+score       SA_TRASH536B 40
+describe    SA_TRASH536B Spam Trash geral 536B
 
-body        SA_TRASH537 /oficialmente sobre o presente acordo|Sistema de Pagamento Digitalizado|Decidimos pagar seus fundos por meio|Clube de Paris|foi devido a atividades fraudulentas|ATM Master Express|receba seu fundo sem qualquer|Armazenamento Excedido|30GB ou 50GB|Segue Guia para pagamento|toenail fungus|POSSUI EFEITOS COLATERAIS|ajuda sincera Realizando meu projeto/i
-score       SA_TRASH537 30
-describe    SA_TRASH537 Spam Trash geral 537
+body        SA_TRASH537B /oficialmente sobre o presente acordo|Sistema de Pagamento Digitalizado|Decidimos pagar seus fundos por meio|Clube de Paris|foi devido a atividades fraudulentas|ATM Master Express|receba seu fundo sem qualquer|Armazenamento Excedido|30GB ou 50GB|Segue Guia para pagamento|toenail fungus|POSSUI EFEITOS COLATERAIS|ajuda sincera Realizando meu projeto/i
+score       SA_TRASH537B 30
+describe    SA_TRASH537B Spam Trash geral 537B
 
-body        SA_TRASH538 /GOLD CARD WORLD WIDE|ATM MASTER EXPRESS CARD|carregado no Master Card|deixe-me saber qual empresa de courier|Departamento de Remessas Externas|Express Card ATM|Need to move you have 24 hours|Judicial Deferida|excedeu o limite de armazenamento|Segue em Anexo a Guia DARF|RoyalLink Cargo|Minha necessidade urgente de um parceiro/i
-score       SA_TRASH538 30
-describe    SA_TRASH538 Spam Trash geral 538
+body        SA_TRASH538B /GOLD CARD WORLD WIDE|ATM MASTER EXPRESS CARD|carregado no Master Card|deixe-me saber qual empresa de courier|Departamento de Remessas Externas|Express Card ATM|Need to move you have 24 hours|Judicial Deferida|excedeu o limite de armazenamento|Segue em Anexo a Guia DARF|RoyalLink Cargo|Minha necessidade urgente de um parceiro/i
+score       SA_TRASH538B 30
+describe    SA_TRASH538B Spam Trash geral 538B
 
-header      SA_TRASH539 Subject =~ /\bJudicial Deferida|Posso liberar sua vaga|Copyright Violation|Meta support pro|Water Quality Association|Aquatec|New Collection|Born In March|2023 T-shirt|de compra no credito on line|Advice USD|Sincronizar iToken|Conta Bloqueada|May Qualify for Compensation|toenail fungus|Poder Sexual do Homem|O seu saque tem validade ate/i
-score       SA_TRASH539 40
-describe    SA_TRASH539 Spam Trash geral 539
+header      SA_TRASH539B Subject =~ /\bJudicial Deferida|Posso liberar sua vaga|Copyright Violation|Meta support pro|Water Quality Association|Aquatec|New Collection|Born In March|2023 T-shirt|de compra no credito on line|Advice USD|Sincronizar iToken|Conta Bloqueada|May Qualify for Compensation|toenail fungus|Poder Sexual do Homem|O seu saque tem validade ate/i
+score       SA_TRASH539B 40
+describe    SA_TRASH539B Spam Trash geral 539B
 
-body        SA_TRASH540 /Informamos que a empresa perdeu a|judicial que foi movida pelo trabalhador|juiz entendeu que a causa|estava a favor do trabalhador|reflete em nenhuma forma a integridade|comprometimento da empresa com os seus|Sincronizar iToken|Kindly Review|Compensation Fund Transfer|Alejandro Mayorkas|Sua conta excedeu o limite de armazenamento/i
-score       SA_TRASH540 30
-describe    SA_TRASH540 Spam Trash geral 540
+body        SA_TRASH540B /Informamos que a empresa perdeu a|judicial que foi movida pelo trabalhador|juiz entendeu que a causa|estava a favor do trabalhador|reflete em nenhuma forma a integridade|comprometimento da empresa com os seus|Sincronizar iToken|Kindly Review|Compensation Fund Transfer|Alejandro Mayorkas|Sua conta excedeu o limite de armazenamento/i
+score       SA_TRASH540B 30
+describe    SA_TRASH540B Spam Trash geral 540B
 
-body        SA_TRASH541 /judiciais e tomaremos as medidas|foi aprovada para ganhar assistindo|Veja no site abaixo como|Quero Saber Como Funciona|de todos e pedimos que continuem dedicados|cumprimento dos nossos objetivos em conjunto|iToken fora de sincronia|Paisley Lewis|Secretary of Homeland Security|Csabai kapu|limite de armazenamento de 20 GB|Kit Lacoste France/i
-score       SA_TRASH541 30
-describe    SA_TRASH541 Spam Trash geral 541
+body        SA_TRASH541B /judiciais e tomaremos as medidas|foi aprovada para ganhar assistindo|Veja no site abaixo como|Quero Saber Como Funciona|de todos e pedimos que continuem dedicados|cumprimento dos nossos objetivos em conjunto|iToken fora de sincronia|Paisley Lewis|Secretary of Homeland Security|Csabai kapu|limite de armazenamento de 20 GB|Kit Lacoste France/i
+score       SA_TRASH541B 30
+describe    SA_TRASH541B Spam Trash geral 541B
 
-body        SA_TRASH542 /Copyright Violation|our team has identified a violation of copyright|in your Instagram account|accordingly your account will be|disabled and deleted from|Instagram servers within 24|keep your account click|Identificamos que sua conta corrente|Monica Bourgeois|TERNO DE CONGO STA EFIGENIA|conforme definido pelo administrador|Secured Message from/i
-score       SA_TRASH542 30
-describe    SA_TRASH542 Spam Trash geral 542
+body        SA_TRASH542B /Copyright Violation|our team has identified a violation of copyright|in your Instagram account|accordingly your account will be|disabled and deleted from|Instagram servers within 24|keep your account click|Identificamos que sua conta corrente|Monica Bourgeois|TERNO DE CONGO STA EFIGENIA|conforme definido pelo administrador|Secured Message from/i
+score       SA_TRASH542B 30
+describe    SA_TRASH542B Spam Trash geral 542B
 
-body        SA_TRASH543 /John Ribeiro Do Vale|Rua Londres 598 Jardim Europa|negativado e enviado para protesto|De acordo com o Credor a|ocorreu no dia da abertura da empresa|onde foi perguntado se gostaria de se associar a|Dear carmo|DISPOSITIVO VIOLADO|iToken violado|Nos ajude a manter seus dados atualizados|validar novamente sua caixa de correio/i
-score       SA_TRASH543 30
-describe    SA_TRASH543 Spam Trash geral 543
+body        SA_TRASH543B /John Ribeiro Do Vale|Rua Londres 598 Jardim Europa|negativado e enviado para protesto|De acordo com o Credor a|ocorreu no dia da abertura da empresa|onde foi perguntado se gostaria de se associar a|Dear carmo|DISPOSITIVO VIOLADO|iToken violado|Nos ajude a manter seus dados atualizados|validar novamente sua caixa de correio/i
+score       SA_TRASH543B 30
+describe    SA_TRASH543B Spam Trash geral 543B
 
-body        SA_TRASH544 /do Pix utilizando o QR Code que consta na|Registro E Processamento Extrajudicial|acarretar no cancelamento do cadastro|Empreendedores de Pouso Alegre e foi aceito a|Nafisa Abdul|Loan Officer|ROI annually|Eva Wen|Detectamos uma falha de acesso|documento PDF anexado com todos os detalhes|Senha na coluna fornecida abaixo|Conta da Microsoft Informa/i
-score       SA_TRASH544 30
-describe    SA_TRASH544 Spam Trash geral 544
+body        SA_TRASH544B /do Pix utilizando o QR Code que consta na|Registro E Processamento Extrajudicial|acarretar no cancelamento do cadastro|Empreendedores de Pouso Alegre e foi aceito a|Nafisa Abdul|Loan Officer|ROI annually|Eva Wen|Detectamos uma falha de acesso|documento PDF anexado com todos os detalhes|Senha na coluna fornecida abaixo|Conta da Microsoft Informa/i
+score       SA_TRASH544B 30
+describe    SA_TRASH544B Spam Trash geral 544B
 
-body        SA_TRASH545 /I hope this message finds you well|Do you have any project|that needs funding|we are funding at|Allah Blessing|to you and family|Let me know if you are interested|with the amount required for the project|39 BTC|DISPOSITIVO VIOLADO|Veteran settlement amounts are estimated|Sou Thiago Paes|Confirmacao de divida ativa|feriado de carnaval no Brasil/i
-score       SA_TRASH545 30
-describe    SA_TRASH545 Spam Trash geral 545
+body        SA_TRASH545B /I hope this message finds you well|Do you have any project|that needs funding|we are funding at|Allah Blessing|to you and family|Let me know if you are interested|with the amount required for the project|39 BTC|DISPOSITIVO VIOLADO|Veteran settlement amounts are estimated|Sou Thiago Paes|Confirmacao de divida ativa|feriado de carnaval no Brasil/i
+score       SA_TRASH545B 30
+describe    SA_TRASH545B Spam Trash geral 545B
 
-header      SA_TRASH546 Subject =~ /\bFOLLOW MY INSTRUCTION|INVESTMENT LOAN OFFER|CONTEMPLADO para se tornar|Bradesco Diamond|TENTE USAR ESTE PRESENTE|OS FILHOS DE DEUS|conta de e-mail bloqueada|Urgent and Profitable help needed|39 BTC|Itoken pendente de|Reserva n 2021|Toxic Water at Camp Lejeune Victims|Segue demonstrativo de Reembolso Para|IMPORTANTE-Atualizar/i
-score       SA_TRASH546 40
-describe    SA_TRASH546 Spam Trash geral 546
+header      SA_TRASH546B Subject =~ /\bFOLLOW MY INSTRUCTION|INVESTMENT LOAN OFFER|CONTEMPLADO para se tornar|Bradesco Diamond|TENTE USAR ESTE PRESENTE|OS FILHOS DE DEUS|conta de e-mail bloqueada|Urgent and Profitable help needed|39 BTC|Itoken pendente de|Reserva n 2021|Toxic Water at Camp Lejeune Victims|Segue demonstrativo de Reembolso Para|IMPORTANTE-Atualizar/i
+score       SA_TRASH546B 40
+describe    SA_TRASH546B Spam Trash geral 546B
 
-header      SA_TRASH547 Subject =~ /\bBradesco Informa|Processo de BLOQUEIO INICIADO|You are chosen|INVESTMENT CONFIDENTIAL|Sua fatura Claro Net por e-mail|You have 3 messages on hold|Decisao judicial BR|USDOLLS|1B Mega Millions|Dispositvo Violado|iToken violado|Compra no credito foi aprovado|Voce Ganhou 50|Todos os destinos com ate 50|Bota Fora de Natal Magalu/i
-score       SA_TRASH547 40
-describe    SA_TRASH547 Spam Trash geral 547
+header      SA_TRASH547B Subject =~ /\bBradesco Informa|Processo de BLOQUEIO INICIADO|You are chosen|INVESTMENT CONFIDENTIAL|Sua fatura Claro Net por e-mail|You have 3 messages on hold|Decisao judicial BR|USDOLLS|1B Mega Millions|Dispositvo Violado|iToken violado|Compra no credito foi aprovado|Voce Ganhou 50|Todos os destinos com ate 50|Bota Fora de Natal Magalu/i
+score       SA_TRASH547B 40
+describe    SA_TRASH547B Spam Trash geral 547B
 
-body        SA_TRASH548 /gerado tanto para o pagador quanto para o recebedor|Navegador Exclusivo BANCO DO BRASIL|unicamente o Navegador Exclusivo PJ|Detectamos um novo acesso a sua conta|Para continuar usando a mesma senha|para atualizar usando a senha atual|Received a New Secure Document|Secure Encrypted Message|faca a viagem dos seus sonhos|Confirmacao de divida ativa/i
-score       SA_TRASH548 30
-describe    SA_TRASH548 Spam Trash geral 548
+body        SA_TRASH548B /gerado tanto para o pagador quanto para o recebedor|Navegador Exclusivo BANCO DO BRASIL|unicamente o Navegador Exclusivo PJ|Detectamos um novo acesso a sua conta|Para continuar usando a mesma senha|para atualizar usando a senha atual|Received a New Secure Document|Secure Encrypted Message|faca a viagem dos seus sonhos|Confirmacao de divida ativa/i
+score       SA_TRASH548B 30
+describe    SA_TRASH548B Spam Trash geral 548B
 
-body        SA_TRASH549 /mais recente atualizada do servidor de e-mail|Senha do servidor Expirado|gerar uma nova senha exatamente|continue using your current password|Mantenha-se atualizado Senha|I have obtained access to your devices|COMPLETE YOUR REGISTRATION WITH|trepadasbrasil|RoyalLink Cargo|Lifestyle Apps|CONSULTAR DESTINOS E DESCONTOS|desconto no Decolar/i
-score       SA_TRASH549 30
-describe    SA_TRASH549 Spam Trash geral 549
+body        SA_TRASH549B /mais recente atualizada do servidor de e-mail|Senha do servidor Expirado|gerar uma nova senha exatamente|continue using your current password|Mantenha-se atualizado Senha|I have obtained access to your devices|COMPLETE YOUR REGISTRATION WITH|trepadasbrasil|RoyalLink Cargo|Lifestyle Apps|CONSULTAR DESTINOS E DESCONTOS|desconto no Decolar/i
+score       SA_TRASH549B 30
+describe    SA_TRASH549B Spam Trash geral 549B
 
-header      SA_TRASH550 Subject =~ /\bNotificação de segurança da conta de e-mail|notificação de e-mails com falha recebida|an outstanding payment|IT-Service Web Master|Comprovante de depósito, conforme solicitado|pasando un grato día de trabajo|trepadasbrasil|desconto para todos os destinos|DE DESCONTOprotocolo|Ofertas Exclusivas 70|desconto no Decolar|Livelo Informa/i
-score       SA_TRASH550 40
-describe    SA_TRASH550 Spam Trash geral 550
+header      SA_TRASH550B Subject =~ /\bNotificação de segurança da conta de e-mail|notificação de e-mails com falha recebida|an outstanding payment|IT-Service Web Master|Comprovante de depósito, conforme solicitado|pasando un grato día de trabajo|trepadasbrasil|desconto para todos os destinos|DE DESCONTOprotocolo|Ofertas Exclusivas 70|desconto no Decolar|Livelo Informa/i
+score       SA_TRASH550B 40
+describe    SA_TRASH550B Spam Trash geral 550B
 
-body        SA_TRASH551 /CNPJ se encontra suspenso, devido a títulos protestados|Secretário Geral de Protesto de Títulos|Oksana Marchenko|Medvedchuk from Ukraine|Developing a Mobile Apps|e-commerce and mobile application|Mailbox Authentication Required|Marcelo Vilela do setor financeiro|Shareholders requests your|Pague agora e resgate seu saldo|MILLION EMAILS/i
-score       SA_TRASH551 30
-describe    SA_TRASH551 Spam Trash geral 551
+body        SA_TRASH551B /CNPJ se encontra suspenso, devido a títulos protestados|Secretário Geral de Protesto de Títulos|Oksana Marchenko|Medvedchuk from Ukraine|Developing a Mobile Apps|e-commerce and mobile application|Mailbox Authentication Required|Marcelo Vilela do setor financeiro|Shareholders requests your|Pague agora e resgate seu saldo|MILLION EMAILS/i
+score       SA_TRASH551B 30
+describe    SA_TRASH551B Spam Trash geral 551B
 
-header      SA_TRASH552 Subject =~ /\bSua hospedagem anual expirou|Revised Contract Document: Sign|Ensine seu Cachorro a Obedecer|fazer xixi e coco no lugar certo|Ate 2 MIL Por Semana|Spero che la tua giornata|New order provide quotation|Um mega desconto para voce viajar|sobrar dinheiro para curtir|BBDigital_PJ|Pedido de 2ª viα da NF-e|desconto Promoções Decolar/i
-score       SA_TRASH552 40
-describe    SA_TRASH552 Spam Trash geral 552
+header      SA_TRASH552B Subject =~ /\bSua hospedagem anual expirou|Revised Contract Document: Sign|Ensine seu Cachorro a Obedecer|fazer xixi e coco no lugar certo|Ate 2 MIL Por Semana|Spero che la tua giornata|New order provide quotation|Um mega desconto para voce viajar|sobrar dinheiro para curtir|BBDigital_PJ|Pedido de 2ª viα da NF-e|desconto Promoções Decolar/i
+score       SA_TRASH552B 40
+describe    SA_TRASH552B Spam Trash geral 552B
 
-body        SA_TRASH553 /Faça o login para ter sua conta|de webmail atualizada automaticamente|Administração de Webmail|Sua conta de webmail será atualizada automaticamente|O prazo de validade da senha da sua caixa|Para continuar usando a mesma senha|MANTER SENHA|will stop sending and receiving emails|Atemberaubend|Esperando receber sua resposta imediatamente/i
-score       SA_TRASH553 30
-describe    SA_TRASH553 Spam Trash geral 553
+body        SA_TRASH553B /Faça o login para ter sua conta|de webmail atualizada automaticamente|Administração de Webmail|Sua conta de webmail será atualizada automaticamente|O prazo de validade da senha da sua caixa|Para continuar usando a mesma senha|MANTER SENHA|will stop sending and receiving emails|Atemberaubend|Esperando receber sua resposta imediatamente/i
+score       SA_TRASH553B 30
+describe    SA_TRASH553B Spam Trash geral 553B
 
-body        SA_TRASH554 /Administrator Service|Please confirm below if you want|to keep your account with us|is not validated within 24 hours starting from|due to recent modifications on our server|Director of Human Resources|You will stop receiving mail as from|Please add free space below to continue using|teste de 30 BRL gratuitamente|Aporte financeiro com taxa/i
-score       SA_TRASH554 30
-describe    SA_TRASH554 Spam Trash geral 554
+body        SA_TRASH554B /Administrator Service|Please confirm below if you want|to keep your account with us|is not validated within 24 hours starting from|due to recent modifications on our server|Director of Human Resources|You will stop receiving mail as from|Please add free space below to continue using|teste de 30 BRL gratuitamente|Aporte financeiro com taxa/i
+score       SA_TRASH554B 30
+describe    SA_TRASH554B Spam Trash geral 554B
 
-header      SA_TRASH555 Subject =~ /\bSeu acesso encontra-se limitado|abra este e-mail e valide seu cadastro|Email Password Notification|O BRADESCO PRIME selecionou seu CPF|vem lhe dar os parabens por sua parceria|Comunicação de desligamentos|Ferias com Voos internacionais|nacionais com ate 50|Foram realizadas 3|Seu beneficio ja possui resgate autorizado/i
-score       SA_TRASH555 40
-describe    SA_TRASH555 Spam Trash geral 555
+header      SA_TRASH555B Subject =~ /\bSeu acesso encontra-se limitado|abra este e-mail e valide seu cadastro|Email Password Notification|O BRADESCO PRIME selecionou seu CPF|vem lhe dar os parabens por sua parceria|Comunicação de desligamentos|Ferias com Voos internacionais|nacionais com ate 50|Foram realizadas 3|Seu beneficio ja possui resgate autorizado/i
+score       SA_TRASH555B 40
+describe    SA_TRASH555B Spam Trash geral 555B
 
-body        SA_TRASH556 /CONTEMPLADO PARA O NOSSO SELETO GRUPO PRIME|Seguros de Viagem e Servicos de Assistencia no exterior|Ate 12 dias sem juros no cheque especial|ListagemAGO|desligamento dos funcionários listados no arquivo anexado|3 tentativas de entrega|Foto do e-mail que voce me envio|Ana Helena. RH|72 horas a partir de hoje|Conta da Microsoft Informa/i
-score       SA_TRASH556 30
-describe    SA_TRASH556 Spam Trash geral 556
+body        SA_TRASH556B /CONTEMPLADO PARA O NOSSO SELETO GRUPO PRIME|Seguros de Viagem e Servicos de Assistencia no exterior|Ate 12 dias sem juros no cheque especial|ListagemAGO|desligamento dos funcionários listados no arquivo anexado|3 tentativas de entrega|Foto do e-mail que voce me envio|Ana Helena. RH|72 horas a partir de hoje|Conta da Microsoft Informa/i
+score       SA_TRASH556B 30
+describe    SA_TRASH556B Spam Trash geral 556B
 
-body        SA_TRASH557 /consultas pela internet ou diretamente na agencia bancaria|Internacional com um Programa de Recompensas especial|Identificador do Desligamento|foram realizadas 3 tentativas de entrega|O que este e-mail quer dizer|Ele pode incluir recursos como firewall|Action required Fix this below|CONSULTAR DESTINOS E DESCONTOS|feriado de carnaval no Brasil/i
-score       SA_TRASH557 30
-describe    SA_TRASH557 Spam Trash geral 557
+body        SA_TRASH557B /consultas pela internet ou diretamente na agencia bancaria|Internacional com um Programa de Recompensas especial|Identificador do Desligamento|foram realizadas 3 tentativas de entrega|O que este e-mail quer dizer|Ele pode incluir recursos como firewall|Action required Fix this below|CONSULTAR DESTINOS E DESCONTOS|feriado de carnaval no Brasil/i
+score       SA_TRASH557B 30
+describe    SA_TRASH557B Spam Trash geral 557B
 
-body        SA_TRASH558 /Smartwatch para Mulheres e Homens|AMAX ULTRA|120h Tempo de uso|Dezenas de facewatches|Acabei Definiticamente com as Minhas Dores|Resolva problemas de Artrite|Revolutionize Your|Cleaning Routine|VacuumGoPro|vacuum cleaners are heavy|Lighter vacuums often lack suction|nuestro servicio postal|podem ser processados de qualquer uma das formas/i
-score       SA_TRASH558 30
-describe    SA_TRASH558 Spam Trash geral 558
+body        SA_TRASH558B /Smartwatch para Mulheres e Homens|AMAX ULTRA|120h Tempo de uso|Dezenas de facewatches|Acabei Definiticamente com as Minhas Dores|Resolva problemas de Artrite|Revolutionize Your|Cleaning Routine|VacuumGoPro|vacuum cleaners are heavy|Lighter vacuums often lack suction|nuestro servicio postal|podem ser processados de qualquer uma das formas/i
+score       SA_TRASH558B 30
+describe    SA_TRASH558B Spam Trash geral 558B
 
-header      SA_TRASH559 Subject =~ /\bChegou o Smartwatch|Serie 8 da|AMAX ULTRA|Corre para adquirir o seu|Chega de Sofrer com Dores|Veja como eu fiz para me livrar|Revolutionize Your|Cleaning Routine|VacuumGoPro|Best Drone on a budget|Best tech gadget|Take movie-like|aerial videos|with this drone|SIDHU BHAU|Explora una nueva experiencia emocionante|MILLION EMAILS/i
-score       SA_TRASH559 60
-describe    SA_TRASH559 Spam Trash geral 559
+header      SA_TRASH559B Subject =~ /\bChegou o Smartwatch|Serie 8 da|AMAX ULTRA|Corre para adquirir o seu|Chega de Sofrer com Dores|Veja como eu fiz para me livrar|Revolutionize Your|Cleaning Routine|VacuumGoPro|Best Drone on a budget|Best tech gadget|Take movie-like|aerial videos|with this drone|SIDHU BHAU|Explora una nueva experiencia emocionante|MILLION EMAILS/i
+score       SA_TRASH559B 60
+describe    SA_TRASH559B Spam Trash geral 559B
 
-header      SA_TRASH560 Subject =~ /\bFerias com voos internacionais e nacionais|desconto hoje em todas as passagens|Hafiz Nurtazhiev|estou conseguindo entrar em contato|Good Day Friend|Atemberaubend|REQUEST FOR DONATION|Confirm your shippment delivery details|desconto em todas as passagens|para todos os destinos|Aporte financeiro com taxa|EXPLODA DE ALEGRIA/i
-score       SA_TRASH560 40
-describe    SA_TRASH560 Spam Trash geral 560
+header      SA_TRASH560B Subject =~ /\bFerias com voos internacionais e nacionais|desconto hoje em todas as passagens|Hafiz Nurtazhiev|estou conseguindo entrar em contato|Good Day Friend|Atemberaubend|REQUEST FOR DONATION|Confirm your shippment delivery details|desconto em todas as passagens|para todos os destinos|Aporte financeiro com taxa|EXPLODA DE ALEGRIA/i
+score       SA_TRASH560B 40
+describe    SA_TRASH560B Spam Trash geral 560B
 
-header      SA_TRASH561 Subject =~ /\bEfetue a troca dos teus pontos|desconto no prazo de 48 horas|Todas as passagens aereas com|Ação necessária para manter o acesso|Durkin Law Office|Ação Necessária: Atualização de Senha|Seu acesso ao WebMail expira|Viagra Online Pharmacy|Buy Erectile Pills|seu convite BB ESTILO|DESBLOQUEIE AGORA|Erro no pagamento spotify/i
-score       SA_TRASH561 40
-describe    SA_TRASH561 Spam Trash geral 561
+header      SA_TRASH561B Subject =~ /\bEfetue a troca dos teus pontos|desconto no prazo de 48 horas|Todas as passagens aereas com|Ação necessária para manter o acesso|Durkin Law Office|Ação Necessária: Atualização de Senha|Seu acesso ao WebMail expira|Viagra Online Pharmacy|Buy Erectile Pills|seu convite BB ESTILO|DESBLOQUEIE AGORA|Erro no pagamento spotify/i
+score       SA_TRASH561B 40
+describe    SA_TRASH561B Spam Trash geral 561B
 
-header      SA_TRASH562 Subject =~ /\bPainKiller Pills|Seu acesso ao WebMail|WebMail vai expirar em breve|Louis Wire Payment Details|System Notification: Error receiving 5 emails|chegou seu convite BB ESTILO|muito mais beneficios e Limites|Senha da Caixa Postal Expirada|SMTP settings are incorrect|Audio Message|MIL pontos que aguardam o seu resgate/i
-score       SA_TRASH562 40
-describe    SA_TRASH562 Spam Trash geral 562
+header      SA_TRASH562B Subject =~ /\bPainKiller Pills|Seu acesso ao WebMail|WebMail vai expirar em breve|Louis Wire Payment Details|System Notification: Error receiving 5 emails|chegou seu convite BB ESTILO|muito mais beneficios e Limites|Senha da Caixa Postal Expirada|SMTP settings are incorrect|Audio Message|MIL pontos que aguardam o seu resgate/i
+score       SA_TRASH562B 40
+describe    SA_TRASH562B Spam Trash geral 562B
 
-header      SA_TRASH563 Subject =~ /\bSonha em morar em Portugal|o seu dia de sorte|Seu e-mail será bloqueado|Zera Estoque Smart TV|godendo una bellissima|Guia Simples Referente|Entrega correios não realizada último aviso|Password to your E-mailbox|is about to be expired|Incorrect delivery address|storage space is|MIL pontos aguardando sua confirmação/i
-score       SA_TRASH563 40
-describe    SA_TRASH563 Spam Trash geral 563
+header      SA_TRASH563B Subject =~ /\bSonha em morar em Portugal|o seu dia de sorte|Seu e-mail será bloqueado|Zera Estoque Smart TV|godendo una bellissima|Guia Simples Referente|Entrega correios não realizada último aviso|Password to your E-mailbox|is about to be expired|Incorrect delivery address|storage space is|MIL pontos aguardando sua confirmação/i
+score       SA_TRASH563B 40
+describe    SA_TRASH563B Spam Trash geral 563B
 
-header      SA_TRASH564 Subject =~ /\bDid you received my message|CF-e SAT Emitida|Atualização de Pagamento Salárial|VOOS COM ATE 50|Valido Por 24 horas|4K UHD LED|Iphone 13 Pro Max 128GB|Dia Dos Pais Magalu|Desligamento de Colaborador|Prorrogado o prazo da sua|Foi Selecionado para PRIME|Hospedagem de site expirada|A fatura dos serviços Registro.br vence hoje/i
-score       SA_TRASH564 40
-describe    SA_TRASH564 Spam Trash geral 564
+header      SA_TRASH564B Subject =~ /\bDid you received my message|CF-e SAT Emitida|Atualização de Pagamento Salárial|VOOS COM ATE 50|Valido Por 24 horas|4K UHD LED|Iphone 13 Pro Max 128GB|Dia Dos Pais Magalu|Desligamento de Colaborador|Prorrogado o prazo da sua|Foi Selecionado para PRIME|Hospedagem de site expirada|A fatura dos serviços Registro.br vence hoje/i
+score       SA_TRASH564B 40
+describe    SA_TRASH564B Spam Trash geral 564B
 
 header      SA_TRASH565 Subject =~ /\bforam realizadas tentativas de entrega|Olá, Recebeu Minha Mensagem|Seu prêmio em dinheiro|Email storage space|Estamos sentindo a sua falta|cobrança para pagamento imediato|forma de pagamento do Spotify nao e valida|nao conseguimos receber seu pagamento|Avoid Email disruption|Chegou Seu Documento Para Conferencia|VALIDAR CONTA DE E-MAIL/i
 score       SA_TRASH565 40
 describe    SA_TRASH565 Spam Trash geral 565
 
-header      SA_TRASH566 Subject =~ /\bService update is required urgently|Active Support|Documento Digital: Cliente|Protesto em seu cpf no cartório|Delivery Emergency Update|Caixa De E-mail Precisa De Atenção|Desligados de 16|BILL OF LADING SHIPPING DOCUMENTS|Bill of Lading Document|Registro Webmail Urgente|Notamos no nosso sistema uma duplicata em aberto/i
-score       SA_TRASH566 40
-describe    SA_TRASH566 Spam Trash geral 566
+header      SA_TRASH566B Subject =~ /\bService update is required urgently|Active Support|Documento Digital: Cliente|Protesto em seu cpf no cartório|Delivery Emergency Update|Caixa De E-mail Precisa De Atenção|Desligados de 16|BILL OF LADING SHIPPING DOCUMENTS|Bill of Lading Document|Registro Webmail Urgente|Notamos no nosso sistema uma duplicata em aberto/i
+score       SA_TRASH566B 40
+describe    SA_TRASH566B Spam Trash geral 566B
 
 body        SA_TRASH567 /REVISAR DOCUMENTO DIGITAL|No Further action is required|avoid suspending your serivce|Navegador Exclusivo PJ para acessar|ROSIMARIO MARTINS MOTA|attempted to deliver your parcel|This parcel has been entrusted|OBS:Tenho ampla experiência em RH|Segue em anexo a lista de demitidos|Chris Chan|Notamos no nosso sistema uma duplicata em aberto/i
 score       SA_TRASH567 30
@@ -5205,9 +5205,9 @@ header      SA_VIRUSZIP10 Subject =~ /\bPrezado cliente [A-Za-z0-9_-]+\@/i
 score       SA_VIRUSZIP10 50
 describe    SA_VIRUSZIP10 Phishing contendo virus zipado com senha 10
 
-header      SA_VIRUSZIP10 Subject =~ /\bNFE para [A-Za-z0-9_-]+\@/i
-score       SA_VIRUSZIP10 50
-describe    SA_VIRUSZIP10 Phishing contendo virus zipado com senha 10
+header      SA_VIRUSZIP10B Subject =~ /\bNFE para [A-Za-z0-9_-]+\@/i
+score       SA_VIRUSZIP10B 50
+describe    SA_VIRUSZIP10B Phishing contendo virus zipado com senha 10B
 
 header      SA_VIRUSZIP11 Subject =~ /\bDocumento para [A-Za-z0-9_-]+\@/i
 score       SA_VIRUSZIP11 10
@@ -5259,11 +5259,11 @@ meta        SUBJ_VIRUS_ZIPADO ( __SUBJ_PAGAMENTO && __MIME_ANEXOS )
 score       SUBJ_VIRUS_ZIPADO 20
 describe    SUBJ_VIRUS_ZIPADO Phishing contendo virus zipado em anexo
 
-header     __DN_PHPSRC    X-Source =~ /\/usr\/bin\/php/
-header     __DN_PHPSRCARG1 X-Source-Args =~ /\/usr\/bin\/php/
-header     __DN_PHPSRCARG2 X-Source-Args =~ /\/usr\/sbin\/proxyexec/
-header     __DN_PHPSRCARG3 X-Source-Args =~ /\/usr\/sbin\//
-header     __DN_PHPSRCARG4 X-Source-Args =~ /\/usr\/bin\//
+header     __DN_PHPSRC    X-Source =~ /\/usr\/bin\/php/i
+header     __DN_PHPSRCARG1 X-Source-Args =~ /\/usr\/bin\/php/i
+header     __DN_PHPSRCARG2 X-Source-Args =~ /\/usr\/sbin\/proxyexec/i
+header     __DN_PHPSRCARG3 X-Source-Args =~ /\/usr\/sbin\//i
+header     __DN_PHPSRCARG4 X-Source-Args =~ /\/usr\/bin\//i
 header     __DN_PHPSRCDIR1 X-Source-Dir =~ /wp-content/i
 header     __DN_PHPSRCDIR2 X-Source-Dir =~ /public_html/i
 
@@ -5355,9 +5355,9 @@ uri         SA_REBRAND /\.rebrand.ly(?:\/|$)/i
 score       SA_REBRAND 10
 describe    SA_REBRAND URL hospedando Malware 13
 
-uri         SA_REBRAND /\.weebly.com(?:\/|$)/i
-score       SA_REBRAND 10
-describe    SA_REBRAND URL hospedando Malware 14
+uri         SA_REBRAND2 /\.weebly.com(?:\/|$)/i
+score       SA_REBRAND2 10
+describe    SA_REBRAND2 URL hospedando Malware 14B
 
 uri         SA_URLAPP /\.app(?:\/|$)/i
 score       SA_URLAPP 10
@@ -5531,17 +5531,17 @@ uri         SA_DIVITALIANO /\.divulgaitaliano.com.br(?:\/|$)/i
 score       SA_DIVITALIANO 10
 describe    SA_DIVITALIANO URL hospedando Malware 58
 
-uri         SA_DIVITALIANO /\.divulgaitaliano.com.br(?:\/|$)/i
-score       SA_DIVITALIANO 10
-describe    SA_DIVITALIANO URL hospedando Malware 58
+uri         SA_DIVITALIANO2 /\.divulgaitaliano.com.br(?:\/|$)/i
+score       SA_DIVITALIANO2 10
+describe    SA_DIVITALIANO2 URL hospedando Malware 58B
 
 uri         SA_CABLEMODEM /\.cable-modem.org(?:\/|$)/i
 score       SA_CABLEMODEM 10
 describe    SA_CABLEMODEM URL hospedando Malware 59
 
-uri         SA_FEROZO /\.ferozo.com(?:\/|$)/i
-score       SA_FEROZO 10
-describe    SA_FEROZO URL hospedando Malware 60
+uri         SA_FEROZO2 /\.ferozo.com(?:\/|$)/i
+score       SA_FEROZO2 10
+describe    SA_FEROZO2 URL hospedando Malware 60B
 
 uri         SA_BRAVUSSISTEMAS /\.bravussistemas.com.br(?:\/|$)/i
 score       SA_BRAVUSSISTEMAS 10
@@ -5611,17 +5611,17 @@ uri         SA_SERVMAIL /\.servidoresemail.com.br(?:\/|$)/i
 score       SA_SERVMAIL 10
 describe    SA_SERVMAIL URL hospedando Malware 77
 
-uri         SA_GHDOGS /\.burghdogs.com(?:\/|$)/i
-score       SA_GHDOGS 10
-describe    SA_GHDOGS URL hospedando Malware 78
+uri         SA_GHDOGS2 /\.burghdogs.com(?:\/|$)/i
+score       SA_GHDOGS2 10
+describe    SA_GHDOGS2 URL hospedando Malware 78B
 
 uri         SA_CLOUDGOOGLE /\.cloud.google.com(?:\/|$)/i
 score       SA_CLOUDGOOGLE 10
 describe    SA_CLOUDGOOGLE URL hospedando Malware 79
 
-uri         SA_ARTIGOFESTA /\.artigodefesta.com.br(?:\/|$)/i
-score       SA_ARTIGOFESTA 10
-describe    SA_ARTIGOFESTA URL hospedando Malware 80
+uri         SA_ARTIGOFESTA2 /\.artigodefesta.com.br(?:\/|$)/i
+score       SA_ARTIGOFESTA2 10
+describe    SA_ARTIGOFESTA2 URL hospedando Malware 80B
 
 uri         SA_EATORGANIC /\.eating-organic.net(?:\/|$)/i
 score       SA_EATORGANIC 10
@@ -5967,9 +5967,9 @@ uri         SA_COMSTARCOMBR /\.comstar.com.br(?:\/|$)/i
 score       SA_COMSTARCOMBR 80
 describe    SA_COMSTARCOMBR URL hospedando Malware 165
 
-uri         SA_COMSTARCOMBR /\.comstar.com.br(?:\/|$)/i
-score       SA_COMSTARCOMBR 80
-describe    SA_COMSTARCOMBR URL hospedando Malware 165
+uri         SA_COMSTARCOMBR2 /\.comstar.com.br(?:\/|$)/i
+score       SA_COMSTARCOMBR2 80
+describe    SA_COMSTARCOMBR2 URL hospedando Malware 165B
 
 uri         SA_STORAGETLD /\.storage(?:\/|$)/i
 score       SA_STORAGETLD 80
@@ -6751,15 +6751,15 @@ uri         SPAM_LINK_3 /\/[a-z]+\.cgi/i
 score       SPAM_LINK_3 10
 describe    SPAM_LINK_3 Link de spam URL contendo CGI
 
-uri         SPAM_LINK_3 /\/\w\/\w{10,}\/\w{10,}/i
-score       SPAM_LINK_3 10
-describe    SPAM_LINK_3 Variação de link de Spam
+uri         SPAM_LINK_3B /\/\w\/\w{10,}\/\w{10,}/i
+score       SPAM_LINK_3B 10
+describe    SPAM_LINK_3B Variação de link de Spam
 
-uri         SA_PORTASNAOPADRAOHTTPS m{https?://[^/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:/|\s|$)}
+uri         SA_PORTASNAOPADRAOHTTPS /https?:\/\/[^\/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:\/|\s|$)/i
 score       SA_PORTASNAOPADRAOHTTPS 30
 describe    SA_PORTASNAOPADRAOHTTPS HTTPS utilizando portas não padrão na URL
 
-uri         SA_PORTASNAOPADRAOHTTP m{http?://[^/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:/|\s|$)}
+uri         SA_PORTASNAOPADRAOHTTP /http?:\/\/[^\/\s]+?:\d+(?<!:80)(?<!:443)(?<!:8080)(?:\/|\s|$)/i
 score       SA_PORTASNAOPADRAOHTTP 30
 describe    SA_PORTASNAOPADRAOHTTP HTTP utilizando portas não padrão na URL
 
